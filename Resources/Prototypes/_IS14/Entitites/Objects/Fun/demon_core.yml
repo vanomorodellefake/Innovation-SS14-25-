@@ -1,0 +1,67 @@
+- type: entity
+  parent: BaseItem
+  id: IS14DemonCoreNormal
+  name: Ядро демон
+  description: Радиоактивная сфера. Верхняя половина поддерживается отвёрткой. Будьте осторожны при обращении с ней.
+  components:
+  - type: Item
+    size: Normal
+  - type: RadiationSource
+    slope: 0.2 
+    intensity: 2 
+  - type: Sprite
+    sprite: _IS14/Objects/Fun/demon_core.rsi
+    layers:
+        - state: icon
+  - type: DamageOnLand
+    damage:
+      types:
+        Blunt: 5
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Blunt: 4
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 5
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:SpillBehavior { }
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          Screwdriver:
+            min: 1
+            max: 1
+          IS14DemonCore:
+            min: 1
+            max: 1
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+
+
+- type: entity
+  parent: BaseItem
+  id: IS14DemonCore
+  name: Ядро демон
+  description: Сфера схлопнулась! Радиоактивные материалы внутри теперь не контролируются и представляют серьёзную опасность для окружающих.
+  components:
+  - type: Item
+    size: Normal
+  - type: RadiationSource
+    slope: 2 
+    intensity: 5 
+  - type: Sprite
+    sprite: Objects/Consumable/Drinks/beer.rsi
+    layers:
+        - state: icon1
+        - state: pizda-unshaded
+          shader: unshaded
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Blunt: 4
