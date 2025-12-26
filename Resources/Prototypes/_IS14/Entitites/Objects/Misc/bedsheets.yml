@@ -27,7 +27,7 @@
 - type: entity
   id: IS14DoubleBedsheetBlue
   parent: IS14DoubleBedsheetBase
-  name: black bedsheet
+  name: blue bedsheet
   components:
   - type: Sprite
     state: blue
@@ -35,7 +35,7 @@
 - type: entity
   id: IS14DoubleBedsheetFlowers
   parent: IS14DoubleBedsheetBase
-  name: black bedsheet
+  name: flowers bedsheet
   components:
   - type: Sprite
     state: flowers
@@ -43,7 +43,7 @@
 - type: entity
   id: IS14DoubleBedsheetGreen
   parent: IS14DoubleBedsheetBase
-  name: black bedsheet
+  name: green bedsheet
   components:
   - type: Sprite
     state: green
@@ -51,7 +51,7 @@
 - type: entity
   id: IS14DoubleBedsheetNT
   parent: IS14DoubleBedsheetBase
-  name: black bedsheet
+  name: nt bedsheet
   components:
   - type: Sprite
     state: nt
@@ -59,7 +59,7 @@
 - type: entity
   id: IS14DoubleBedsheetUSSR
   parent: IS14DoubleBedsheetBase
-  name: black bedsheet
+  name: ussr bedsheet
   components:
   - type: Sprite
     state: ussr
@@ -67,7 +67,7 @@
 - type: entity
   id: IS14DoubleBedsheetViolet
   parent: IS14DoubleBedsheetBase
-  name: black bedsheet
+  name: violet bedsheet
   components:
   - type: Sprite
     state: violet
@@ -75,7 +75,15 @@
 - type: entity
   id: IS14DoubleBedsheetWhite
   parent: IS14DoubleBedsheetBase
-  name: black bedsheet
+  name: white bedsheet
   components:
   - type: Sprite
     state: white
+
+- type: entity
+  id: IS14DoubleBedsheetSymbol
+  parent: IS14DoubleBedsheetBase
+  name: symbol bedsheet
+  components:
+  - type: Sprite
+    state: symbol
