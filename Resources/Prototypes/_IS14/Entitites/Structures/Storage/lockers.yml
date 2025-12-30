@@ -366,9 +366,9 @@
     sprite: _IS14/Structures/Storage/Lockers/Medical.rsi
     noRot: true
     layers:
-    - state: feld_base
+    - state: farm_base
       map: ["enum.StorageVisualLayers.Base"]
-    - state: feld_closed
+    - state: farm_closed
       map: ["enum.StorageVisualLayers.Door"]
     - state: locked
       map: ["enum.LockVisualLayers.Lock"]
@@ -377,11 +377,11 @@
       visible: false
       map: ["enum.WeldableLayers.BaseWelded"]
   - type: AccessReader
-    access: [["Medical"]]
+    access: [["Chemistry"]]
   - type: EntityStorageVisuals
-    stateBaseClosed: feld_base
-    stateDoorOpen: feld_opened
-    stateDoorClosed: feld_closed
+    stateBaseClosed: farm_base
+    stateDoorOpen: farm_opened
+    stateDoorClosed: farm_closed
 
 
 
