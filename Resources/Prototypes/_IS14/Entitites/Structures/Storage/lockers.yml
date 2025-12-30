@@ -291,9 +291,9 @@
     sprite: _IS14/Structures/Storage/Lockers/Medical.rsi
     noRot: true
     layers:
-    - state: v1_base
+    - state: v2_base
       map: ["enum.StorageVisualLayers.Base"]
-    - state: v1_closed
+    - state: v2_closed
       map: ["enum.StorageVisualLayers.Door"]
     - state: locked
       map: ["enum.LockVisualLayers.Lock"]
