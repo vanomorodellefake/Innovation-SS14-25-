@@ -491,7 +491,7 @@
       visible: false
       map: ["enum.WeldableLayers.BaseWelded"]
   - type: AccessReader
-    access: [["Pilot"]]
+    access: [["Security"]]
   - type: EntityStorageVisuals
     stateBaseClosed: pilot_base
     stateDoorOpen: pilot_opened
