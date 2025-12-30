@@ -441,7 +441,7 @@
       visible: false
       map: ["enum.WeldableLayers.BaseWelded"]
   - type: AccessReader
-    access: [["Brigmedic"]]
+    access: [["Security"]]
   - type: EntityStorageVisuals
     stateBaseClosed: brigmed_base
     stateDoorOpen: brigmed_opened
