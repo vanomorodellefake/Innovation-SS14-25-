@@ -19,7 +19,19 @@ ent-IS14VendingMachineChem = ХимШкаф
 ent-IS14VendingMachineMed = МедШкаф
     .desc = Одежда врачей.
 
+###############################
 
+ent-IS14VendingMachineCigs = Сигареты
+    .desc = Снаряжение экспедиций.
+
+ent-IS14VendingMachinekofee = Аппарат с кофе
+    .desc = Одежда для экспедиций.
+
+ent-IS14VendingMachineFood = Быстрый перекус!
+    .desc = Одежда химиков.
+
+ent-IS14VendingMachineWater = Вода
+    .desc = Одежда врачей.
 
 
 
@@ -86,3 +98,40 @@ thankyou-Med-2 = Попытайтесь не уничтожить лаборат
 thankyou-Med-3 = Мы верим, что хлор-фторовое соединение надёжно.
 thankyou-Med-4 = Помните, изготовление наркотических веществ караеться советским законодательством.
 
+##################
+
+advertisement-cigss-1 = Товарищь, пройдите на перекур.
+advertisement-cigss-2 = Табачку?
+advertisement-cigss-3 = С нашей медициной курение не вредно.
+advertisement-cigss-4 = Не стойте в стороне нюхая дым - покупайте!
+thankyou-cigssvend-1 = Курите в строго отведённом месте.
+thankyou-cigssvend-2 = Вы вернетесь ещё!
+thankyou-cigssvend-3 = Не забудьте пыхнуть кому-то в лицо.
+thankyou-cigssvend-4 = Шоб я так жил, как вы тратитесь.
+
+advertisement-kofee-1 = Пошли кофе пить!
+advertisement-kofee-2 = Кофе будешь?
+advertisement-kofee-3 = Лучший цикорий в секторе.
+advertisement-kofee-4 = Взбодрит так, что не проснётесь.
+thankyou-kofee-1 = Сахар дать?
+thankyou-kofee-2 = Не задерживаем очереди.
+thankyou-kofee-3 = Картонный стакан подлежит возврату.
+thankyou-kofee-4 = Имейте совесть, не выплескивайте кофе, если не понравился - терпите и пейте.
+
+advertisement-food-1 = Доступные шоколадки по доступным ценам.
+advertisement-food-2 = Пива нет, есть орешки.
+advertisement-food-3 = Попкорн в замороженном брикете - повод обновить пломбы.
+advertisement-food-4 = Налетай, подешевело, было кредит - стало два.
+thankyou-food-1 = Кушайте - необляпайтесь.
+thankyou-food-2 = Сортируйте мусор по цвету фантиков.
+thankyou-food-3 = Уважайте труд уборщика - не забирайте его работу.
+thankyou-food-4 = Приятного перекуса.
+
+advertisement-water-1 = Та самая, Кривозерская, как оригинал.
+advertisement-water-2 = Гранённый стакан возврату подлежит.
+advertisement-water-3 = Разобьёте стакан - потеряете чашечки.
+advertisement-water-4 = А ты выпил норму в 1.5 литра?
+thankyou-water-1 = Смотрите - не захлебнитесь.
+thankyou-water-2 = Верни стакан.
+thankyou-water-3 = Жалобы на состав воды не принимаються.
+thankyou-water-4 = Помните, чистее чем у нас - только из под крана.
