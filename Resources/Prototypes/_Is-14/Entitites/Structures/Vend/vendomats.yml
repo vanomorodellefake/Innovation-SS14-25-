@@ -1,0 +1,247 @@
+- type: entity
+  parent: VendingMachine
+  id: IS14VendingMachineMilicia
+  name: MilicVend
+  description: Cop wardrobe.
+  components:
+  - type: VendingMachine
+    pack: IS14MilicInventory #
+    offState: off
+    brokenState: broken
+    normalState: normal-unshaded
+    ejectState: eject-unshaded
+  - type: DatasetVocalizer
+    dataset: IS14MilicVendAds #
+  - type: SpeakOnUIClosed
+    pack: IS14MilicVendGoodbyes #
+  - type: Sprite
+    sprite: _IS14/Structures/Machines/Vends/milicia.rsi #
+    layers:
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.Base"]
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+      shader: unshaded
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: AccessReader
+    access: [["Service"]]
+  - type: PointLight
+    radius: 2
+    energy: 1.6
+    color: "#4b93ad"
+    mask: /Textures/Effects/LightMasks/cone.png
+    autoRot: true
+
+- type: entity
+  parent: VendingMachine
+  id: IS14VendingMachineObshiy
+  name: Vend
+  description: General usage vend.
+  components:
+  - type: VendingMachine
+    pack: IS14ObshiyInventory #
+    offState: off
+    brokenState: broken
+    normalState: normal-unshaded
+    ejectState: eject-unshaded
+  - type: DatasetVocalizer
+    dataset: IS14ObshiyVendAds #
+  - type: SpeakOnUIClosed
+    pack: IS14ObshiyVendGoodbyes #
+  - type: Sprite
+    sprite: _IS14/Structures/Machines/Vends/obshiy.rsi #
+    layers:
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.Base"]
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+      shader: unshaded
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: AccessReader
+    access: [["Service"]]
+  - type: PointLight
+    radius: 2
+    energy: 1.6
+    color: "#4b93ad"
+    mask: /Textures/Effects/LightMasks/cone.png
+    autoRot: true
+
+- type: entity
+  parent: VendingMachine
+  id: IS14VendingMachineUr
+  name: LawVend
+  description: Vending machine for lawyers.
+  components:
+  - type: VendingMachine
+    pack: IS14UrInventory #
+    offState: off
+    brokenState: broken
+    normalState: normal-unshaded
+    ejectState: eject-unshaded
+  - type: DatasetVocalizer
+    dataset: IS14URVendAds #
+  - type: SpeakOnUIClosed
+    pack: IS14URVendGoodbyes #
+  - type: Sprite
+    sprite: _IS14/Structures/Machines/Vends/ur.rsi #
+    layers:
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.Base"]
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+      shader: unshaded
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: AccessReader
+    access: [["Service"]]
+  - type: PointLight
+    radius: 2
+    energy: 1.6
+    color: "#4b93ad"
+    mask: /Textures/Effects/LightMasks/cone.png
+    autoRot: true
+
+
+
+- type: entity
+  parent: VendingMachine
+  id: IS14VendingMachineExpeditionGear
+  name: ExpGear
+  description: Expedition gear.
+  components:
+  - type: VendingMachine
+    pack: IS14ExpGearInventory #
+    offState: off
+    brokenState: broken
+    normalState: normal-unshaded
+    ejectState: eject-unshaded
+  - type: DatasetVocalizer
+    dataset: IS14ExpGearVendAds #
+  - type: SpeakOnUIClosed
+    pack: IS14ExpGearVendGoodbyes #
+  - type: Sprite
+    sprite: _IS14/Structures/Machines/Vends/expgear.rsi #
+    layers:
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.Base"]
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+      shader: unshaded
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: AccessReader
+    access: [["Service"]]
+  - type: PointLight
+    radius: 2
+    energy: 1.6
+    color: "#4b93ad"
+    mask: /Textures/Effects/LightMasks/cone.png
+    autoRot: true
+
+- type: entity
+  parent: VendingMachine
+  id: IS14VendingMachineExp
+  name: ExpVend
+  description: Expedition vending machine.
+  components:
+  - type: VendingMachine
+    pack: IS14ExpInventory #
+    offState: off
+    brokenState: broken
+    normalState: normal-unshaded
+    ejectState: eject-unshaded
+  - type: DatasetVocalizer
+    dataset: IS14ExpVendAds #
+  - type: SpeakOnUIClosed
+    pack: IS14ExpVendGoodbyes #
+  - type: Sprite
+    sprite: _IS14/Structures/Machines/Vends/exp.rsi #
+    layers:
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.Base"]
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+      shader: unshaded
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: AccessReader
+    access: [["Service"]]
+  - type: PointLight
+    radius: 2
+    energy: 1.6
+    color: "#4b93ad"
+    mask: /Textures/Effects/LightMasks/cone.png
+    autoRot: true
+
+- type: entity
+  parent: VendingMachine
+  id: IS14VendingMachineChem
+  name: ChemVend
+  description: Vending machine for chemists.
+  components:
+  - type: VendingMachine
+    pack: IS14ChemInventory #
+    offState: off
+    brokenState: broken
+    normalState: normal-unshaded
+    ejectState: eject-unshaded
+  - type: DatasetVocalizer
+    dataset: IS14ChemVendAds #
+  - type: SpeakOnUIClosed
+    pack: IS14ChemVendGoodbyes #
+  - type: Sprite
+    sprite: _IS14/Structures/Machines/Vends/chem.rsi #
+    layers:
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.Base"]
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+      shader: unshaded
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: AccessReader
+    access: [["Service"]]
+  - type: PointLight
+    radius: 2
+    energy: 1.6
+    color: "#4b93ad"
+    mask: /Textures/Effects/LightMasks/cone.png
+    autoRot: true
+
+- type: entity
+  parent: VendingMachine
+  id: IS14VendingMachineMed
+  name: MedVend
+  description: Vending machine for medics.
+  components:
+  - type: VendingMachine
+    pack: IS14MedInventory #
+    offState: off
+    brokenState: broken
+    normalState: normal-unshaded
+    ejectState: eject-unshaded
+  - type: DatasetVocalizer
+    dataset: IS14MedVendAds #
+  - type: SpeakOnUIClosed
+    pack: IS14MedVendGoodbyes #
+  - type: Sprite
+    sprite: _IS14/Structures/Machines/Vends/med.rsi #
+    layers:
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.Base"]
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+      shader: unshaded
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: AccessReader
+    access: [["Service"]]
+  - type: PointLight
+    radius: 2
+    energy: 1.6
+    color: "#4b93ad"
+    mask: /Textures/Effects/LightMasks/cone.png
+    autoRot: true
+

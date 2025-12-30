@@ -29,4 +29,4 @@ jobs:
    - if: ${{ steps.checkUserMember.outputs.isTeamMember == 'true' }}
      uses: actions-ecosystem/action-add-labels@v1
      with:
-       labels: "S: Approved"
+       labels: "S: Одобрено"
