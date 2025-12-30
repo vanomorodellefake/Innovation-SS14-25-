@@ -45,7 +45,7 @@
 - type: localizedDataset
   id: IS14CigsVendAds
   values:
-    prefix: advertisement-cigs-
+    prefix: advertisement-cigss-
     count: 4
 
 - type: localizedDataset
@@ -129,7 +129,7 @@
 - type: localizedDataset
   id: IS14CigsVendGoodbyes
   values:
-    prefix: thankyou-cigsvend-
+    prefix: thankyou-cigssvend-
     count: 4
 
 - type: localizedDataset

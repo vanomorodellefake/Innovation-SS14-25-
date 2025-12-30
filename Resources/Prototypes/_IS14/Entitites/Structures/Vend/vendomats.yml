@@ -354,44 +354,40 @@
     mask: /Textures/Effects/LightMasks/cone.png
     autoRot: true
 
-- type: entity
-  parent: VendingMachine
-  id: IS14VendingMachineWater
-  name: WaterVend
-  description: Vending machine for water.
-  components:
-  - type: VendingMachine
-    pack: IS14WaterInventory #
-    offState: off
-    brokenState: broken
-    normalState: normal-unshaded
-    ejectState: eject-unshaded
-  - type: DatasetVocalizer
-    dataset: IS14WaterVendAds #
-  - type: SpeakOnUIClosed
-    pack: IS14WaterVendGoodbyes #
-  - type: Sprite
-    sprite: _IS14/Structures/Machines/Vends/water.rsi #
-    layers:
-    - state: "off"
-      map: ["enum.VendingMachineVisualLayers.Base"]
-    - state: "off"
-      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
-      shader: unshaded
-    - state: panel
-      map: ["enum.WiresVisualLayers.MaintenancePanel"]
-  - type: AccessReader
-    access: [["Service"]]
-  - type: PointLight
-    radius: 2
-    energy: 1.6
-    color: "#4b93ad"
-    mask: /Textures/Effects/LightMasks/cone.png
-    autoRot: true
-
-
-
-
+# - type: entity
+#   parent: VendingMachine
+#   id: IS14VendingMachineWater
+#   name: WaterVend
+#   description: Vending machine for water.
+#   components:
+#   - type: VendingMachine
+#     pack: IS14WaterInventory #
+#     offState: off
+#     brokenState: broken
+#     normalState: normal-unshaded
+#     ejectState: eject-unshaded
+#   - type: DatasetVocalizer
+#     dataset: IS14WaterVendAds #
+#   - type: SpeakOnUIClosed
+#     pack: IS14WaterVendGoodbyes #
+#   - type: Sprite
+#     sprite: _IS14/Structures/Machines/Vends/water.rsi #
+#     layers:
+#     - state: "off"
+#       map: ["enum.VendingMachineVisualLayers.Base"]
+#     - state: "off"
+#       map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+#       shader: unshaded
+#     - state: panel
+#       map: ["enum.WiresVisualLayers.MaintenancePanel"]
+#   - type: AccessReader
+#     access: [["Service"]]
+#   - type: PointLight
+#     radius: 2
+#     energy: 1.6
+#     color: "#4b93ad"
+#     mask: /Textures/Effects/LightMasks/cone.png
+#     autoRot: true
 
 
 

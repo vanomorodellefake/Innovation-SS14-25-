@@ -100,14 +100,14 @@ thankyou-Med-4 = Помните, изготовление наркотическ
 
 ##################
 
-advertisement-cigs-1 = Товарищь, пройдите на перекур.
-advertisement-cigs-2 = Табачку?
-advertisement-cigs-3 = С нашей медициной курение не вредно.
-advertisement-cigs-4 = Не стойте в стороне нюхая дым - покупайте!
-thankyou-cigsvend-1 = Курите в строго отведённом месте.
-thankyou-cigsvend-2 = Вы вернетесь ещё!
-thankyou-cigsvend-3 = Не забудьте пыхнуть кому-то в лицо.
-thankyou-cigsvend-4 = Шоб я так жил, как вы тратитесь.
+advertisement-cigss-1 = Товарищь, пройдите на перекур.
+advertisement-cigss-2 = Табачку?
+advertisement-cigss-3 = С нашей медициной курение не вредно.
+advertisement-cigss-4 = Не стойте в стороне нюхая дым - покупайте!
+thankyou-cigssvend-1 = Курите в строго отведённом месте.
+thankyou-cigssvend-2 = Вы вернетесь ещё!
+thankyou-cigssvend-3 = Не забудьте пыхнуть кому-то в лицо.
+thankyou-cigssvend-4 = Шоб я так жил, как вы тратитесь.
 
 advertisement-kofee-1 = Пошли кофе пить!
 advertisement-kofee-2 = Кофе будешь?
