@@ -24,6 +24,9 @@
     },
     {
       "name": "warden"
+    },
+    {
+      "name": "internal_control_executor"
     }
   ]
 }

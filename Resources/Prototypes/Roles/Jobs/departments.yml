@@ -108,6 +108,7 @@
   - CargoTechnician
   - Quartermaster
   - SalvageSpecialist
+  - SeniorExpeditioner # IS14 Edit
 
 - type: department
   id: Civilian
@@ -133,6 +134,7 @@
   - Visitor
   - Zookeeper
   - ServiceWorker
+  - ChurchServant # IS14 Edit
 
 - type: department
   id: CentralCommand
@@ -188,6 +190,7 @@
   - ERTEngineer
   - DeathSquad
   - HecuOperative
+  - CommandSecretary # IS14 Edit
   primary: false
   weight: 100
 
@@ -201,6 +204,7 @@
   - ChiefEngineer
   - StationEngineer
   - TechnicalAssistant
+  - SeniorEngineer # IS14 Edit
 
 - type: department
   id: Medical
@@ -215,6 +219,7 @@
   - Psychologist
   - Paramedic
   - Surgeon # Corvax-Next-Surgeon
+  - SeniorPhysician # IS14 Edit
 
 - type: department
   id: Security
@@ -231,6 +236,8 @@
   - Brigmedic # Goob
   - Pilot # Corvax-Pilot
   - WardenHelper # Corvax-Next-WardenHelper
+  - InternalControlExecutor # IS14 Edit
+  - SeniorOfficer # IS14 Edit
 
 - type: department
   id: Science
@@ -241,6 +248,7 @@
   - ResearchDirector
   - Scientist
   - ResearchAssistant
+  - SeniorResearcher # IS14 Edit
 
 - type: department
   id: Silicon
