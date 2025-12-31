@@ -58,3 +58,13 @@
   - type: Pda
     id: IS_IdCardWarden
 
+# IS14 Edit - Internal Control Executor
+- type: entity
+  parent: IS_PdaBase
+  id: IS_PdaInternalControlExecutor
+  name: internal control executor's PDA
+  components:
+  - type: Sprite
+    sprite: _IS14/Objects/Devices/pda/Security/security.rsi
+  - type: Pda
+    id: IS_IdCardInternalControlExecutor

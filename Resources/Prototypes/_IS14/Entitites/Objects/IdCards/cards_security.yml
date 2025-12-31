@@ -82,3 +82,17 @@
   - type: Sprite
     sprite: /Textures/_IS14/Objects/Devices/id_cards/security.rsi
 
+# IS14 Edit - Internal Control Executor
+- type: entity
+  parent: IS_IdCardBase
+  id: IS_IdCardInternalControlExecutor
+  name: identification card
+  description: A card necessary to access various areas aboard the station.
+  components:
+  - type: Appearance
+    appearanceDataInit:
+     enum.IdCardVisualLayers.Base:
+       !type:String
+       internal_control_executor
+  - type: Sprite
+    sprite: /Textures/_IS14/Objects/Devices/id_cards/security.rsi
