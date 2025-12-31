@@ -31,8 +31,7 @@
     ears: ClothingHeadsetScience
     id: IS_PdaMentorScientist # IS14 Edit - используем существующий PDA для старшего учёного
   storage:
-    back:
-    - Stuff
+    back: []
 
 - type: chameleonOutfit
   id: SeniorResearcherChameleonOutfit

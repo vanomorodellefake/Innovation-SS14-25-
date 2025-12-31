@@ -43,8 +43,7 @@
     belt: ClothingBeltMedicalFilled
     id: IS_PdaSeniorDoctor # IS14 Edit
   storage:
-    back:
-    - Stuff
+    back: []
 
 - type: chameleonOutfit
   id: SeniorPhysicianChameleonOutfit

@@ -44,8 +44,7 @@
     ears: ClothingHeadsetEngineering
     id: IS_PdaSeniorEngineer # IS14 Edit
   storage:
-    back:
-    - Stuff
+    back: []
 
 - type: chameleonOutfit
   id: SeniorEngineerChameleonOutfit
