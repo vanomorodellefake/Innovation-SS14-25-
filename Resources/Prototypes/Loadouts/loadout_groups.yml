@@ -1066,8 +1066,7 @@
   id: AtmosphericTechnicianHead
   name: loadout-group-atmospheric-technician-head
   minLimit: 0
-  loadouts:
-  # IS14 Edit - SeniorEngineerBeret закомментирован, loadout не существует
+  loadouts: [] # IS14 Edit - SeniorEngineerBeret закомментирован, loadout не существует
 
 - type: loadoutGroup
   id: AtmosphericTechnicianJumpsuit
