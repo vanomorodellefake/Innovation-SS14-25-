@@ -26,7 +26,13 @@
             "name": "CargoTechnician"
         },
         {
-            "name": "CentralCommandOfficial"
+            "name": "CentralCommandRepOfficial"
+        },
+        {
+            "name": "CentralCommandOfficerOfficial"
+        },
+        {
+            "name": "CentralCommandCommanderOfficial"
         },
         {
             "name": "Chaplain"
