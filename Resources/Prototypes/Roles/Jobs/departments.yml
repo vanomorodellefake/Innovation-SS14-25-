@@ -125,7 +125,6 @@
   - Clown
   - HeadOfPersonnel
   - Janitor
-  - Lawyer
   - Librarian
   - Mime
   - Musician
@@ -135,6 +134,17 @@
   - Zookeeper
   - ServiceWorker
   - ChurchServant # IS14 Edit
+
+- type: department
+  id: Legal
+  name: department-Legal
+  description: department-Legal-description
+  color: "#9FED58"
+  roles:
+  - NanotrasenRepresentative # IS14 Edit
+  - InternalControlExecutor # IS14 Edit
+  - Lawyer
+
 
 - type: department
   id: CentralCommand
@@ -178,7 +188,6 @@
   - ResearchDirector
   - Quartermaster
   - BlueshieldOfficer # Goobstation
-  - NanotrasenRepresentative # Goobstation
   - NanotrasenCareerTrainer # Goobstation
   - CentralCommandOfficial
   - CBURN
@@ -235,8 +244,7 @@
   - Warden
   - Brigmedic # Goob
   - Pilot # Corvax-Pilot
-  - WardenHelper # Corvax-Next-WardenHelper
-  - InternalControlExecutor # IS14 Edit
+  # - WardenHelper # Corvax-Next-WardenHelper # IS14 Edit
   - SeniorOfficer # IS14 Edit
 
 - type: department
