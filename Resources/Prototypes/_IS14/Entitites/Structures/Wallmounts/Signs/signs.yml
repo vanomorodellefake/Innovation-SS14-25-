@@ -514,6 +514,15 @@
 
 - type: entity
   parent: IS14BaseSign
+  id: IS14SignSecurity
+  name: security sign
+  description: A sign indicating the security.
+  components:
+    - type: Sprite
+      state: security
+
+- type: entity
+  parent: IS14BaseSign
   id: IS14SignArmory
   name: armory sign
   description: A sign indicating the armory.
