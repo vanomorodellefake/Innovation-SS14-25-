@@ -1,47 +1,251 @@
 {
-    "version": 1,
-    "size": {
-        "x": 32,
-        "y": 32
+  "version": 1,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "license": "All Rights Reserved",
+  "copyright": "made for innovation station by melvilla (discord)",
+  "states": [
+    {
+      "name": "direction_cmd",
+      "directions": 4
     },
-    "license": "All Rights Reserved",
-    "copyright": "made for innovation station by melvilla (discord)",
-    "states": [
-        {
-            "name": "direction_cmd",
-            "directions": 4
-        },
-        {
-            "name": "direction_crb",
-            "directions": 4
-        },
-        {
-            "name": "direction_expo",
-            "directions": 4
-        },
-        {
-            "name": "direction_med",
-            "directions": 4
-        },
-        {
-            "name": "direction_moko",
-            "directions": 4
-        },
-        {
-            "name": "direction_mup",
-            "directions": 4
-        },
-        {
-            "name": "direction_sci",
-            "directions": 4
-        },
-        {
-            "name": "direction_sec",
-            "directions": 4
-        },
-        {
-            "name": "direction_service",
-            "directions": 4
-        }
-    ]
+    {
+      "name": "direction_crb",
+      "directions": 4
+    },
+    {
+      "name": "direction_expo",
+      "directions": 4
+    },
+    {
+      "name": "direction_med",
+      "directions": 4
+    },
+    {
+      "name": "direction_moko",
+      "directions": 4
+    },
+    {
+      "name": "direction_mup",
+      "directions": 4
+    },
+    {
+      "name": "direction_sci",
+      "directions": 4
+    },
+    {
+      "name": "direction_sec",
+      "directions": 4
+    },
+    {
+      "name": "direction_service",
+      "directions": 4
+    },
+    {
+      "name": "dock"
+    },
+    {
+      "name": "doors"
+    },
+    {
+      "name": "mats"
+    },
+    {
+      "name": "eng"
+    },
+    {
+      "name": "engine"
+    },
+    {
+      "name": "eva"
+    },
+    {
+      "name": "examroom"
+    },
+    {
+      "name": "cloning"
+    },
+    {
+      "name": "genpop"
+    },
+    {
+      "name": "gravi"
+    },
+    {
+      "name": "hydro"
+    },
+    {
+      "name": "interrogation"
+    },
+    {
+      "name": "janitor"
+    },
+    {
+      "name": "laundromat"
+    },
+    {
+      "name": "law"
+    },
+    {
+      "name": "mail"
+    },
+    {
+      "name": "medbay"
+    },
+    {
+      "name": "morgue"
+    },
+    {
+      "name": "news"
+    },
+    {
+      "name": "kitchen"
+    },
+    {
+      "name": "drama1"
+    },
+    {
+      "name": "drama2"
+    },
+    {
+      "name": "drama3"
+    },
+    {
+      "name": "restroom"
+    },
+    {
+      "name": "surgery"
+    },
+    {
+      "name": "pods"
+    },
+    {
+      "name": "psychology"
+    },
+    {
+      "name": "reception"
+    },
+    {
+      "name": "rnd"
+    },
+    {
+      "name": "robo"
+    },
+    {
+      "name": "salvage"
+    },
+    {
+      "name": "sci"
+    },
+    {
+      "name": "cans"
+    },
+    {
+      "name": "cans_sci"
+    },
+    {
+      "name": "space"
+    },
+    {
+      "name": "telecoms"
+    },
+    {
+      "name": "toxins"
+    },
+    {
+      "name": "virology"
+    },
+    {
+      "name": "xenobio"
+    },
+    {
+      "name": "zomlab"
+    },
+    {
+      "name": "vox"
+    },
+    {
+      "name": "data"
+    },
+    {
+      "name": "cryo"
+    },
+    {
+      "name": "ai"
+    },
+    {
+      "name": "ai_upload"
+    },
+    {
+      "name": "vault"
+    },
+    {
+      "name": "xenoarch"
+    },
+    {
+      "name": "anomaly"
+    },
+    {
+      "name": "arcade"
+    },
+    {
+      "name": "armory"
+    },
+    {
+      "name": "barbershop"
+    },
+    {
+      "name": "ass"
+    },
+    {
+      "name": "atmos"
+    },
+    {
+      "name": "bar"
+    },
+    {
+      "name": "bath"
+    },
+    {
+      "name": "biblio"
+    },
+    {
+      "name": "bridge"
+    },
+    {
+      "name": "cargo"
+    },
+    {
+      "name": "cargo_dock"
+    },
+    {
+      "name": "chapel"
+    },
+    {
+      "name": "chem"
+    },
+    {
+      "name": "commander"
+    },
+    {
+      "name": "conference_room"
+    },
+    {
+      "name": "detective"
+    },
+    {
+      "name": "kpz"
+    },
+    {
+      "name": "perm"
+    },
+    {
+      "name": "sizo"
+    },
+    {
+      "name": "solitary"
+    }
+  ]
 }
