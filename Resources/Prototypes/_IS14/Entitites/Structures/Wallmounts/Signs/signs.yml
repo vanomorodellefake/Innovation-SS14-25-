@@ -1,3 +1,5 @@
+# Directional Signs
+
 - type: entity
   parent: IS14BaseSign
   id: IS14BaseSignDirectional
@@ -11,69 +13,681 @@
   id: IS14SignDirectionalCmd
   name: cmd sign
   components:
-  - type: Sprite
-    state: direction_cmd
+    - type: Sprite
+      state: direction_cmd
 
 - type: entity
   parent: IS14BaseSignDirectional
   id: IS14SignDirectionalCrb
   name: crb sign
   components:
-  - type: Sprite
-    state: direction_crb
+    - type: Sprite
+      state: direction_crb
 
 - type: entity
   parent: IS14BaseSignDirectional
   id: IS14SignDirectionalExpo
   name: expo sign
   components:
-  - type: Sprite
-    state: direction_expo
+    - type: Sprite
+      state: direction_expo
 
 - type: entity
   parent: IS14BaseSignDirectional
   id: IS14SignDirectionalMed
   name: med sign
   components:
-  - type: Sprite
-    state: direction_med
+    - type: Sprite
+      state: direction_med
 
 - type: entity
   parent: IS14BaseSignDirectional
   id: IS14SignDirectionalMoko
   name: moko sign
   components:
-  - type: Sprite
-    state: direction_moko
+    - type: Sprite
+      state: direction_moko
 
 - type: entity
   parent: IS14BaseSignDirectional
   id: IS14SignDirectionalMup
   name: mup sign
   components:
-  - type: Sprite
-    state: direction_mup
+    - type: Sprite
+      state: direction_mup
 
 - type: entity
   parent: IS14BaseSignDirectional
   id: IS14SignDirectionalSci
   name: sci sign
   components:
-  - type: Sprite
-    state: direction_sci
+    - type: Sprite
+      state: direction_sci
 
 - type: entity
   parent: IS14BaseSignDirectional
   id: IS14SignDirectionalSec
   name: sec sign
   components:
-  - type: Sprite
-    state: direction_sec
+    - type: Sprite
+      state: direction_sec
 
 - type: entity
   parent: IS14BaseSignDirectional
   id: IS14SignDirectionalService
   name: service sign
   components:
-  - type: Sprite
-    state: direction_service
+    - type: Sprite
+      state: direction_service
+
+# Regular Signs
+
+- type: entity
+  parent: IS14BaseSign
+  id: IS14SignDock
+  name: dock sign
+  description: A sign indicating a docking area.
+  components:
+    - type: Sprite
+      state: dock
+
+- type: entity
+  parent: IS14BaseSign
+  id: IS14SignDoors
+  name: doors sign
+  description: A sign indicating doors.
+  components:
+    - type: Sprite
+      state: doors
+
+- type: entity
+  parent: IS14BaseSign
+  id: IS14SignMaterials
+  name: materials sign
+  description: An omen to the juicy vault of steel, glass, and plastic that lays before you.
+  components:
+    - type: Sprite
+      state: mats
+
+- type: entity
+  parent: IS14BaseSign
+  id: IS14SignEngineering
+  name: engineering sign
+  description: A sign indicating the engineering area.
+  components:
+    - type: Sprite
+      state: eng
+
+- type: entity
+  parent: IS14BaseSign
+  id: IS14SignEngine
+  name: power sign
+  description: Where the powa happens.
+  components:
+    - type: Sprite
+      state: engine
+
+- type: entity
+  parent: IS14BaseSign
+  id: IS14SignEVA
+  name: EVA sign
+  description: A sign indicating an EVA area. EVA equipment may be required beyond this point.
+  components:
+    - type: Sprite
+      state: eva
+
+- type: entity
+  parent: IS14BaseSign
+  id: IS14SignExamroom
+  name: examination room sign
+  description: A sign indicating a medical examination room.
+  components:
+    - type: Sprite
+      state: examroom
+
+- type: entity
+  parent: IS14BaseSign
+  id: IS14SignCloning
+  name: cloning sign
+  description: A sign indicating the cloning lab.
+  components:
+    - type: Sprite
+      state: cloning
+
+- type: entity
+  parent: IS14BaseSign
+  id: IS14SignGenpop
+  name: genpop sign
+  description: A sign indicating the genpop prison.
+  components:
+    - type: Sprite
+      state: genpop
+
+- type: entity
+  parent: IS14BaseSign
+  id: IS14SignGravity
+  name: gravity sign
+  description: A sign indicating the gravity generator.
+  components:
+    - type: Sprite
+      state: gravi
+
+- type: entity
+  parent: IS14BaseSign
+  id: IS14SignHydro
+  name: hydro sign
+  description: A sign indicating a hydroponics area.
+  components:
+    - type: Sprite
+      state: hydro
+
+- type: entity
+  parent: IS14BaseSign
+  id: IS14SignInterrogation
+  name: interrogation sign
+  description: A sign indicating an interrogation room.
+  components:
+    - type: Sprite
+      state: interrogation
+
+- type: entity
+  parent: IS14BaseSign
+  id: IS14SignJanitor
+  name: janitor sign
+  description: A sign labelling an area where the janitor works.
+  components:
+    - type: Sprite
+      state: janitor
+
+- type: entity
+  parent: IS14BaseSign
+  id: IS14SignLaundromat
+  name: laundromat sign
+  description: A sign indicating the laundromat.
+  components:
+    - type: Sprite
+      state: laundromat
+
+- type: entity
+  parent: IS14BaseSign
+  id: IS14SignLaw
+  name: law sign
+  description: A sign indicating the presence of the (typically absent) rule of law.
+  components:
+    - type: Sprite
+      state: law
+
+- type: entity
+  parent: IS14BaseSign
+  id: IS14SignMail
+  name: mail sign
+  description: A sign indicating mail.
+  components:
+    - type: Sprite
+      state: mail
+
+- type: entity
+  parent: IS14BaseSign
+  id: IS14SignMedbay
+  name: medbay sign
+  description: A sign indicating the medical bay.
+  components:
+    - type: Sprite
+      state: medbay
+
+- type: entity
+  parent: IS14BaseSign
+  id: IS14SignMorgue
+  name: morgue sign
+  description: A sign indicating the morgue.
+  components:
+    - type: Sprite
+      state: morgue
+
+- type: entity
+  parent: IS14BaseSign
+  id: IS14SignNews
+  name: news sign
+  description: A sign indicating where the Reporter works.
+  components:
+    - type: Sprite
+      state: news
+
+- type: entity
+  parent: IS14BaseSign
+  id: IS14SignKitchen
+  name: kitchen sign
+  description: The heart of the home. And disease.
+  components:
+    - type: Sprite
+      state: kitchen
+
+- type: entity
+  parent: IS14BaseSign
+  id: IS14SignTheater
+  name: theater sign
+  description: Would it even be Space Station without drama?
+  components:
+    - type: Sprite
+      layers:
+        - state: drama1
+          map: ["base"]
+    - type: RandomSprite
+      available:
+        - base:
+            drama1: null
+            drama2: null
+            drama3: null
+
+- type: entity
+  parent: IS14BaseSign
+  id: IS14SignRestroom
+  name: restroom sign
+  description: A sign indicating where you go to... What do you do here again?
+  components:
+    - type: Sprite
+      state: restroom
+
+- type: entity
+  parent: IS14BaseSign
+  id: IS14SignSurgery
+  name: surgery sign
+  description: A sign indicating the operating theater.
+  components:
+    - type: Sprite
+      state: surgery
+
+- type: entity
+  parent: IS14BaseSign
+  id: IS14SignEscapePods
+  name: escape pods sign
+  description: A sign indicating the escape pods.
+  components:
+    - type: Sprite
+      state: pods
+
+- type: entity
+  parent: IS14BaseSign
+  id: IS14SignPsychology
+  name: psychology sign
+  description: A sign labelling an area where the Psychologist works.
+  components:
+    - type: Sprite
+      state: psychology
+
+- type: entity
+  parent: IS14BaseSign
+  id: IS14SignReception
+  name: reception sign
+  description: A sign indicating the reception.
+  components:
+    - type: Sprite
+      state: reception
+
+- type: entity
+  parent: IS14BaseSign
+  id: IS14SignRND
+  name: research and development sign
+  description: A sign indicating the research and development lab.
+  components:
+    - type: Sprite
+      state: rnd
+
+- type: entity
+  parent: IS14BaseSign
+  id: IS14SignRobo
+  name: robo sign
+  description: A sign indicating the robotics lab.
+  components:
+    - type: Sprite
+      state: robo
+
+- type: entity
+  parent: IS14BaseSign
+  id: IS14SignSalvage
+  name: salvage sign
+  description: A sign indicating the salvage area.
+  components:
+    - type: Sprite
+      state: salvage
+
+- type: entity
+  parent: IS14BaseSign
+  id: IS14SignScience
+  name: science sign
+  description: A sign indicating the science area.
+  components:
+    - type: Sprite
+      state: sci
+
+- type: entity
+  parent: IS14BaseSign
+  id: IS14SignCans
+  name: canisters sign
+  description: A sign indicating the auspicious presence of gas canisters.
+  components:
+    - type: Sprite
+      state: cans
+
+- type: entity
+  parent: IS14SignCans
+  id: IS14SignCansScience
+  suffix: science
+  components:
+    - type: Sprite
+      state: cans_sci
+
+- type: entity
+  parent: IS14BaseSign
+  id: IS14SignSpace
+  name: space sign
+  description: A sign warning that the area ahead is nothing but cold, empty space.
+  components:
+    - type: Sprite
+      state: space
+
+- type: entity
+  parent: IS14BaseSign
+  id: IS14SignTelecomms
+  name: telecomms sign
+  description: A sign indicating the telecommunications room.
+  components:
+    - type: Sprite
+      state: telecoms
+
+- type: entity
+  parent: IS14BaseSign
+  id: IS14SignToxins
+  name: toxins sign
+  description: A sign indicating the toxin lab.
+  components:
+    - type: Sprite
+      state: toxins
+
+- type: entity
+  parent: IS14BaseSign
+  id: IS14SignVirology
+  name: virology sign
+  description: A sign indicating the virology lab.
+  components:
+    - type: Sprite
+      state: virology
+
+- type: entity
+  parent: IS14BaseSign
+  id: IS14SignXenobio
+  name: xenobio sign
+  description: A sign indicating the xenobiology lab.
+  components:
+    - type: Sprite
+      state: xenobio
+
+- type: entity
+  parent: IS14BaseSign
+  id: IS14SignZomlab
+  name: zombie lab sign
+  description: The final remains of a shut-down Nanotrasen research project that aimed to harness the powers of Romerol. I wonder how that went...
+  components:
+    - type: Sprite
+      state: zomlab
+
+- type: entity
+  parent: IS14BaseSign
+  id: IS14SignVox
+  name: vox area sign
+  description: A sign indicating that the area ahead is intended for Vox crew members and does not have an oxygen atmosphere.
+  components:
+    - type: Sprite
+      state: vox
+
+- type: entity
+  parent: IS14BaseSign
+  id: IS14SignData
+  name: data sign
+  description: A sign indicating data servers.
+  components:
+    - type: Sprite
+      state: data
+
+- type: entity
+  parent: IS14BaseSign
+  id: IS14SignCryo
+  name: cryosleep sign
+  description: Just like that? You're gonna chicken out?
+  components:
+    - type: Sprite
+      state: cryo
+
+- type: entity
+  parent: IS14BaseSign
+  id: IS14SignAi
+  name: ai sign
+  description: A sign, indicating an AI is present.
+  components:
+    - type: Sprite
+      state: ai
+
+- type: entity
+  parent: IS14BaseSign
+  id: IS14SignAiUpload
+  name: ai upload sign
+  description: A sign, indicating an AI is present.
+  components:
+    - type: Sprite
+      state: ai_upload
+
+- type: entity
+  parent: IS14BaseSign
+  id: IS14SignVault
+  name: vault sign
+  description: A sign indicating the vault. Who knows what secrets lie inside?
+  components:
+    - type: Sprite
+      state: vault
+
+- type: entity
+  parent: IS14BaseSign
+  id: IS14SignXenoarch
+  name: xenoarcheology lab sign
+  description: A sign indicating the xenoarchaeology lab.
+  components:
+    - type: Sprite
+      state: xenoarch
+
+- type: entity
+  parent: IS14BaseSign
+  id: IS14SignAnomaly
+  name: anomaly lab sign
+  description: A sign indicating the anomalous research lab.
+  components:
+    - type: Sprite
+      state: anomaly
+
+- type: entity
+  parent: IS14BaseSign
+  id: IS14SignArcade
+  name: arcade sign
+  description: A sign indicating the arcade.
+  components:
+    - type: Sprite
+      state: arcade
+
+- type: entity
+  parent: IS14BaseSign
+  id: IS14SignSecurity
+  name: security sign
+  description: A sign indicating the security.
+  components:
+    - type: Sprite
+      state: security
+
+- type: entity
+  parent: IS14BaseSign
+  id: IS14SignArmory
+  name: armory sign
+  description: A sign indicating the armory.
+  components:
+    - type: Sprite
+      state: armory
+
+- type: entity
+  parent: IS14BaseSign
+  id: IS14SignBarbershop
+  name: barbershop sign
+  description: A sign indicating the barbershop.
+  components:
+    - type: Sprite
+      state: barbershop
+
+- type: entity
+  parent: IS14BaseSign
+  id: IS14SignToolStorage
+  name: tool storage sign
+  description: A sign indicating the tool storage room.
+  components:
+    - type: Sprite
+      state: ass
+
+- type: entity
+  parent: IS14BaseSign
+  id: IS14SignAtmos
+  name: atmos sign
+  description: A sign indicating the atmospherics area.
+  components:
+    - type: Sprite
+      state: atmos
+
+- type: entity
+  parent: IS14BaseSign
+  id: IS14SignBar
+  name: bar sign
+  description: A sign indicating the bar.
+  components:
+    - type: Sprite
+      state: bar
+
+- type: entity
+  parent: IS14BaseSign
+  id: IS14SignBath
+  name: bathroom sign
+  description: A sign indicating the bathroom.
+  components:
+    - type: Sprite
+      state: bath
+
+- type: entity
+  parent: IS14BaseSign
+  id: IS14SignLibrary
+  name: library sign
+  description: A sign indicating the library.
+  components:
+    - type: Sprite
+      state: biblio
+
+- type: entity
+  parent: IS14BaseSign
+  id: IS14SignBridge
+  name: bridge sign
+  description: A sign indicating the bridge.
+  components:
+    - type: Sprite
+      state: bridge
+
+- type: entity
+  parent: IS14BaseSign
+  id: IS14SignCargo
+  name: cargo sign
+  description: A sign indicating the cargo area.
+  components:
+    - type: Sprite
+      state: cargo
+
+- type: entity
+  parent: IS14BaseSign
+  id: IS14SignCargoDock
+  name: cargo dock sign
+  description: A sign indicating a cargo dock.
+  components:
+    - type: Sprite
+      state: cargo_dock
+
+- type: entity
+  parent: IS14BaseSign
+  id: IS14SignChapel
+  name: chapel sign
+  description: A sign indicating the chapel.
+  components:
+    - type: Sprite
+      state: chapel
+
+- type: entity
+  parent: IS14BaseSign
+  id: IS14SignChem
+  name: chemistry sign
+  description: A sign indicating the chemistry lab.
+  components:
+    - type: Sprite
+      state: chem
+
+- type: entity
+  parent: IS14BaseSign
+  id: IS14SignCommander
+  name: commander sign
+  description: An official sign indicating the dwellings of a Nanotrasen-certified head of department.
+  components:
+    - type: Sprite
+      state: commander
+
+- type: entity
+  parent: IS14BaseSign
+  id: IS14SignConferenceRoom
+  name: conference room sign
+  description: Where work happens.
+  components:
+    - type: Sprite
+      state: conference_room
+
+- type: entity
+  parent: IS14BaseSign
+  id: IS14SignDetective
+  name: detective sign
+  description: A sign depicting the detective's office.
+  components:
+    - type: Sprite
+      state: detective
+
+- type: entity
+  parent: IS14BaseSign
+  id: IS14SignKPZ
+  name: KPZ sign
+  description: A sign indicating a KPZ area.
+  components:
+    - type: Sprite
+      state: kpz
+
+- type: entity
+  parent: IS14BaseSign
+  id: IS14SignPerm
+  name: perm sign
+  description: A sign indicating a permanent area.
+  components:
+    - type: Sprite
+      state: perm
+
+- type: entity
+  parent: IS14BaseSign
+  id: IS14SignSizo
+  name: sizo sign
+  description: A sign indicating a sizo area.
+  components:
+    - type: Sprite
+      state: sizo
+
+- type: entity
+  parent: IS14BaseSign
+  id: IS14SignSolitary
+  name: solitary sign
+  description: A sign indicating a solitary confinement area.
+  components:
+    - type: Sprite
+      state: solitary
