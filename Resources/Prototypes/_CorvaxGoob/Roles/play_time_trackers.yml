@@ -49,8 +49,8 @@
 - type: playTimeTracker
   id: JobSurgeon
 
-# - type: playTimeTracker # IS14 Edit
-#   id: JobWardenHelper # IS14 Edit
+- type: playTimeTracker
+  id: JobWardenHelper
 
 - type: playTimeTracker
   id: JobPilot

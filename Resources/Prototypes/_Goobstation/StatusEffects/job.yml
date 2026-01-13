@@ -96,6 +96,14 @@
   parent: JobIcon
   id: JobIconBlueshield
   icon:
-    sprite: /Textures/_IS14/Interface/Misc/job_icons.rsi
-    state: BlueshieldOfficer
+    sprite: /Textures/_Goobstation/Interface/Misc/job_icons.rsi
+    state: blueshield
   jobName: job-name-bs
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconRadioHost
+  icon:
+    sprite: /Textures/_Goobstation/Interface/Misc/job_icons.rsi
+    state: radiohost
+  jobName: job-name-radiohost

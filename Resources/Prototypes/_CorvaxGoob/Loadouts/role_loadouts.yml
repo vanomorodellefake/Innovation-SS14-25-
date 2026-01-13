@@ -17,37 +17,37 @@
   - SurvivalMedical
   - GroupSpeciesBreathToolMedical
 
-# - type: roleLoadout # IS14 Edit
-#   id: JobWardenHelper # IS14 Edit
-#   groups: # IS14 Edit
-#   - Inventory
-#   - WardenHead
-#   - WardenJumpsuit
-#   - SecurityBackpack
-#   - SecurityMelee
-#   - SecurityNeck
-#   - SecurityBelt
-#   - WardenOuterClothing
-#   - SecurityShoes
-#   - SurvivalSecurity
-#   - SecurityStar
-#   - Trinkets
-#   - Animals
-#   - GroupSpeciesBreathToolSecurity
-#   - WardenEnvirohelm
-#   - WardenEnvirosuit
-#   - WardenEnvirogloves
+- type: roleLoadout
+  id: JobWardenHelper
+  groups:
+  - Inventory
+  - WardenHead
+  - WardenJumpsuit
+  - SecurityBackpack
+  - SecurityMelee
+  - SecurityNeck
+  - SecurityBelt
+  - WardenOuterClothing
+  - SecurityShoes
+  - SurvivalSecurity
+  - SecurityStar
+  - Trinkets
+  - Animals
+  - GroupSpeciesBreathToolSecurity
+  - WardenEnvirohelm
+  - WardenEnvirosuit
+  - WardenEnvirogloves
 
 - type: roleLoadout
   id: JobPilot
   groups:
   - Inventory
-  - SecurityHead
-  - SecurityJumpsuit
+  - PilotHead
+  - PilotJumpsuit
   - SecurityBackpack
   - SecurityMelee
   - SecurityNeck
-  - SecurityOuterClothing
+  - PilotOuterClothing
   - SecurityBelt
   - SecurityShoes
   - SurvivalSecurity

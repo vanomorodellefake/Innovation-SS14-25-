@@ -8,6 +8,9 @@
   name: job-name-senior-physician
   description: job-description-senior-physician
   playTimeTracker: JobSeniorPhysician
+  skills:
+    - Surgery
+    - MedicalEquipment
   requirements:
     - !type:RoleTimeRequirement
       role: JobChemist
@@ -31,10 +34,6 @@
     components:
     - type: SurgerySpeedModifier
       speedModifier: 1.5
-    - type: Skills # CorvaxGoob-Skills
-      skills:
-      - Surgery
-      - MedicalEquipment
 
 - type: startingGear
   id: SeniorPhysicianGear

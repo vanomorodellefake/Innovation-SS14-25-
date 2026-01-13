@@ -8,6 +8,9 @@
   name: job-name-senior-engineer
   description: job-description-senior-engineer
   playTimeTracker: JobSeniorEngineer
+  skills:
+    - ShuttleControl
+    - AdvancedBuilding
   requirements:
     - !type:RoleTimeRequirement
       role: JobAtmosphericTechnician
@@ -31,10 +34,6 @@
   - !type:AddComponentSpecial
     components:
     - type: EngineeringStaff
-    - type: Skills # CorvaxGoob-Skills
-      skills:
-      - ShuttleControl
-      - AdvancedBuilding
 
 - type: startingGear
   id: SeniorEngineerGear
