@@ -84,7 +84,14 @@ job-name-boxer = Martial Arts Master
 job-name-pilot = Space Security Officer
 job-name-zookeeper = Zookeeper
 job-name-visitor = Visitor
+# Viro
+job-name-virologist = Virologist
 job-name-cluwne = Cluwne
+
+# event-resctricted jobs
+job-name-security-clown = Security Clown
+job-name-command-maid = Command Maid
+job-name-party-maker = Party Maker
 
 # unused jobs
 # these are required for the agent ID job icon tooltips
@@ -95,7 +102,6 @@ job-name-prisoner = Prisoner
 job-name-roboticist = Roboticist
 job-name-syndicate = Syndicate
 job-name-unknown = Unknown
-job-name-virologist = Virologist
 job-name-zombie = Zombie
 
 # Job titles
@@ -119,8 +125,9 @@ JobChemist = Pharmacist
 JobChiefEngineer = Chief Engineering Specialist
 JobChiefMedicalOfficer = Chief Medical Specialist
 JobClown = Clown
-JobDetective = Investigator
-JobBrigmedic = Medical Officer
+JobCommandMaid = Command Maid
+JobDetective = Detective
+JobBrigmedic = Brigmedic
 JobERTChaplain = ERT Chaplain
 JobERTEngineer = ERT Engineer
 JobERTJanitor = ERT Janitor
@@ -137,18 +144,19 @@ JobMedicalIntern = Intern
 JobMime = Mime
 JobMusician = Musician
 JobParamedic = Paramedic
-JobPassenger = Handyman
-JobPilot = Space Security Officer
+JobPassenger = Assistant
+JobPartyMaker = Party Maker
 JobPsychologist = Psychologist
-JobQuartermaster = ESO Director
-JobReporter = Correspondent
-JobResearchAssistant = Lab Assistant
-JobResearchDirector = RIC Director
-JobSalvageSpecialist = Expeditioner
-JobScientist = Research Associate
-JobSecurityCadet = Cadet
-JobSecurityOfficer = Militiaman
-JobServiceWorker = Service Employee
+JobQuartermaster = Quartermaster
+JobReporter = Reporter
+JobResearchAssistant = Research Assistant
+JobResearchDirector = Research Director
+JobSalvageSpecialist = Salvage Specialist
+JobScientist = Scientist
+JobSecurityCadet = Security Cadet
+JobSecurityClown = Security Clown
+JobSecurityOfficer = Security Officer
+JobServiceWorker = Service Worker
 JobStationAi = Station AI
 JobStationEngineer = Engineering Specialist
 JobTechnicalAssistant = Junior Engineering Specialist
