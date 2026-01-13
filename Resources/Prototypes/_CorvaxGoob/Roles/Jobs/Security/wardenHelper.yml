@@ -31,31 +31,31 @@
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]
 
-# - type: startingGear
-  # id: WardenHelperGear
-  # equipment:
-    # head: ClothingHeadHatWardenHelper
-    # eyes: ClothingEyesGlassesSecurity
-    # id: WardenHelperPDA
-    # ears: ClothingHeadsetSecurity
-    # pocket1: WeaponPistolMk58
-    # pocket2: BookSpaceLaw
-  # storage:
-    # back:
-    # - Flash
-    # - MagazinePistol
+- type: startingGear
+  id: WardenHelperGear
+  equipment:
+    head: ClothingHeadHatWardenHelper
+    eyes: ClothingEyesGlassesSecurity
+    id: WardenHelperPDA
+    ears: ClothingHeadsetSecurity
+    pocket1: WeaponPistolMk58
+    pocket2: BookSpaceLaw
+  storage:
+    back:
+    - Flash
+    - MagazinePistol
 
-# - type: chameleonOutfit
-  # id: WardenHelperChameleonOutfit
-  # job: WardenHelper
-  # equipment:
-    # head: ClothingHeadHatWardenHelper
-    # eyes: ClothingEyesGlassesSecurity
-    # mask: ClothingMaskGasSecurity
-    # ears: ClothingHeadsetSecurity
-    # outerClothing: ClothingOuterCoatWarden
-    # gloves: ClothingHandsGlovesCombat
-    # jumpsuit: ClothingUniformJumpsuitWarden
-    # id: WardenHelperPDA
-    # back: ClothingBackpackSecurity
-    # shoes: ClothingShoesBootsJack
+- type: chameleonOutfit
+  id: WardenHelperChameleonOutfit
+  job: WardenHelper
+  equipment:
+    head: ClothingHeadHatWardenHelper
+    eyes: ClothingEyesGlassesSecurity
+    mask: ClothingMaskGasSecurity
+    ears: ClothingHeadsetSecurity
+    outerClothing: ClothingOuterCoatWarden
+    gloves: ClothingHandsGlovesCombat
+    jumpsuit: ClothingUniformJumpsuitWarden
+    id: WardenHelperPDA
+    back: ClothingBackpackSecurity
+    shoes: ClothingShoesBootsJack
