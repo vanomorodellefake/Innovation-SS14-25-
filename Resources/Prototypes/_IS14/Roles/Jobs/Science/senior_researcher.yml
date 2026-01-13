@@ -20,9 +20,6 @@
   access:
   - Research
   - Maintenance
-  special:
-  - !type:AddComponentSpecial
-    components:
 
 - type: startingGear
   id: SeniorResearcherGear

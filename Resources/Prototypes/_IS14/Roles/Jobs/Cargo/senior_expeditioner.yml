@@ -24,9 +24,6 @@
   - Salvage
   - Maintenance
   - External
-  special:
-  - !type:AddComponentSpecial
-    components:
 
 
 - type: startingGear
