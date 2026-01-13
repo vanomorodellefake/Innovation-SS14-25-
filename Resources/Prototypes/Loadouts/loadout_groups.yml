@@ -1343,7 +1343,8 @@
   - SecurityJumpskirt
   - SecurityJumpsuitGrey
   - SecurityJumpskirtGrey
-  # IS14 Edit - SeniorOfficerJumpsuit и SeniorOfficerJumpskirt закомментированы, loadout'ы не существуют
+  - SeniorOfficerJumpsuit
+  - SeniorOfficerJumpskirt
   - TrooperUniform
 
 - type: loadoutGroup
