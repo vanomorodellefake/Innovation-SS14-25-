@@ -8,6 +8,8 @@
   name: job-name-internal-control-executor
   description: job-description-internal-control-executor
   playTimeTracker: JobInternalControlExecutor
+  skills:
+    - Shooting
   requirements:
     - !type:DepartmentTimeRequirement
       department: Security
@@ -30,9 +32,6 @@
   - !type:AddComponentSpecial
     components:
       - type: SecurityStaff
-      - type: Skills # CorvaxGoob-Skills
-        skills:
-        - Shooting
 
 - type: startingGear
   id: InternalControlExecutorGear

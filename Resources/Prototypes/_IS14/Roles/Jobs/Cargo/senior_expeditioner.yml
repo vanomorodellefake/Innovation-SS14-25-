@@ -8,6 +8,10 @@
   name: job-name-senior-expeditioner
   description: job-description-senior-expeditioner
   playTimeTracker: JobSeniorExpeditioner
+  skills:
+    - ShuttleControl
+    - Shooting
+    - Butchering
   requirements:
     - !type:DepartmentTimeRequirement
       department: Cargo
@@ -23,11 +27,7 @@
   special:
   - !type:AddComponentSpecial
     components:
-    - type: Skills # CorvaxGoob-Skills
-      skills:
-      - ShuttleControl
-      - Shooting
-      - Butchering
+
 
 - type: startingGear
   id: SeniorExpeditionerGear

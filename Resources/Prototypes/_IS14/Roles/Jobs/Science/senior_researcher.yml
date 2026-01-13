@@ -8,6 +8,8 @@
   name: job-name-senior-researcher
   description: job-description-senior-researcher
   playTimeTracker: JobSeniorResearcher
+  skills:
+    - AdvancedBuilding
   requirements:
     - !type:DepartmentTimeRequirement
       department: Science
@@ -21,9 +23,6 @@
   special:
   - !type:AddComponentSpecial
     components:
-    - type: Skills # CorvaxGoob-Skills
-      skills:
-      - AdvancedBuilding
 
 - type: startingGear
   id: SeniorResearcherGear

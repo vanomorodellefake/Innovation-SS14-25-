@@ -8,6 +8,8 @@
   name: job-name-senior-officer
   description: job-description-senior-officer
   playTimeTracker: JobSeniorOfficer
+  skills:
+    - Shooting
   requirements:
     - !type:RoleTimeRequirement
       role: JobWarden
@@ -32,9 +34,7 @@
   - !type:AddComponentSpecial
     components:
       - type: SecurityStaff
-      - type: Skills # CorvaxGoob-Skills
-        skills:
-        - Shooting
+
 
 - type: startingGear
   id: SeniorOfficerGear
