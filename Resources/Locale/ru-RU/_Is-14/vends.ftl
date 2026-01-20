@@ -7,7 +7,7 @@ ent-IS14VendingMachineObshiy = ОбщШкаф
 ent-IS14VendingMachineUr = ЮрШкаф
     .desc = Юридический гардероб.
 
-ent-IS14VendingMachineExpGear = ЭкспСнарШкаф
+ent-IS14VendingMachineExpeditionGear = ЭкспСнарШкаф
     .desc = Снаряжение экспедиций.
 
 ent-IS14VendingMachineExp = ЭкспШкаф
@@ -22,16 +22,16 @@ ent-IS14VendingMachineMed = МедШкаф
 ###############################
 
 ent-IS14VendingMachineCigs = Сигареты
-    .desc = Снаряжение экспедиций.
+    .desc = Автомат по выдаче сигарет. На нижней части автомата написано "Медздрав предупреждает! Курение вредит вашему здоровью!"
 
 ent-IS14VendingMachinekofee = Аппарат с кофе
-    .desc = Одежда для экспедиций.
+    .desc = Кофемашина.
 
 ent-IS14VendingMachineFood = Быстрый перекус!
-    .desc = Одежда химиков.
+    .desc = Автомат с едой быстрого приготовления.
 
 ent-IS14VendingMachineWater = Вода
-    .desc = Одежда врачей.
+    .desc = Автомат с водой.
 
 
 
