@@ -661,203 +661,203 @@
   id: IS14AirlockMaintCargoLocked
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+    sprite: _IS14/Structures/Doors/Airlocks/Standard/maint.rsi
 
 - type: entity
   parent: IS14AirlockCommandLocked
   id: IS14AirlockMaintCommandLocked
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+    sprite: _IS14/Structures/Doors/Airlocks/Standard/maint.rsi
 
 - type: entity
   parent: IS14AirlockEngineeringLocked
   id: IS14AirlockMaintEngiLocked
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+    sprite: _IS14/Structures/Doors/Airlocks/Standard/maint.rsi
 
 - type: entity
   parent: IS14AirlockAtmosphericsLocked
   id: IS14AirlockMaintAtmoLocked
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+    sprite: _IS14/Structures/Doors/Airlocks/Standard/maint.rsi
 
 - type: entity
   parent: IS14AirlockBarLocked
   id: IS14AirlockMaintBarLocked
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+    sprite: _IS14/Structures/Doors/Airlocks/Standard/maint.rsi
 
 - type: entity
   parent: IS14AirlockBarKitchenLocked
   id: IS14AirlockMaintBarKitchenLocked
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+    sprite: _IS14/Structures/Doors/Airlocks/Standard/maint.rsi
 
 - type: entity
   parent: IS14AirlockChapelLocked
   id: IS14AirlockMaintChapelLocked
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+    sprite: _IS14/Structures/Doors/Airlocks/Standard/maint.rsi
 
 - type: entity
   parent: IS14AirlockHydroponicsLocked
   id: IS14AirlockMaintHydroLocked
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+    sprite: _IS14/Structures/Doors/Airlocks/Standard/maint.rsi
 
 - type: entity
   parent: IS14AirlockLawyerLocked
   id: IS14AirlockMaintLawyerLocked
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+    sprite: _IS14/Structures/Doors/Airlocks/Standard/maint.rsi
 
 - type: entity
   parent: IS14AirlockServiceLocked
   id: IS14AirlockMaintServiceLocked
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+    sprite: _IS14/Structures/Doors/Airlocks/Standard/maint.rsi
 
 - type: entity
   parent: IS14AirlockTheatreLocked
   id: IS14AirlockMaintTheatreLocked
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+    sprite: _IS14/Structures/Doors/Airlocks/Standard/maint.rsi
 
 - type: entity
   parent: IS14AirlockServiceTheatreLocked
   id: IS14AirlockMaintServiceTheatreLocked
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+    sprite: _IS14/Structures/Doors/Airlocks/Standard/maint.rsi
 
 - type: entity
   parent: IS14AirlockKitchenLocked
   id: IS14AirlockMaintKitchenLocked
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+    sprite: _IS14/Structures/Doors/Airlocks/Standard/maint.rsi
 
 - type: entity
   parent: IS14AirlockFreezerKitchenHydroLocked
   id: IS14AirlockMaintKitchenHydroLocked
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+    sprite: _IS14/Structures/Doors/Airlocks/Standard/maint.rsi
 
 - type: entity
   parent: IS14AirlockMedicalLocked
   id: IS14AirlockMaintMedLocked
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+    sprite: _IS14/Structures/Doors/Airlocks/Standard/maint.rsi
 
 - type: entity
   parent: IS14AirlockMedicalMorgueLocked
   id: IS14AirlockMedicalMorgueMaintLocked
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+    sprite: _IS14/Structures/Doors/Airlocks/Standard/maint.rsi
 
 - type: entity
   parent: IS14AirlockChemistryLocked
   id: IS14AirlockMaintChemLocked
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+    sprite: _IS14/Structures/Doors/Airlocks/Standard/maint.rsi
 
 - type: entity
   parent: IS14AirlockScienceLocked
   id: IS14AirlockMaintRnDLocked
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+    sprite: _IS14/Structures/Doors/Airlocks/Standard/maint.rsi
 
 - type: entity
   parent: IS14AirlockMedicalScienceLocked
   id: IS14AirlockMaintRnDMedLocked
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+    sprite: _IS14/Structures/Doors/Airlocks/Standard/maint.rsi
 
 - type: entity
   parent: IS14AirlockSecurityLocked
   id: IS14AirlockMaintSecLocked
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+    sprite: _IS14/Structures/Doors/Airlocks/Standard/maint.rsi
 
 - type: entity
   parent: IS14AirlockDetectiveLocked
   id: IS14AirlockMaintDetectiveLocked
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+    sprite: _IS14/Structures/Doors/Airlocks/Standard/maint.rsi
 
 - type: entity
   parent: IS14AirlockHeadOfPersonnelLocked
   id: IS14AirlockMaintHOPLocked
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+    sprite: _IS14/Structures/Doors/Airlocks/Standard/maint.rsi
 
 - type: entity
   parent: IS14AirlockCaptainLocked
   id: IS14AirlockMaintCaptainLocked
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+    sprite: _IS14/Structures/Doors/Airlocks/Standard/maint.rsi
 
 - type: entity
   parent: IS14AirlockChiefEngineerLocked
   id: IS14AirlockMaintChiefEngineerLocked
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+    sprite: _IS14/Structures/Doors/Airlocks/Standard/maint.rsi
 
 - type: entity
   parent: IS14AirlockChiefMedicalOfficerLocked
   id: IS14AirlockMaintChiefMedicalOfficerLocked
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+    sprite: _IS14/Structures/Doors/Airlocks/Standard/maint.rsi
 
 - type: entity
   parent: IS14AirlockHeadOfSecurityLocked
   id: IS14AirlockMaintHeadOfSecurityLocked
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+    sprite: _IS14/Structures/Doors/Airlocks/Standard/maint.rsi
 
 - type: entity
   parent: IS14AirlockResearchDirectorLocked
   id: IS14AirlockMaintResearchDirectorLocked
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+    sprite: _IS14/Structures/Doors/Airlocks/Standard/maint.rsi
 
 - type: entity
   parent: IS14AirlockQuartermasterLocked
   id: IS14AirlockMaintQuartermasterLocked
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+    sprite: _IS14/Structures/Doors/Airlocks/Standard/maint.rsi
 
 - type: entity
   parent: IS14AirlockArmoryLocked
   id: IS14AirlockMaintArmoryLocked
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+    sprite: _IS14/Structures/Doors/Airlocks/Standard/maint.rsi
 
 #HighSecDoors
 
