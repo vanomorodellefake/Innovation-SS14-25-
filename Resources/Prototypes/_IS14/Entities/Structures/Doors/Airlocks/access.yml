@@ -1,0 +1,880 @@
+
+# Airlocks
+- type: entity
+  parent: IS14AirlockStandard
+  id: IS14AirlockServiceLocked
+  suffix: Service, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsService ]
+  - type: Wires
+    layoutid: IS14AirlockService
+
+- type: entity
+  parent: IS14AirlockLawyer # Corvax-Goob-RespriteAirlocks
+  id: IS14AirlockLawyerLocked
+  suffix: Lawyer, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsLawyer ]
+
+- type: entity
+  parent: IS14AirlockServiceLocked
+  id: IS14AirlockTheatreLocked
+  suffix: Theatre, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsTheatre ]
+
+- type: entity
+  parent: IS14AirlockServiceLocked
+  id: IS14AirlockServiceTheatreLocked
+  suffix: Service, Theatre, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsServiceTheatre ]
+
+- type: entity
+  parent: IS14AirlockServiceLocked
+  id: IS14AirlockChapelLocked
+  suffix: Chapel, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsChapel ]
+
+- type: entity
+  parent: IS14AirlockServiceLocked
+  id: IS14AirlockKitchenLocked
+  suffix: Kitchen, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsKitchen ]
+
+- type: entity
+  parent: IS14AirlockServiceLocked
+  id: IS14AirlockBarLocked
+  suffix: Bar, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsBar ]
+
+- type: entity
+  parent: IS14AirlockServiceLocked
+  id: IS14AirlockBarKitchenLocked
+  suffix: Bar&Kitchen, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsBarKitchen ]
+
+- type: entity
+  parent: IS14AirlockHydroponics
+  id: IS14AirlockHydroponicsLocked
+  suffix: Hydroponics, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsHydroponics ]
+
+- type: entity
+  parent: IS14AirlockFreezer
+  id: IS14AirlockFreezerLocked
+  suffix: Kitchen, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsKitchen ]
+
+- type: entity
+  parent: IS14AirlockFreezer
+  id: IS14AirlockFreezerKitchenHydroLocked
+  suffix: Kitchen/Hydroponics, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsKitchenHydroponics ]
+
+- type: entity
+  parent: IS14AirlockFreezer
+  id: IS14AirlockFreezerHydroponicsLocked
+  suffix: Hydroponics, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsHydroponics ]
+
+- type: entity
+  parent: IS14AirlockEngineering
+  id: IS14AirlockEngineeringLocked
+  suffix: Engineering, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsEngineering ]
+
+- type: entity
+  parent: IS14AirlockAtmospherics
+  id: IS14AirlockAtmosphericsLocked
+  suffix: Atmospherics, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsAtmospherics ]
+
+- type: entity
+  parent: IS14AirlockCargo
+  id: IS14AirlockCargoLocked
+  suffix: Cargo, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsCargo ]
+
+- type: entity
+  parent: IS14AirlockMedical
+  id: IS14AirlockMedicalLocked
+  suffix: Medical, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsMedical ]
+
+- type: entity
+  parent: IS14AirlockVirology
+  id: IS14AirlockVirologyLocked
+  suffix: Virology, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsMedical ]
+
+- type: entity
+  parent: IS14AirlockChemistry
+  id: IS14AirlockChemistryLocked
+  suffix: Chemistry, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsChemistry ]
+
+- type: entity
+  parent: IS14AirlockMedical
+  id: IS14AirlockMedicalMorgueLocked
+  suffix: Morgue, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsMorgue ]
+
+- type: entity
+  parent: IS14AirlockScience
+  id: IS14AirlockScienceLocked
+  suffix: Science, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsResearch ]
+
+- type: entity
+  parent: IS14AirlockScience
+  id: IS14AirlockMedicalScienceLocked
+  suffix: Medical/Science, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsMedicalResearch ]
+
+- type: entity
+  parent: IS14AirlockCentralCommand
+  id: IS14AirlockCentralCommandLocked
+  suffix: Central Command, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsCentralCommand ]
+
+- type: entity
+  parent: IS14AirlockCommand
+  id: IS14AirlockCommandLocked
+  suffix: Command, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsCommand ]
+
+- type: entity
+  parent: IS14AirlockCaptain # Corvax-Goob-RespriteAirlocks
+  id: IS14AirlockCaptainLocked
+  suffix: Captain, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsCaptain ]
+
+- type: entity
+  parent: IS14AirlockChiefMedicalOfficer # Corvax-Goob-RespriteAirlocks
+  id: IS14AirlockChiefMedicalOfficerLocked
+  suffix: ChiefMedicalOfficer, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsChiefMedicalOfficer ]
+
+- type: entity
+  parent: IS14AirlockChiefEngineer # Corvax-Goob-RespriteAirlocks
+  id: IS14AirlockChiefEngineerLocked
+  suffix: ChiefEngineer, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsChiefEngineer ]
+
+- type: entity
+  parent: IS14AirlockHeadOfSecurity # Corvax-Goob-RespriteAirlocks
+  id: IS14AirlockHeadOfSecurityLocked
+  suffix: HeadOfSecurity, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsHeadOfSecurity ]
+
+- type: entity
+  parent: IS14AirlockResearchDirector # Corvax-Goob-RespriteAirlocks
+  id: IS14AirlockResearchDirectorLocked
+  suffix: ResearchDirector, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsResearchDirector ]
+
+- type: entity
+  parent: IS14AirlockHeadOfPersonnel # Corvax-Goob-RespriteAirlocks
+  id: IS14AirlockHeadOfPersonnelLocked
+  suffix: HeadOfPersonnel, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsHeadOfPersonnel ]
+
+- type: entity
+  parent: IS14AirlockQuartermaster # Corvax-Goob-RespriteAirlocks
+  id: IS14AirlockQuartermasterLocked
+  suffix: Quartermaster, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsQuartermaster ]
+
+- type: entity
+  parent: IS14AirlockSecurity
+  id: IS14AirlockSecurityLocked
+  suffix: Security, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsSecurity ]
+
+- type: entity
+  parent: IS14AirlockSecurity
+  id: IS14AirlockDetectiveLocked
+  suffix: Detective, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsDetective ]
+
+- type: entity
+  parent: IS14AirlockSecurity
+  id: IS14AirlockBrigLocked
+  suffix: Brig, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsBrig ]
+
+- type: entity
+  parent: IS14AirlockSecurity
+  id: IS14AirlockSecurityLawyerLocked
+  suffix: Security/Lawyer, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsSecurityLawyer ]
+
+- type: entity
+  parent: IS14AirlockSecurity
+  id: IS14AirlockArmoryLocked
+  suffix: Armory, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsArmory ]
+  - type: Wires
+    layoutid: IS14AirlockArmory
+
+- type: entity
+  parent: IS14AirlockSecurity
+  id: IS14AirlockVaultLocked
+  suffix: Vault, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsVault ]
+
+- type: entity
+  parent: IS14AirlockCommand
+  id: IS14AirlockEVALocked
+  suffix: EVA, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsExternal ]
+
+# Glass Airlocks
+- type: entity
+  parent: IS14AirlockStandardGlass
+  id: IS14AirlockServiceGlassLocked
+  suffix: Service, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsService ]
+  - type: Wires
+    layoutid: IS14AirlockService
+
+- type: entity
+  parent: IS14AirlockLawyerGlass # Corvax-Goob-RespriteAirlocks
+  id: IS14AirlockLawyerGlassLocked
+  suffix: Lawyer, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsLawyer ]
+
+- type: entity
+  parent: IS14AirlockServiceGlassLocked
+  id: IS14AirlockTheatreGlassLocked
+  suffix: Theatre, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsTheatre ]
+
+- type: entity
+  parent: IS14AirlockServiceGlassLocked
+  id: IS14AirlockServiceTheatreGlassLocked
+  suffix: Service, Theatre, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsServiceTheatre ]
+
+- type: entity
+  parent: IS14AirlockServiceGlassLocked
+  id: IS14AirlockBarGlassLocked
+  suffix: Bar, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsBar ]
+
+- type: entity
+  parent: IS14AirlockServiceGlassLocked
+  id: IS14AirlockBarKitchenGlassLocked
+  suffix: Bar&Kitchen, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsBarKitchen ]
+
+- type: entity
+  parent: IS14AirlockServiceGlassLocked
+  id: IS14AirlockKitchenGlassLocked
+  suffix: Kitchen, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsKitchen ]
+
+- type: entity
+  parent: IS14AirlockHydroponicsGlass
+  id: IS14AirlockHydroGlassLocked
+  suffix: Hydroponics, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsHydroponics ]
+
+- type: entity
+  parent: IS14AirlockServiceGlassLocked
+  id: IS14AirlockChapelGlassLocked
+  suffix: Chapel, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsChapel ]
+
+- type: entity
+  parent: IS14AirlockEngineeringGlass
+  id: IS14AirlockEngineeringGlassLocked
+  suffix: Engineering, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsEngineering ]
+
+- type: entity
+  parent: IS14AirlockAtmosphericsGlass
+  id: IS14AirlockAtmosphericsGlassLocked
+  suffix: Atmospherics, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsAtmospherics ]
+
+- type: entity
+  parent: IS14AirlockCargoGlass
+  id: IS14AirlockCargoGlassLocked
+  suffix: Cargo, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsCargo ]
+
+- type: entity
+  parent: IS14AirlockChemistryGlass
+  id: IS14AirlockChemistryGlassLocked
+  suffix: Chemistry, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsChemistry ]
+
+- type: entity
+  parent: IS14AirlockMedicalGlass
+  id: IS14AirlockMedicalMorgueGlassLocked
+  suffix: Morgue, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsMorgue ]
+
+- type: entity
+  parent: IS14AirlockMedicalGlass
+  id: IS14AirlockMedicalGlassLocked
+  suffix: Medical, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsMedical ]
+
+- type: entity
+  parent: IS14AirlockVirologyGlass
+  id: IS14AirlockVirologyGlassLocked
+  suffix: Virology, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsMedical ]
+
+- type: entity
+  parent: IS14AirlockScienceGlass
+  id: IS14AirlockScienceGlassLocked
+  suffix: Science, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsResearch ]
+
+- type: entity
+  parent: IS14AirlockScienceGlass
+  id: IS14AirlockMedicalScienceGlassLocked
+  suffix: Medical/Science, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsMedicalResearch ]
+
+- type: entity
+  parent: IS14AirlockCentralCommandGlass
+  id: IS14AirlockCentralCommandGlassLocked
+  suffix: Central Command, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsCentralCommand ]
+
+- type: entity
+  parent: IS14AirlockCommandGlass
+  id: IS14AirlockCommandGlassLocked
+  suffix: Command, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsCommand ]
+
+#- type: entity
+#  parent: IS14AirlockCaptainGlass # Corvax-Goob-RespriteAirlocks
+#  id: IS14AirlockCaptainGlassLocked
+#  suffix: Captain, Locked
+#  components:
+#  - type: ContainerFill
+#    containers:
+#      board: [ DoorElectronicsCaptain ]
+#
+#- type: entity
+#  parent: IS14AirlockChiefMedicalOfficerGlass # Corvax-Goob-RespriteAirlocks
+#  id: IS14AirlockChiefMedicalOfficerGlassLocked
+#  suffix: ChiefMedicalOfficer, Locked
+#  components:
+#  - type: ContainerFill
+#    containers:
+#      board: [ DoorElectronicsChiefMedicalOfficer ]
+#
+#- type: entity
+#  parent: IS14AirlockChiefEngineerGlass # Corvax-Goob-RespriteAirlocks
+#  id: IS14AirlockChiefEngineerGlassLocked
+#  suffix: ChiefEngineer, Locked
+#  components:
+#  - type: ContainerFill
+#    containers:
+#      board: [ DoorElectronicsChiefEngineer ]
+#
+#- type: entity
+#  parent: IS14AirlockHeadOfSecurityGlass # Corvax-Goob-RespriteAirlocks
+#  id: IS14AirlockHeadOfSecurityGlassLocked
+#  suffix: HeadOfSecurity, Locked
+#  components:
+#  - type: ContainerFill
+#    containers:
+#      board: [ DoorElectronicsHeadOfSecurity ]
+#
+#- type: entity
+#  parent: IS14AirlockResearchDirectorGlass # Corvax-Goob-RespriteAirlocks
+#  id: IS14AirlockResearchDirectorGlassLocked
+#  suffix: ResearchDirector, Locked
+#  components:
+#  - type: ContainerFill
+#    containers:
+#      board: [ DoorElectronicsResearchDirector ]
+#
+#- type: entity
+#  parent: IS14AirlockHeadOfPersonnelGlass # Corvax-Goob-RespriteAirlocks
+#  id: IS14AirlockHeadOfPersonnelGlassLocked
+#  suffix: HeadOfPersonnel, Locked
+#  components:
+#  - type: ContainerFill
+#    containers:
+#      board: [ DoorElectronicsHeadOfPersonnel ]
+#
+#- type: entity
+#  parent: IS14AirlockQuartermasterGlass # Corvax-Goob-RespriteAirlocks
+#  id: IS14AirlockQuartermasterGlassLocked
+#  suffix: Quartermaster, Locked
+#  components:
+#  - type: ContainerFill
+#    containers:
+#      board: [ DoorElectronicsQuartermaster ]
+
+- type: entity
+  parent: IS14AirlockSecurityGlass
+  id: IS14AirlockSecurityGlassLocked
+  suffix: Security, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsSecurity ]
+
+- type: entity
+  parent: IS14AirlockSecurityGlass
+  id: IS14AirlockDetectiveGlassLocked
+  suffix: Detective, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsDetective ]
+
+- type: entity
+  parent: IS14AirlockSecurityGlass
+  id: IS14AirlockBrigGlassLocked
+  suffix: Brig, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsBrig ]
+
+- type: entity
+  parent: IS14AirlockSecurityGlass
+  id: IS14AirlockSecurityLawyerGlassLocked
+  suffix: Security/Lawyer, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsSecurityLawyer ]
+
+- type: entity
+  parent: IS14AirlockSecurityGlass
+  id: IS14AirlockArmoryGlassLocked
+  suffix: Armory, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsArmory ]
+
+- type: entity
+  parent: IS14AirlockCommandGlassLocked
+  id: IS14AirlockEVAGlassLocked
+  suffix: EVA, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsExternal ]
+
+# Maintenance Hatches
+- type: entity
+  parent: IS14AirlockMaint
+  id: IS14AirlockMaintLocked
+  suffix: Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsMaintenance ]
+
+- type: entity
+  parent: IS14AirlockMaintGlass
+  id: IS14AirlockMaintGlassLocked
+  suffix: Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsMaintenance ]
+
+- type: entity
+  parent: IS14AirlockCargoLocked
+  id: IS14AirlockMaintCargoLocked
+  components:
+  - type: Sprite
+    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+
+- type: entity
+  parent: IS14AirlockCommandLocked
+  id: IS14AirlockMaintCommandLocked
+  components:
+  - type: Sprite
+    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+
+- type: entity
+  parent: IS14AirlockEngineeringLocked
+  id: IS14AirlockMaintEngiLocked
+  components:
+  - type: Sprite
+    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+
+- type: entity
+  parent: IS14AirlockAtmosphericsLocked
+  id: IS14AirlockMaintAtmoLocked
+  components:
+  - type: Sprite
+    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+
+- type: entity
+  parent: IS14AirlockBarLocked
+  id: IS14AirlockMaintBarLocked
+  components:
+  - type: Sprite
+    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+
+- type: entity
+  parent: IS14AirlockBarKitchenLocked
+  id: IS14AirlockMaintBarKitchenLocked
+  components:
+  - type: Sprite
+    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+
+- type: entity
+  parent: IS14AirlockChapelLocked
+  id: IS14AirlockMaintChapelLocked
+  components:
+  - type: Sprite
+    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+
+- type: entity
+  parent: IS14AirlockHydroponicsLocked
+  id: IS14AirlockMaintHydroLocked
+  components:
+  - type: Sprite
+    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+
+- type: entity
+  parent: IS14AirlockLawyerLocked
+  id: IS14AirlockMaintLawyerLocked
+  components:
+  - type: Sprite
+    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+
+- type: entity
+  parent: IS14AirlockServiceLocked
+  id: IS14AirlockMaintServiceLocked
+  components:
+  - type: Sprite
+    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+
+- type: entity
+  parent: IS14AirlockTheatreLocked
+  id: IS14AirlockMaintTheatreLocked
+  components:
+  - type: Sprite
+    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+
+- type: entity
+  parent: IS14AirlockServiceTheatreLocked
+  id: IS14AirlockMaintServiceTheatreLocked
+  components:
+  - type: Sprite
+    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+
+- type: entity
+  parent: IS14AirlockKitchenLocked
+  id: IS14AirlockMaintKitchenLocked
+  components:
+  - type: Sprite
+    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+
+- type: entity
+  parent: IS14AirlockFreezerKitchenHydroLocked
+  id: IS14AirlockMaintKitchenHydroLocked
+  components:
+  - type: Sprite
+    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+
+- type: entity
+  parent: IS14AirlockMedicalLocked
+  id: IS14AirlockMaintMedLocked
+  components:
+  - type: Sprite
+    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+
+- type: entity
+  parent: IS14AirlockMedicalMorgueLocked
+  id: IS14AirlockMedicalMorgueMaintLocked
+  components:
+  - type: Sprite
+    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+
+- type: entity
+  parent: IS14AirlockChemistryLocked
+  id: IS14AirlockMaintChemLocked
+  components:
+  - type: Sprite
+    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+
+- type: entity
+  parent: IS14AirlockScienceLocked
+  id: IS14AirlockMaintRnDLocked
+  components:
+  - type: Sprite
+    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+
+- type: entity
+  parent: IS14AirlockMedicalScienceLocked
+  id: IS14AirlockMaintRnDMedLocked
+  components:
+  - type: Sprite
+    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+
+- type: entity
+  parent: IS14AirlockSecurityLocked
+  id: IS14AirlockMaintSecLocked
+  components:
+  - type: Sprite
+    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+
+- type: entity
+  parent: IS14AirlockDetectiveLocked
+  id: IS14AirlockMaintDetectiveLocked
+  components:
+  - type: Sprite
+    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+
+- type: entity
+  parent: IS14AirlockHeadOfPersonnelLocked
+  id: IS14AirlockMaintHOPLocked
+  components:
+  - type: Sprite
+    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+
+- type: entity
+  parent: IS14AirlockCaptainLocked
+  id: IS14AirlockMaintCaptainLocked
+  components:
+  - type: Sprite
+    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+
+- type: entity
+  parent: IS14AirlockChiefEngineerLocked
+  id: IS14AirlockMaintChiefEngineerLocked
+  components:
+  - type: Sprite
+    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+
+- type: entity
+  parent: IS14AirlockChiefMedicalOfficerLocked
+  id: IS14AirlockMaintChiefMedicalOfficerLocked
+  components:
+  - type: Sprite
+    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+
+- type: entity
+  parent: IS14AirlockHeadOfSecurityLocked
+  id: IS14AirlockMaintHeadOfSecurityLocked
+  components:
+  - type: Sprite
+    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+
+- type: entity
+  parent: IS14AirlockResearchDirectorLocked
+  id: IS14AirlockMaintResearchDirectorLocked
+  components:
+  - type: Sprite
+    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+
+- type: entity
+  parent: IS14AirlockQuartermasterLocked
+  id: IS14AirlockMaintQuartermasterLocked
+  components:
+  - type: Sprite
+    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+
+- type: entity
+  parent: IS14AirlockArmoryLocked
+  id: IS14AirlockMaintArmoryLocked
+  components:
+  - type: Sprite
+    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+
+#HighSecDoors
+
+- type: entity
+  parent: HighSecDoor
+  id: IS14HighSecCommandLocked
+  suffix: Command, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsCommand ]
+
+- type: entity
+  parent: HighSecDoor
+  id: IS14HighSecCaptainLocked
+  suffix: Captain, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsCaptain ]
