@@ -520,68 +520,68 @@
     containers:
       board: [ DoorElectronicsCommand ]
 
-#- type: entity
-#  parent: IS14AirlockCaptainGlass # Corvax-Goob-RespriteAirlocks
-#  id: IS14AirlockCaptainGlassLocked
-#  suffix: Captain, Locked
-#  components:
-#  - type: ContainerFill
-#    containers:
-#      board: [ DoorElectronicsCaptain ]
-#
-#- type: entity
-#  parent: IS14AirlockChiefMedicalOfficerGlass # Corvax-Goob-RespriteAirlocks
-#  id: IS14AirlockChiefMedicalOfficerGlassLocked
-#  suffix: ChiefMedicalOfficer, Locked
-#  components:
-#  - type: ContainerFill
-#    containers:
-#      board: [ DoorElectronicsChiefMedicalOfficer ]
-#
-#- type: entity
-#  parent: IS14AirlockChiefEngineerGlass # Corvax-Goob-RespriteAirlocks
-#  id: IS14AirlockChiefEngineerGlassLocked
-#  suffix: ChiefEngineer, Locked
-#  components:
-#  - type: ContainerFill
-#    containers:
-#      board: [ DoorElectronicsChiefEngineer ]
-#
-#- type: entity
-#  parent: IS14AirlockHeadOfSecurityGlass # Corvax-Goob-RespriteAirlocks
-#  id: IS14AirlockHeadOfSecurityGlassLocked
-#  suffix: HeadOfSecurity, Locked
-#  components:
-#  - type: ContainerFill
-#    containers:
-#      board: [ DoorElectronicsHeadOfSecurity ]
-#
-#- type: entity
-#  parent: IS14AirlockResearchDirectorGlass # Corvax-Goob-RespriteAirlocks
-#  id: IS14AirlockResearchDirectorGlassLocked
-#  suffix: ResearchDirector, Locked
-#  components:
-#  - type: ContainerFill
-#    containers:
-#      board: [ DoorElectronicsResearchDirector ]
-#
-#- type: entity
-#  parent: IS14AirlockHeadOfPersonnelGlass # Corvax-Goob-RespriteAirlocks
-#  id: IS14AirlockHeadOfPersonnelGlassLocked
-#  suffix: HeadOfPersonnel, Locked
-#  components:
-#  - type: ContainerFill
-#    containers:
-#      board: [ DoorElectronicsHeadOfPersonnel ]
-#
-#- type: entity
-#  parent: IS14AirlockQuartermasterGlass # Corvax-Goob-RespriteAirlocks
-#  id: IS14AirlockQuartermasterGlassLocked
-#  suffix: Quartermaster, Locked
-#  components:
-#  - type: ContainerFill
-#    containers:
-#      board: [ DoorElectronicsQuartermaster ]
+- type: entity
+  parent: IS14AirlockCaptainGlass # Corvax-Goob-RespriteAirlocks
+  id: IS14AirlockCaptainGlassLocked
+  suffix: Captain, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsCaptain ]
+
+- type: entity
+  parent: IS14AirlockChiefMedicalOfficerGlass # Corvax-Goob-RespriteAirlocks
+  id: IS14AirlockChiefMedicalOfficerGlassLocked
+  suffix: ChiefMedicalOfficer, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsChiefMedicalOfficer ]
+
+- type: entity
+  parent: IS14AirlockChiefEngineerGlass # Corvax-Goob-RespriteAirlocks
+  id: IS14AirlockChiefEngineerGlassLocked
+  suffix: ChiefEngineer, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsChiefEngineer ]
+
+- type: entity
+  parent: IS14AirlockHeadOfSecurityGlass # Corvax-Goob-RespriteAirlocks
+  id: IS14AirlockHeadOfSecurityGlassLocked
+  suffix: HeadOfSecurity, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsHeadOfSecurity ]
+
+- type: entity
+  parent: IS14AirlockResearchDirectorGlass # Corvax-Goob-RespriteAirlocks
+  id: IS14AirlockResearchDirectorGlassLocked
+  suffix: ResearchDirector, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsResearchDirector ]
+
+- type: entity
+  parent: IS14AirlockHeadOfPersonnelGlass # Corvax-Goob-RespriteAirlocks
+  id: IS14AirlockHeadOfPersonnelGlassLocked
+  suffix: HeadOfPersonnel, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsHeadOfPersonnel ]
+
+- type: entity
+  parent: IS14AirlockQuartermasterGlass # Corvax-Goob-RespriteAirlocks
+  id: IS14AirlockQuartermasterGlassLocked
+  suffix: Quartermaster, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsQuartermaster ]
 
 - type: entity
   parent: IS14AirlockSecurityGlass
