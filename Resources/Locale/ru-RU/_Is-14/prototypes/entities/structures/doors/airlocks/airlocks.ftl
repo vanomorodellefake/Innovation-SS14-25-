@@ -145,12 +145,6 @@ ent-IS14AirlockLawyerLocked = { ent-IS14AirlockLawyer }
 ent-IS14AirlockTheatreLocked = { ent-IS14AirlockStandard } 
     .desc = { ent-IS14AirlockStandard.desc }
 
-ent-IS14AirlockServiceLocked = { ent-IS14AirlockServiceLocked } 
-    .desc = { ent-IS14AirlockServiceLocked.desc }
-
-ent-IS14AirlockTheatreLocked = { ent-IS14AirlockServiceLocked } 
-    .desc = { ent-IS14AirlockServiceLocked.desc }
-
 ent-IS14AirlockServiceTheatreLocked = { ent-IS14AirlockServiceLocked } 
     .desc = { ent-IS14AirlockServiceLocked.desc }
 
@@ -162,9 +156,6 @@ ent-IS14AirlockKitchenLocked = { ent-IS14AirlockServiceLocked }
 
 ent-IS14AirlockBarLocked = { ent-IS14AirlockServiceLocked } 
     .desc = { ent-IS14AirlockServiceLocked.desc }
-
-ent-IS14AirlockServiceLocked = { ent-IS14AirlockStandard } 
-    .desc = { ent-IS14AirlockStandard.desc }
 
 ent-IS14AirlockBarKitchenLocked = { ent-IS14AirlockServiceLocked } 
     .desc = { ent-IS14AirlockServiceLocked.desc }
