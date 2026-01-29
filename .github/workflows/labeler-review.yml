@@ -20,13 +20,13 @@ jobs:
      pull-requests: write
    runs-on: ubuntu-latest
    steps:
-   - uses: tspascoal/get-user-teams-membership@v3
-     id: checkUserMember
-     with:
-       username: ${{ github.actor }}
-       team: "maintainers"
-       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-   - if: ${{ steps.checkUserMember.outputs.isTeamMember == 'true' }}
-     uses: actions-ecosystem/action-add-labels@v1
+   # - uses: tspascoal/get-user-teams-membership@v3 Down untill GITHUB_TOKEN -> PAT
+   #   id: checkUserMember
+   #   with:
+   #     username: ${{ github.actor }}
+   #     team: "maintainers"
+   #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+   #- if: ${{ steps.checkUserMember.outputs.isTeamMember == 'true' }}     
+   - uses: actions-ecosystem/action-add-labels@v1
      with:
        labels: "S: Одобрено"
