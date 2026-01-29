@@ -1,0 +1,27 @@
+- type: entity
+  id: ParilkaOven
+  parent: BaseStructureDynamic
+  name: parilka oven
+  description: "A traditional Russian steam bath oven, used to heat the parilka and create steam by pouring water over hot stones."
+  components:
+  - type: Sprite
+    sprite: _IS14/Structures/Decoration/aquarium.rsi
+    state: base
+    noRot: true
+  - type: InteractionOutline
+  - type: Damageable
+    damageContainer: StructuralInorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: Parilka
+    fuel: 0
+    maxFuel: 10
+    active: false
+    temperature: 20
+
