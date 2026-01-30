@@ -13,7 +13,7 @@ namespace Content.Shared._IS.Parilka;
 public sealed class ParilkaSystem : EntitySystem
 {
             [Dependency] private readonly TagSystem _tag = default!;
-            [Dependency] private readonly StackSystem _stack = default!;
+            [Dependency] private readonly SharedStackSystem _stack = default!;
 
     public override void Initialize()
     {
@@ -32,9 +32,12 @@ public sealed class ParilkaSystem : EntitySystem
         if (component.Fuel >= component.MaxFuel)
                 return;
 
-        if (_stack.TryChangeStackCount(used, -1)){
-                component.Fuel = Math.Min(component.Fuel + 1, component.MaxFuel);
-                args.Handled = true;
-        }
+        if (!EntityManager.TryGetComponent<StackComponent>(used, out var stack))
+            return;
+        if (!_stack.Use(used, 1, stack!))
+            return;
+
+        component.Fuel = Math.Min(component.Fuel + 1, component.MaxFuel);
+        args.Handled = true;
     }
 }
