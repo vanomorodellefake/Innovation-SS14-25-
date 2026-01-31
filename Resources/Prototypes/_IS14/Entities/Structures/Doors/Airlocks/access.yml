@@ -8,6 +8,8 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsService ]
+  - type: Wires
+    layoutId: IS14AirlockService
 
 - type: entity
   parent: IS14AirlockLawyer # Corvax-Goob-RespriteAirlocks
@@ -315,7 +317,7 @@
     containers:
       board: [ DoorElectronicsArmory ]
   - type: Wires
-    layoutid: IS14AirlockArmory
+    layoutId: IS14AirlockArmory
 
 - type: entity
   parent: IS14AirlockSecurity
@@ -345,7 +347,7 @@
     containers:
       board: [ DoorElectronicsService ]
   - type: Wires
-    layoutid: IS14AirlockService
+    layoutId: IS14AirlockService
 
 - type: entity
   parent: IS14AirlockLawyerGlass # Corvax-Goob-RespriteAirlocks
