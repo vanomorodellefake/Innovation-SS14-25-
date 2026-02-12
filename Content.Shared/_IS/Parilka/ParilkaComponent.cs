@@ -19,6 +19,12 @@ public sealed partial class ParilkaComponent : Component
     public bool Active = false;
     [DataField("temperature")]
     public float Temperature = 0f;
+    [DataField("burnTime")]
+    public float BurnTime = 0f;
+    [DataField("HeatPerSecond")]
+    public float HeatPerSecond = 15f;
+    [DataField("UsePerSecond")]
+    public float UsePerSecond = 1f;
 
     // [DataField(readOnly: true, required: true)]
     // public ProtoId<ParilkaPrototype> PariklaProto;

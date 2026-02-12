@@ -30,6 +30,32 @@ public sealed class ParilkaSystem : EntitySystem
         return ev.IsHot;
     }
 
+    public override void Update(float frameTime)
+    {
+        var query = EntityQueryEnumerator<ParilkaComponent>();
+        while (query.MoveNext(out var uid, out var comp))
+        {
+            if (!comp.Active)
+                continue;
+
+            comp.BurnTime += frameTime;
+            if (comp.BurnTime < 1f)
+                continue;
+
+            comp.BurnTime -= 1f;
+
+            if (comp.Fuel <= 0)
+            {
+                comp.Active = false;
+                continue;
+            }
+
+            comp.Fuel = Math.Max(0, comp.Fuel - (int)comp.UsePerSecond);
+            comp.Temperature += comp.HeatPerSecond;
+
+        }
+    }
+
 
     private void OnInteractUsing(EntityUid uid, ParilkaComponent component, InteractUsingEvent args)
     {
@@ -46,6 +72,8 @@ public sealed class ParilkaSystem : EntitySystem
             component.Fuel = Math.Min(component.Fuel + 1, component.MaxFuel);
             args.Handled = true;
         }
+
+
 
 
 

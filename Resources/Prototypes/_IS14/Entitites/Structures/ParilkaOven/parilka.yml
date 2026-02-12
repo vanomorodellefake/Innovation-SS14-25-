@@ -20,8 +20,5 @@
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: Parilka
-    fuel: 0
-    maxFuel: 10
-    active: false
-    temperature: 20
+
 
