@@ -24,7 +24,15 @@ public sealed partial class ParilkaComponent : Component
     [DataField("HeatPerSecond")]
     public float HeatPerSecond = 15f;
     [DataField("UsePerSecond")]
-    public float UsePerSecond = 1f;
+    public int UsePerSecond = 1;
+
+    [DataField("water")]
+    public int Water = 0;
+    [DataField("maxWater")]
+    public int MaxWater = 50;
+    [DataField("steamTimer")]
+    public float SteamTimer = 0f;
+
 
     // [DataField(readOnly: true, required: true)]
     // public ProtoId<ParilkaPrototype> PariklaProto;
