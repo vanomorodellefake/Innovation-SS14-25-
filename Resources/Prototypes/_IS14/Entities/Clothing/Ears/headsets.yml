@@ -1,0 +1,26 @@
+- type: entity
+  parent: ClothingHeadset
+  id: ClothingHeadsetIS14Militia
+  components:
+  - type: Sprite
+    sprite: _IS14/Clothing/Ears/militia_headset.rsi
+  - type: Clothing
+    sprite: _IS14/Clothing/Ears/militia_headset.rsi
+
+- type: entity
+  parent: ClothingHeadset
+  id: ClothingHeadsetIS14MedOfficer
+  components:
+  - type: Sprite
+    sprite: _IS14/Clothing/Ears/med_officer_headset.rsi
+  - type: Clothing
+    sprite: _IS14/Clothing/Ears/med_officer_headset.rsi
+
+- type: entity
+  parent: ClothingHeadset
+  id: ClothingHeadsetIS14Hos
+  components:
+  - type: Sprite
+    sprite: _IS14/Clothing/Ears/hos_headset.rsi
+  - type: Clothing
+    sprite: _IS14/Clothing/Ears/hos_headset.rsi
