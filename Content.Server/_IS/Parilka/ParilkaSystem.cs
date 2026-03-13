@@ -18,11 +18,11 @@ public sealed class ParilkaSystem : EntitySystem
     {
         var xform = Transform(uid);
 
-        var mixture = _atmos.GetTileMixture((uid, xform), true);
-        if (mixture is not { })
+        var cord = _atmos.GetTileMixture((uid, xform), true);
+        if (cord is not { })
             return;
 
-        mixture.AdjustMoles(Gas.WaterVapor, args.SteamMoles);
+        cord.AdjustMoles(Gas.WaterVapor, args.SteamMoles);
 
     }
 

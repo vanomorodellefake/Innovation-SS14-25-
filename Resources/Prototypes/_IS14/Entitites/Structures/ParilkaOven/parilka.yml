@@ -5,7 +5,7 @@
   description: "A traditional Russian steam bath oven, used to heat the parilka and create steam by pouring water over hot stones."
   components:
   - type: Sprite
-    sprite: _IS14/Structures/Decoration/aquarium.rsi
+    sprite: _IS14/Structures/Machines/Parilka.rsi
     state: base
     noRot: true
   - type: InteractionOutline
