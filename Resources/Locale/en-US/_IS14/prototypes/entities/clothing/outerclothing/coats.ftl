@@ -1,0 +1,12 @@
+ent-ClothingOuterIS14SeniorMilitiaFormalJacket = Senior Militia Formal Jacket
+    .desc = Parade uniform for awards, salary, pension and gratitude from the party.
+ent-ClothingOuterIS14MilitiaFormalJacket = Militia Formal Jacket
+    .desc = Parade uniform for promises of promotion.
+ent-ClothingOuterIS14LrrChiefJacket = LRR Chief Jacket
+    .desc = Fleece lining to avoid frostbite when the AC is harsh.
+ent-ClothingOuterIS14HosJacket = Head of Militia Jacket
+    .desc = For field trips, inspections, birthdays and corporate events outdoors.
+ent-ClothingOuterIS14MedOfficerRobe = Medical Officer Robe
+    .desc = Small armor plate at belly level, handy when working in a squat.
+ent-ClothingOuterIS14RiotVest = Riot Vest
+    .desc = Reminds you of army days and folk competitions.

@@ -1,0 +1,15 @@
+- type: entity
+  parent: [ RadioHandheld, BaseSecurityContraband ]
+  id: RadioHandheldIS14Militia
+  components:
+  - type: RadioMicrophone
+    broadcastChannel: Security
+    listenRange: 1
+  - type: RadioSpeaker
+    channels:
+    - Security
+  - type: Sprite
+    sprite: _IS14/Objects/Devices/militia_radio.rsi
+  - type: Item
+    sprite: _IS14/Objects/Devices/militia_radio.rsi
+    heldPrefix: walkietalkie
