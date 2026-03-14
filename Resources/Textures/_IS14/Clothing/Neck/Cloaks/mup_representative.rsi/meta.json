@@ -1,7 +1,7 @@
 {
   "version": 1,
   "license": "All Rights Reserved",
-  "copyright": "Created by ashotik3 (discord) for Innovation Station 14",
+  "copyright": "Created by Melvilla (discord Melvilla) for Innovation Station SS14",
   "size": {
     "x": 32,
     "y": 32
@@ -11,7 +11,7 @@
       "name": "icon"
     },
     {
-      "name": "equipped-EYES",
+      "name": "equipped-NECK",
       "directions": 4
     },
     {

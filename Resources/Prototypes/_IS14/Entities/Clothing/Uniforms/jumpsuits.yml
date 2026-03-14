@@ -1,3 +1,5 @@
+# Jumpsuit base
+
 - type: entity
   abstract: true
   parent: ClothingUniformBase
@@ -18,6 +20,8 @@
       path: /Audio/_Goobstation/Items/handling/cloth_drop.ogg
       params:
         volume: -4
+
+# Militia start
 
 - type: entity
   parent: ClothingUniformJumpsuitIS14Base
@@ -205,3 +209,63 @@
     sprite: _IS14/Clothing/Uniforms/Jumpsuit/senior_militia_tactical.rsi
     equipSound:
       path: /Audio/Items/jumpsuit_equip.ogg
+
+# Militia end
+
+# Minust start
+
+- type: entity
+  parent: ClothingUniformJumpsuitIS14Base
+  id: ClothingUniformJumpsuitIS14Lawyer
+  components:
+  - type: Sprite
+    sprite: _IS14/Clothing/Uniforms/Jumpsuit/lawyer.rsi
+  - type: Clothing
+    sprite: _IS14/Clothing/Uniforms/Jumpsuit/lawyer.rsi
+    equipSound:
+      path: /Audio/Items/jumpsuit_equip.ogg
+
+- type: entity
+  parent: ClothingUniformJumpsuitIS14Base
+  id: ClothingUniformJumpsuitIS14MupRepresentative
+  components:
+  - type: Sprite
+    sprite: _IS14/Clothing/Uniforms/Jumpsuit/mup_representative.rsi
+  - type: Clothing
+    sprite: _IS14/Clothing/Uniforms/Jumpsuit/mup_representative.rsi
+    equipSound:
+      path: /Audio/Items/jumpsuit_equip.ogg
+
+- type: entity
+  parent: ClothingUniformJumpsuitIS14Base
+  id: ClothingUniformJumpsuitIS14FormalMupRepresentative
+  components:
+  - type: Sprite
+    sprite: _IS14/Clothing/Uniforms/Jumpsuit/formal_mup_representative.rsi
+  - type: Clothing
+    sprite: _IS14/Clothing/Uniforms/Jumpsuit/formal_mup_representative.rsi
+    equipSound:
+      path: /Audio/Items/jumpsuit_equip.ogg
+
+- type: entity
+  parent: ClothingUniformJumpsuitIS14Base
+  id: ClothingUniformJumpsuitIS14FormalBlackMupRepresentative
+  components:
+  - type: Sprite
+    sprite: _IS14/Clothing/Uniforms/Jumpsuit/formal_black_mup_representative.rsi
+  - type: Clothing
+    sprite: _IS14/Clothing/Uniforms/Jumpsuit/formal_black_mup_representative.rsi
+    equipSound:
+      path: /Audio/Items/jumpsuit_equip.ogg
+
+- type: entity
+  parent: ClothingUniformJumpskirtIS14Base
+  id: ClothingUniformJumpskirtIS14IVK
+  components:
+  - type: Sprite
+    sprite: _IS14/Clothing/Uniforms/Jumpsuit/ivk.rsi
+  - type: Clothing
+    sprite: _IS14/Clothing/Uniforms/Jumpsuit/ivk.rsi
+    equipSound:
+      path: /Audio/Items/jumpsuit_equip.ogg
+

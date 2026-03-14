@@ -14,6 +14,8 @@
       params:
         volume: -4
 
+# Militia start
+
 - type: entity
   parent: ClothingOuterIS14Base
   id: ClothingOuterIS14SeniorMilitiaFormalJacket
@@ -115,3 +117,26 @@
   - type: ModifyDelayedKnockdown
     delayDelta: 2.5
     knockdownTimeDelta: -2.5
+
+# Militia end
+
+# Minust start
+
+- type: entity
+  parent: ClothingOuterIS14Base
+  id: ClothingOuterIS14IVKShinel
+  components:
+  - type: Sprite
+    sprite: _IS14/Clothing/OuterClothing/Coats/ivk_shinel.rsi
+  - type: Clothing
+    sprite: _IS14/Clothing/OuterClothing/Coats/ivk_shinel.rsi
+
+- type: entity
+  parent: ClothingOuterIS14Base
+  id: ClothingOuterIS14IVKVest
+  components:
+  - type: Sprite
+    sprite: _IS14/Clothing/OuterClothing/Vests/ivk_vest.rsi
+  - type: Clothing
+    sprite: _IS14/Clothing/OuterClothing/Vests/ivk_vest.rsi
+

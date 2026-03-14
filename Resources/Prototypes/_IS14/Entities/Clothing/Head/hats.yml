@@ -1,3 +1,5 @@
+# Militia start
+
 - type: entity
   parent: ClothingHeadBase
   id: ClothingHeadIS14HosCap
@@ -57,7 +59,7 @@
     sprite: _IS14/Clothing/Head/Hats/militia_kubanka.rsi
     layers:
     - state: icon-red
-    
+
 - type: entity
   parent: ClothingHeadBase
   id: ClothingHeadIS14HatBlackMilitiaKubanka
@@ -151,4 +153,28 @@
     sprite: _IS14/Clothing/Head/Berets/hos_beret.rsi
   - type: Clothing
     sprite: _IS14/Clothing/Head/Berets/hos_beret.rsi
+    equippedState: equipped-HEAD
+
+# Militia end
+
+# Minust start
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadIS14IVKCap
+  components:
+  - type: Sprite
+    sprite: _IS14/Clothing/Head/Caps/ivk_cap.rsi
+  - type: Clothing
+    sprite: _IS14/Clothing/Head/Caps/ivk_cap.rsi
+    equippedState: equipped-HEAD
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadIS14IVKBeret
+  components:
+  - type: Sprite
+    sprite: _IS14/Clothing/Head/Berets/ivk_beret.rsi
+  - type: Clothing
+    sprite: _IS14/Clothing/Head/Berets/ivk_beret.rsi
     equippedState: equipped-HEAD

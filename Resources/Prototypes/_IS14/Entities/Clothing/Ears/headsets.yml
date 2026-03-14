@@ -1,3 +1,5 @@
+# militia start
+
 - type: entity
   parent: ClothingHeadset
   id: ClothingHeadsetIS14Militia
@@ -24,3 +26,25 @@
     sprite: _IS14/Clothing/Ears/hos_headset.rsi
   - type: Clothing
     sprite: _IS14/Clothing/Ears/hos_headset.rsi
+
+# militia end
+
+# minust start
+
+- type: entity
+  parent: ClothingHeadset
+  id: ClothingHeadsetIS14MupRepresentative
+  components:
+  - type: Sprite
+    sprite: _IS14/Clothing/Ears/mup_representative_headset.rsi
+  - type: Clothing
+    sprite: _IS14/Clothing/Ears/mup_representative_headset.rsi
+
+- type: entity
+  parent: ClothingHeadset
+  id: ClothingHeadsetIS14Lawyer
+  components:
+  - type: Sprite
+    sprite: _IS14/Clothing/Ears/lawyer_headset.rsi
+  - type: Clothing
+    sprite: _IS14/Clothing/Ears/lawyer_headset.rsi
