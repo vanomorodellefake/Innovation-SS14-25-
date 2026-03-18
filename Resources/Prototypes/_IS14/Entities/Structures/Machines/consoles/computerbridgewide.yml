@@ -1,0 +1,73 @@
+
+
+- type: entity
+  parent: ComputerSurveillanceWirelessCameraMonitor
+  id: IS14WideComputerRightCameraMonitor
+  name: wireless camera monitor
+  description: A wireless surveillance camera monitor. You're watching them. Maybe.
+  components:
+  - type: Sprite
+    layers:
+    - map: ["computerLayerBody"]
+      sprite: _IS14/Structures/Machines/consoles/widebridge.rsi
+      state: computerright
+    - map: ["computerLayerKeyboard"]
+      sprite: _IS14/Structures/Machines/consoles/widebridge.rsi
+      state: animright-unshaded
+    - map: ["computerLayerScreen"]
+      sprite: _IS14/Structures/Machines/consoles/widebridge.rsi
+      state: animright-unshaded
+    - map: ["computerLayerKeys"]
+      sprite: _IS14/Structures/Machines/consoles/widebridge.rsi
+      state: animright-unshaded
+    - map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
+      state: generic_panel_open
+
+
+
+- type: entity
+  parent: ComputerComms
+  id: IS14WideComputerCenterComms
+  name: communications computer
+  description: A computer used to make station wide announcements via keyboard, set the appropriate alert level, and call the emergency shuttle.
+  components:
+  - type: Sprite
+    layers:
+    - map: ["computerLayerBody"]
+      sprite: _IS14/Structures/Machines/consoles/widebridge.rsi
+      state: computercenter
+    - map: ["computerLayerKeyboard"]
+      sprite: _IS14/Structures/Machines/consoles/widebridge.rsi
+      state: animcenter-unshaded
+    - map: ["computerLayerScreen"]
+      sprite: _IS14/Structures/Machines/consoles/widebridge.rsi
+      state: animcenter-unshaded
+    - map: ["computerLayerKeys"]
+      sprite: _IS14/Structures/Machines/consoles/widebridge.rsi
+      state: animcenter-unshaded
+    - map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
+      state: generic_panel_open
+
+
+- type: entity
+  parent: ComputerCrewMonitoring
+  id: IS14WideComputerLeftCrewMonitoring
+  name: crew monitoring console
+  description: Used to monitor active health sensors built into most of the crew's uniforms.
+  components:
+  - type: Sprite
+    layers:
+    - map: ["computerLayerBody"]
+      sprite: _IS14/Structures/Machines/consoles/widebridge.rsi
+      state: computerleft
+    - map: ["computerLayerKeyboard"]
+      sprite: _IS14/Structures/Machines/consoles/widebridge.rsi
+      state: animleft-unshaded
+    - map: ["computerLayerScreen"]
+      sprite: _IS14/Structures/Machines/consoles/widebridge.rsi
+      state: animleft-unshaded
+    - map: ["computerLayerKeys"]
+      sprite: _IS14/Structures/Machines/consoles/widebridge.rsi
+      state: animleft-unshaded
+    - map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
+      state: generic_panel_open
