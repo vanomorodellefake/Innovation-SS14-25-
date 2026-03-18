@@ -1,0 +1,42 @@
+- type: entity
+  parent: BaseItem
+  id: RubberStampIS14MupRepresentative
+  components:
+  - type: Stamp
+    stampedName: stamp-component-stamped-name-mup
+    stampState: "paper_stamp-generic"
+    stampedColor: "#513726"
+    sound:
+      path: /Audio/Items/Stamp/thick_stamp_sub.ogg
+      params:
+        volume: -2
+        maxDistance: 5
+  - type: Sprite
+    sprite: _IS14/Objects/Misc/Stamps/mup_representative.rsi
+    state: icon
+  - type: Item
+    size: Tiny
+  - type: StealTarget
+    stealGroup: Stamp
+
+- type: entity
+  parent: BaseItem
+  id: RubberStampIS14Lawyer
+  components:
+  - type: Stamp
+    stampedName: stamp-component-stamped-name-is14lawyer
+    stampState: "paper_stamp-generic"
+    stampedColor: "#a46e4b"
+    sound:
+      path: /Audio/Items/Stamp/thick_stamp_sub.ogg
+      params:
+        volume: -2
+        maxDistance: 5
+  - type: Sprite
+    sprite: _IS14/Objects/Misc/Stamps/lawyer.rsi
+    state: icon
+  - type: Item
+    size: Tiny
+  - type: StealTarget
+    stealGroup: Stamp
+
