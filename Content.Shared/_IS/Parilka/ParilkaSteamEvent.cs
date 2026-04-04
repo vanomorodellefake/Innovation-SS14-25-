@@ -1,4 +1,4 @@
-using Robust.Shared.GameStates;
+using Robust.Shared.GameObjects;
 
 namespace Content.Shared._IS.Parilka;
 
@@ -10,5 +10,4 @@ public sealed class ParilkaSteamEvent : EntityEventArgs
     {
         SteamMoles = steamMoles;
     }
-
-} //no comments
+}

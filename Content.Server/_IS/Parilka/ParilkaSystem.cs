@@ -1,13 +1,12 @@
+using Content.Server.Atmos.EntitySystems;
 using Content.Shared.Atmos;
 using Content.Shared._IS.Parilka;
-using Content.Server.Atmos.EntitySystems;
-using Robust.Shared.Map.Components;
 
 namespace Content.Server._IS.Parilka;
 
 public sealed class ParilkaSystem : EntitySystem
 {
-    [Dependency] private readonly AtmosphereSystem _atmos = default!;
+    [Dependency] private readonly AtmosphereSystem _atmosphereSystem = default!;
 
     public override void Initialize()
     {
@@ -16,15 +15,18 @@ public sealed class ParilkaSystem : EntitySystem
 
     private void OnSteam(EntityUid uid, ParilkaComponent comp, ParilkaSteamEvent args)
     {
-        var xform = Transform(uid);
+        var transform = Transform(uid);
 
-        var cord = _atmos.GetTileMixture((uid, xform), true);
-        if (cord is not { })
+        var environment = _atmosphereSystem.GetContainingMixture((uid, transform), true, true);
+        if (environment == null)
             return;
 
-        cord.AdjustMoles(Gas.WaterVapor, args.SteamMoles);
+        var merger = new GasMixture(1)
+        {
+            Temperature = comp.Temperature
+        };
 
+        merger.SetMoles(Gas.WaterVapor, args.SteamMoles);
+        _atmosphereSystem.Merge(environment, merger);
     }
-
-
 }
