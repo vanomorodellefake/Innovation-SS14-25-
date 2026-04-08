@@ -77,7 +77,7 @@ public sealed class ParilkaSystem : EntitySystem
                 if (comp.SteamTimer >= comp.SteamInterval)
                 {
                     comp.SteamTimer = 0f;
-                    RemoveWater(uid, 1);
+                    RemoveWater(uid, 5);
                     RaiseLocalEvent(uid, new ParilkaSteamEvent(5f));
 
                     comp.SteamVisualTimer = comp.SteamVisualDuration;

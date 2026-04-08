@@ -1,6 +1,6 @@
 {
     "version": 1,
-    "license": "All rights secured",
+    "license": "CC-BY-SA-3.0",
     "copyright": "by melvilla",
     "size": {
         "x": 32,
@@ -13,28 +13,13 @@
         {
             "name": "unshaded_fire",
             "delays": [
-                [
-                    0.1,
-                    0.1,
-                    0.1
-                ]
+                [0.1, 0.1, 0.1]
             ]
         },
         {
             "name": "steamfromstones",
             "delays": [
-                [
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1
-                ]
+                [0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1]
             ]
         }
     ]
