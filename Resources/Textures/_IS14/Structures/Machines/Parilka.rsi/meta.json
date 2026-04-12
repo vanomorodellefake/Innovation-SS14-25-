@@ -1,0 +1,26 @@
+{
+    "version": 1,
+    "license": "All Rights Reserved",
+    "copyright": "by melvilla",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "base"
+        },
+        {
+            "name": "unshaded_fire",
+            "delays": [
+                [0.1, 0.1, 0.1]
+            ]
+        },
+        {
+            "name": "steamfromstones",
+            "delays": [
+                [0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1]
+            ]
+        }
+    ]
+}

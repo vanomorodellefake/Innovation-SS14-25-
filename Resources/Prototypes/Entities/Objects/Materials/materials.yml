@@ -372,6 +372,7 @@
     - Wooden
     - RawMaterial
     - DroneUsable # Goobstation
+    - FuelForFire # Add for future. Because wood its a fuel.
   - type: Extractable
     grindableSolutionName: wood
   - type: SolutionContainerManager

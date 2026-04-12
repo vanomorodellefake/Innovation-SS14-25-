@@ -1,0 +1,53 @@
+- type: entity
+  id: ParilkaOven
+  parent: BaseStructureDynamic
+  name: parilka oven
+  description: "A traditional Russian steam bath oven, used to heat the parilka and create steam by pouring water over hot stones."
+  components:
+  - type: Appearance
+  - type: Transform
+    anchored: true
+  - type: Sprite
+    sprite: _IS14/Structures/Machines/Parilka.rsi
+    noRot: true
+    layers:
+    - state: base
+      map: [ "enum.ParilkaVisualLayers.Base" ]
+    - state: unshaded_fire
+      shader: unshaded
+      visible: false
+      map: [ "enum.ParilkaVisualLayers.Fire" ]
+    - state: steamfromstones
+      visible: false
+      map: [ "enum.ParilkaVisualLayers.Steam" ]
+  - type: GenericVisualizer
+    visuals:
+      enum.ParilkaVisuals.IsRunning:
+        enum.ParilkaVisualLayers.Fire:
+          True: { visible: true }
+          False: { visible: false }
+      enum.ParilkaVisuals.ShowSteam:
+        enum.ParilkaVisualLayers.Steam:
+          True: { visible: true }
+          False: { visible: false }
+  - type: InteractionOutline
+  - type: Damageable
+    damageContainer: StructuralInorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: Parilka
+  - type: SolutionContainerManager
+    solutions:
+      tank:
+        maxVol: 100
+  - type: RefillableSolution
+    solution: tank
+    maxRefill: 20
+  - type: ExaminableSolution
+    solution: tank
