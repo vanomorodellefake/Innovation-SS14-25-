@@ -30,6 +30,15 @@
       board: [ DoorElectronicsTheatre ]
 
 - type: entity
+  parent: IS14AirlockStandard
+  id: IS14AirlockJanitorLocked
+  suffix: Janitor, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsJanitor ]
+
+- type: entity
   parent: IS14AirlockServiceLocked
   id: IS14AirlockServiceTheatreLocked
   suffix: Service, Theatre, Locked
