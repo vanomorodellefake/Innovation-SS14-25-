@@ -6,3 +6,5 @@
     sprite: _IS14/Clothing/Shoes/militia_boots.rsi
   - type: Clothing
     sprite: _IS14/Clothing/Shoes/militia_boots.rsi
+  - type: ClothingSlowOnDamageModifier
+    modifier: 0.5

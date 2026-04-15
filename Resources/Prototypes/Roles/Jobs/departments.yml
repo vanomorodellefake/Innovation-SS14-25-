@@ -134,6 +134,9 @@
   - Zookeeper
   - ServiceWorker
   - PartyMaker # event-restricted, Goobstation
+  - JobIvk # IS14 Edit
+  - IS_JobLawyer # IS14 Edit
+  - JobMupRepresentative # IS14 Edit
 
 - type: department
   id: CentralCommand
@@ -189,6 +192,7 @@
   - DeathSquad
   - HecuOperative
   - CommandMaid # event-restricted, Goobstation
+  - JobHosMilitia # IS14 Edit
   primary: false
   weight: 100
 
@@ -226,15 +230,16 @@
   color: "#DE3A3A"
   weight: 20
   roles:
-  - HeadOfSecurity
-  - SecurityCadet
-  - SecurityOfficer
-  - Detective
-  - Warden
-  - Brigmedic # Goob
-  - Pilot # Corvax-Pilot
-  - WardenHelper # CorvaxGoob-WardenHelper
-  - SecurityClown # event-restricted, Goob
+  # IS14 Edit 
+  - JobHosMilitia
+  - JobMilitia
+  - JobSeniorMilitia
+  - IS_JobCadet
+  - JobInvestigator
+  - JobMedOfficer
+  - JobLrrChief
+  - IS_JobPilot
+  - InternalControlExecutor # IS14 Edit
 
 - type: department
   id: Science

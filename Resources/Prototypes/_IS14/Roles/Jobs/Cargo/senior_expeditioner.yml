@@ -1,8 +1,5 @@
-# SPDX-FileCopyrightText: 2025 IS14 Edit
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
 
-# IS14 Edit - Новая роль: Старший экспедитор
 - type: job
   id: SeniorExpeditioner
   name: job-name-senior-expeditioner
@@ -16,7 +13,7 @@
     - !type:DepartmentTimeRequirement
       department: Cargo
       time: 18000 # 5 hrs
-  icon: "JobIconSeniorExpeditioner" # IS14 Edit
+  icon: "JobIconSeniorExpeditioner"
   startingGear: SeniorExpeditionerGear
   supervisors: job-supervisors-qm
   access:
@@ -30,7 +27,7 @@
   id: SeniorExpeditionerGear
   equipment:
     jumpsuit: ClothingUniformJumpsuitSalvageSpecialist
-    id: IS_PdaSeniorExpeditionist # IS14 Edit
+    id: IS_PdaSeniorExpeditionist
     ears: ClothingHeadsetCargo
   storage:
     back:

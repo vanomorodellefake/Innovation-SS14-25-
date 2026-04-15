@@ -155,7 +155,7 @@
             Lawyer: [ 3, 3 ]
             Brigmedic: [ 1, 1 ]
             InternalControlExecutor: [ 1, 1 ] # IS14 Edit
-            SeniorOfficer: [ 1, 1 ] # IS14 Edit
+            JobSeniorMilitia: [ 1, 1 ] # IS14 Edit
             #supply
             Quartermaster: [ 1, 1 ]
             SalvageSpecialist: [ 3, 3 ]

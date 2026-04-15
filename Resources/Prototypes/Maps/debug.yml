@@ -51,6 +51,17 @@
             Captain: [ -1, -1 ]
             NanotrasenRepresentative: [ -1, -1 ] # Goob - remove it after test
             BlueshieldOfficer: [ -1, -1 ] # Remove this too
+            JobHosMilitia: [ -1, -1 ]
+            JobMilitia: [ -1, -1 ]
+            JobSeniorMilitia: [ -1, -1 ]
+            IS_JobCadet: [ -1, -1 ]
+            JobInvestigator: [ -1, -1 ]
+            JobMedOfficer: [ -1, -1 ]
+            JobLrrChief: [ -1, -1 ]
+            IS_JobPilot: [ -1, -1 ]
+            JobIvk: [ -1, -1 ]
+            IS_JobLawyer: [ -1, -1 ]
+            JobMupRepresentative: [ -1, -1 ]
         # Goobstation blob-config-start DEBUG
         - type: StationBlobConfig
           stageBegin: 20

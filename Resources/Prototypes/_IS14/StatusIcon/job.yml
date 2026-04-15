@@ -29,3 +29,91 @@
     sprite: /Textures/_IS14/Interface/Misc/job_icons.rsi
     state: InternalControlExecutor
   jobName: job-name-internal-control-executor
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconHosMilitia
+  icon:
+    sprite: /Textures/_IS14/Interface/Misc/job_icons.rsi
+    state: HeadOfSecurity
+  jobName: job-name-hos-militia
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconMilitia
+  icon:
+    sprite: /Textures/_IS14/Interface/Misc/job_icons.rsi
+    state: SecurityOfficer
+  jobName: job-name-militia
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconSeniorMilitia
+  icon:
+    sprite: /Textures/_IS14/Interface/Misc/job_icons.rsi
+    state: SeniorOfficer
+  jobName: job-name-senior-militia
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconIS14Cadet
+  icon:
+    sprite: /Textures/_IS14/Interface/Misc/job_icons.rsi
+    state: SecurityCadet
+  jobName: job-name-is14-cadet
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconInvestigator
+  icon:
+    sprite: /Textures/_IS14/Interface/Misc/job_icons.rsi
+    state: Detective
+  jobName: job-name-investigator
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconMedOfficer
+  icon:
+    sprite: /Textures/_IS14/Interface/Misc/job_icons.rsi
+    state: MedicalDoctor
+  jobName: job-name-med-officer
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconLrrChief
+  icon:
+    sprite: /Textures/_IS14/Interface/Misc/job_icons.rsi
+    state: Warden
+  jobName: job-name-lrr-chief
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconIS14Pilot
+  icon:
+    sprite: /Textures/_IS14/Interface/Misc/job_icons.rsi
+    state: Pilot
+  jobName: job-name-is14-pilot
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconIvk
+  icon:
+    sprite: /Textures/_IS14/Interface/Misc/job_icons.rsi
+    state: Lawyer
+  jobName: job-name-ivk
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconIS14Lawyer
+  icon:
+    sprite: /Textures/_IS14/Interface/Misc/job_icons.rsi
+    state: Lawyer
+  jobName: job-name-lawyer-militia
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconMupRepresentative
+  icon:
+    sprite: /Textures/_IS14/Interface/Misc/job_icons.rsi
+    state: NanotrasenRepresentative
+  jobName: job-name-mup-representative

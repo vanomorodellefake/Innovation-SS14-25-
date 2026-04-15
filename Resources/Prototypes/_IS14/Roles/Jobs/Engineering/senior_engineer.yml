@@ -1,8 +1,5 @@
-# SPDX-FileCopyrightText: 2025 IS14 Edit
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
 
-# IS14 Edit - Новая роль: Старший инженер
 - type: job
   id: SeniorEngineer
   name: job-name-senior-engineer
@@ -22,7 +19,7 @@
       department: Engineering
       time: 216000 # 60 hrs
   startingGear: SeniorEngineerGear
-  icon: "JobIconSeniorEngineer" # IS14 Edit
+  icon: "JobIconSeniorEngineer"
   supervisors: job-supervisors-ce
   access:
   - Maintenance
@@ -41,7 +38,7 @@
     eyes: ClothingEyesGlassesMeson
     belt: ClothingBeltUtilityEngineering
     ears: ClothingHeadsetEngineering
-    id: IS_PdaSeniorEngineer # IS14 Edit
+    id: IS_PdaSeniorEngineer
   storage:
     back: []
 
