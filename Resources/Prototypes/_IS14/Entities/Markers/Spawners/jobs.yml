@@ -1,8 +1,5 @@
-# SPDX-FileCopyrightText: 2025 IS14 Edit
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
 
-# IS14 Edit - Spawn points for custom roles
 
 # Cargo
 - type: entity
@@ -55,18 +52,6 @@
     layers:
       - state: green
       - state: security_officer
-
-- type: entity
-  id: SpawnPointSeniorOfficer
-  parent: SpawnPointJobBase
-  name: seniorofficer
-  components:
-  - type: SpawnPoint
-    job_id: SeniorOfficer
-  - type: Sprite
-    layers:
-      - state: green
-      - state: seniorofficer
 
 # Engineering
 - type: entity

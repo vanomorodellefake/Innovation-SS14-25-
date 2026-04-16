@@ -58,7 +58,6 @@
   - type: Pda
     id: IS_IdCardWarden
 
-# IS14 Edit - Internal Control Executor
 - type: entity
   parent: IS_PdaBase
   id: IS_PdaInternalControlExecutor
@@ -68,3 +67,83 @@
     sprite: _IS14/Objects/Devices/pda/Security/security.rsi
   - type: Pda
     id: IS_IdCardInternalControlExecutor
+
+- type: entity
+  parent: IS_PdaBase
+  id: IS_PdaHosMilitia
+  name: head of security's PDA
+  components:
+  - type: Sprite
+    sprite: _IS14/Objects/Devices/pda/Security/security.rsi
+  - type: Pda
+    id: IS_IdCardHosMilitia
+
+- type: entity
+  parent: IS_PdaBase
+  id: IS_PdaMilitia
+  name: militia officer's PDA
+  components:
+  - type: Sprite
+    sprite: _IS14/Objects/Devices/pda/Security/security.rsi
+  - type: Pda
+    id: IS_IdCardMilitia
+
+- type: entity
+  parent: IS_PdaBase
+  id: IS_PdaSeniorMilitia
+  name: senior militia officer's PDA
+  components:
+  - type: Sprite
+    sprite: _IS14/Objects/Devices/pda/Security/security.rsi
+  - type: Pda
+    id: IS_IdCardSeniorMilitia
+
+- type: entity
+  parent: IS_PdaBase
+  id: IS_PdaMedOfficer
+  name: medical officer's PDA
+  components:
+  - type: Sprite
+    sprite: _IS14/Objects/Devices/pda/Security/security.rsi
+  - type: Pda
+    id: IS_IdCardMedOfficer
+
+- type: entity
+  parent: IS_PdaBase
+  id: IS_PdaLrrChief
+  name: LRR chief's PDA
+  components:
+  - type: Sprite
+    sprite: _IS14/Objects/Devices/pda/Security/security.rsi
+  - type: Pda
+    id: IS_IdCardLrrChief
+
+- type: entity
+  parent: IS_PdaBase
+  id: IS_PdaPilot
+  name: pilot's PDA
+  components:
+  - type: Sprite
+    sprite: _IS14/Objects/Devices/pda/Security/security.rsi
+  - type: Pda
+    id: IS_IdCardPilot
+
+- type: entity
+  parent: IS_PdaBase
+  id: IS_PdaIVK
+  name: IVK officer's PDA
+  components:
+  - type: Sprite
+    sprite: _IS14/Objects/Devices/pda/Security/security.rsi
+  - type: Pda
+    id: IS_IdCardIVK
+
+- type: entity
+  parent: IS_PdaBase
+  id: IS_PdaInvestigator
+  name: investigator's PDA
+  components:
+  - type: Sprite
+    sprite: _IS14/Objects/Devices/pda/Security/security.rsi
+  - type: Pda
+    id: IS_IdCardInvestigator

@@ -1,0 +1,6 @@
+loadout-group-jumpsuit = Jumpsuit
+loadout-group-head = Head
+loadout-group-outerclothing = Outer clothing
+loadout-group-belt = Belt
+loadout-group-shoes = Shoes
+loadout-group-ears = Ears

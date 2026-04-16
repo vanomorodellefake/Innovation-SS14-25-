@@ -1,0 +1,6 @@
+loadout-group-jumpsuit = Комбинезон
+loadout-group-head = Голова
+loadout-group-outerclothing = Верхняя одежда
+loadout-group-belt = Пояс
+loadout-group-shoes = Обувь
+loadout-group-ears = Уши

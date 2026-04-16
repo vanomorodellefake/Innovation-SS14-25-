@@ -1,4 +1,3 @@
-# IS14 Edit - New role descriptions
 job-description-senior-expeditioner = Lead the expedition team, coordinate salvage operations, and ensure the efficiency of the supply department.
 job-description-church-servant = Assist the chaplain in their spiritual work, maintain order in the chapel, and provide spiritual guidance to the crew.
 job-description-command-secretary = Provide administrative support to station command, maintain documentation, and assist in coordinating department work.
@@ -7,3 +6,15 @@ job-description-senior-engineer = An experienced engineer with deep knowledge in
 job-description-senior-physician = An experienced physician with extensive knowledge in medicine and surgery, capable of handling the most complex cases.
 job-description-senior-researcher = An experienced scientist with deep knowledge in research and development, capable of conducting complex experiments.
 job-description-senior-officer = An experienced security officer with extensive experience in maintaining order and ensuring station security.
+
+job-description-hos-militia = Command the militia security forces, maintain order on the station, and report directly to the Captain.
+job-description-militia = Patrol the station, protect the crew, and uphold the law as a militia officer.
+job-description-senior-militia = A seasoned militia officer with experience and authority over junior personnel.
+job-description-is14-cadet = A new recruit to the militia, learning the ropes of station security.
+job-description-investigator = Investigate crimes, gather evidence, and work with security to bring criminals to justice.
+job-description-med-officer = Provide medical support to security personnel and detainees in the brig.
+job-description-lrr-chief = Lead the rapid response squad, coordinate armed response operations, and oversee the armory.
+job-description-is14-pilot = Pilot station shuttles and provide transportation support to security operations.
+job-description-ivk = Serve as an internal affairs officer, ensuring security procedures are followed correctly.
+job-description-lawyer-militia = Provide legal counsel, defend the rights of detainees, and ensure the law is applied fairly.
+job-description-mup-representative = Represent municipal interests, oversee legal compliance, and liaise between the crew and command.

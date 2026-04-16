@@ -63,7 +63,7 @@
             SeniorResearcher: [ 1, 1 ] # IS14 Edit
             SeniorEngineer: [ 1, 1 ] # IS14 Edit
             SeniorPhysician: [ 1, 1 ] # IS14 Edit
-            SeniorOfficer: [ 1, 1 ] # IS14 Edit
+            JobSeniorMilitia: [ 1, 1 ] # IS14 Edit
             CommandSecretary: [ 1, 1 ] # IS14 Edit
             ChurchServant: [ 1, 1 ] # IS14 Edit
             InternalControlExecutor: [ 1, 1 ] # IS14 Edit

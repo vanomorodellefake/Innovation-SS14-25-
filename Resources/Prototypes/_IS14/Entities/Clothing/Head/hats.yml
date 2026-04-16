@@ -28,7 +28,7 @@
     sprite: _IS14/Clothing/Head/Caps/militia_cap.rsi
   - type: Clothing
     sprite: _IS14/Clothing/Head/Caps/militia_cap.rsi
-    equippedState: equipped-HELMET
+    equippedState: equipped-HEAD
 
 - type: entity
   parent: ClothingHeadHatUshanka
