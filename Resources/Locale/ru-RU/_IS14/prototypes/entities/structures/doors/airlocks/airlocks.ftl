@@ -136,6 +136,11 @@ ent-IS14AirlockAtmosphericsGlass = Стеклянный Шлюз Отдела А
      .desc = Обладает достаточно прочным стеклом, чтобы то, не вылетало от дуновения ветра.
      
 #access 
+
+ent-IS14AirlockJanitorLocked = Шлюз Уборщика 
+     .desc = Ведет вас из коридора в помещение и обратно.
+
+
 ent-IS14AirlockServiceLocked = { ent-IS14AirlockStandard } 
     .desc = { ent-IS14AirlockStandard.desc }
 
