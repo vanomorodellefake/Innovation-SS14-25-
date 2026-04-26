@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "license": "All Rights Reserved",
+  "copyright": "Made by melvilla (discord) for IS14",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "base"
+    },
+    {
+      "name": "door"
+    },
+    {
+      "name": "open"
+    },
+    {
+      "name": "unlocked"
+    },
+    {
+      "name": "locked"
+    },
+    {
+      "name": "panel"
+    },
+    {
+      "name": "welded"
+    }
+  ]
+}

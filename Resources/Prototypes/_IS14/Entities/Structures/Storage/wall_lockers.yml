@@ -201,4 +201,33 @@
   - type: AccessReader
     access: [["Captain"]]
 
+- type: entity
+  id: ClosetWallIS14Prison
+  parent: BaseWallLocker
+  name: prison wall locker
+  description: A reinforced wall locker for prison use.
+  components:
+  - type: Sprite
+    layers:
+    - state: prison_generic
+      sprite: _IS14/Structures/Storage/prison_wall_locker.rsi
+      map: ["enum.StorageVisualLayers.Base"]
+    - state: prison_closed
+      sprite: _IS14/Structures/Storage/prison_wall_locker.rsi
+      map: ["enum.StorageVisualLayers.Door"]
+    - state: welded
+      sprite: Structures/Storage/wall_locker.rsi
+      map: ["enum.WeldableLayers.BaseWelded"]
+      visible: false
+    - state: locked
+      sprite: Structures/Storage/wall_locker.rsi
+      map: ["enum.LockVisualLayers.Lock"]
+      shader: unshaded
+  - type: EntityStorageVisuals
+    stateBaseClosed: prison_generic
+    stateDoorOpen: prison_open
+    stateDoorClosed: prison_closed
+  - type: AccessReader
+    access: [["Security"]]
+
 

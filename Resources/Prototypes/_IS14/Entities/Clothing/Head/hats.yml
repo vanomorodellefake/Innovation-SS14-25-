@@ -178,3 +178,26 @@
   - type: Clothing
     sprite: _IS14/Clothing/Head/Berets/ivk_beret.rsi
     equippedState: equipped-HEAD
+
+# minust end
+
+# Prison start
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadIS14PrisonerCap
+  name: prisoner cap
+  description: A cheap cap issued to inmates.
+  components:
+  - type: Sprite
+    sprite: _IS14/Clothing/Head/Hats/prisoner_cap.rsi
+  - type: Clothing
+    sprite: _IS14/Clothing/Head/Hats/prisoner_cap.rsi
+    equippedState: equipped-HEAD
+  - type: Tag
+    tags:
+    - ClothMade
+    - Recyclable
+    - WhitelistChameleon
+    
+# Prison end

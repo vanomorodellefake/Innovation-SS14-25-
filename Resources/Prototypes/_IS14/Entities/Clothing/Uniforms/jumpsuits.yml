@@ -269,3 +269,26 @@
     equipSound:
       path: /Audio/Items/jumpsuit_equip.ogg
 
+- type: entity
+  parent: ClothingUniformJumpsuitIS14Base
+  id: ClothingUniformJumpsuitIS14Prisoner
+  name: prisoner jumpsuit
+  description: A jumpsuit used for prisoners. It has suit sensors automatically enabled at all times.
+  components:
+  - type: Sprite
+    sprite: _IS14/Clothing/Uniforms/Jumpsuit/prisoner.rsi
+  - type: Clothing
+    sprite: _IS14/Clothing/Uniforms/Jumpsuit/prisoner.rsi
+    equipSound:
+      path: /Audio/Items/jumpsuit_equip.ogg
+  - type: SuitSensor
+    controlsLocked: true
+    randomMode: false
+    mode: SensorCords
+  - type: Tag
+    tags:
+    - ClothMade
+    - Recyclable
+    - PrisonUniform
+    - WhitelistChameleon
+

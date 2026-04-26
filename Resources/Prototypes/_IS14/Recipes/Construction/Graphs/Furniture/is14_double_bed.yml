@@ -1,0 +1,56 @@
+- type: constructionGraph
+  id: IS14DoubleBed
+  start: start
+  graph:
+    - node: start
+      actions:
+        - !type:DestroyEntity {}
+      edges:
+        - to: bunkUpper
+          completed:
+            - !type:SnapToGrid {}
+          steps:
+            - material: Steel
+              amount: 3
+              doAfter: 1
+            - material: Cloth
+              amount: 2
+              doAfter: 1
+        - to: bunkLower
+          completed:
+            - !type:SnapToGrid {}
+          steps:
+            - material: Steel
+              amount: 3
+              doAfter: 1
+            - material: Cloth
+              amount: 2
+              doAfter: 1
+    - node: bunkUpper
+      entity: IS14BedDoubleUp
+      edges:
+        - to: start
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetSteel1
+              amount: 3
+            - !type:SpawnPrototype
+              prototype: MaterialCloth1
+              amount: 2
+          steps:
+            - tool: Screwing
+              doAfter: 1
+    - node: bunkLower
+      entity: IS14BedDoubleDown
+      edges:
+        - to: start
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetSteel1
+              amount: 3
+            - !type:SpawnPrototype
+              prototype: MaterialCloth1
+              amount: 2
+          steps:
+            - tool: Screwing
+              doAfter: 1

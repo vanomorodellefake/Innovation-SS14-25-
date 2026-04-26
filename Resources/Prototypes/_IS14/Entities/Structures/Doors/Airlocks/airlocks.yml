@@ -36,6 +36,25 @@
       containers:
         board: [DoorElectronicsSecurity]
 
+- type: entity
+  parent: AirlockGlass
+  id: IS14AirlockPrisonCell
+  suffix: Security, Brig
+  components:
+    - type: Sprite
+      sprite: _IS14/Structures/Doors/Airlocks/Standard/prison_cell.rsi
+    - type: Wires
+      layoutId: AirlockSecurity
+
+- type: entity
+  parent: IS14AirlockPrisonCell
+  id: IS14AirlockPrisonCellLocked
+  suffix: Security, Brig, Locked
+  components:
+    - type: ContainerFill
+      containers:
+        board: [DoorElectronicsSecurity]
+
 #airlocks pr-n2
 
 - type: entity

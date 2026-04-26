@@ -1,0 +1,19 @@
+- type: entity
+  parent: BaseItem
+  id: IS14PrisonMattressItem
+  name: bunk mattress
+  description: A rolled mattress for prison bunks. Too bulky to hide easily.
+  components:
+  - type: Tag
+    tags:
+    - IS14BunkMattress
+  - type: Sprite
+    sprite: _IS14/Objects/Misc/mattress_prison.rsi
+    state: icon
+  - type: Item
+    size: Huge
+    inhandVisuals:
+      left:
+      - state: inhand-left
+      right:
+      - state: inhand-right

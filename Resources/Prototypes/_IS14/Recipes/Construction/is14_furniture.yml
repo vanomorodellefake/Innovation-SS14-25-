@@ -1,0 +1,27 @@
+- type: construction
+  id: IS14BunkBedUpper
+  name: bunk bed (upper berth)
+  description: Top bunk of a two-tier bed.
+  graph: IS14DoubleBed
+  startNode: start
+  targetNode: bunkUpper
+  category: construction-category-furniture
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  id: IS14BunkBedLower
+  name: bunk bed (lower berth)
+  description: Bottom bunk of a two-tier bed.
+  graph: IS14DoubleBed
+  startNode: start
+  targetNode: bunkLower
+  category: construction-category-furniture
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
