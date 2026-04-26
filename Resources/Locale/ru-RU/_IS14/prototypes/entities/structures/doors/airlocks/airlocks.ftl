@@ -445,3 +445,19 @@ ent-IS14HighSecCommandLocked = { ent-HighSecDoor }
 
 ent-IS14HighSecCaptainLocked = { ent-HighSecDoor }
     .desc = { ent-HighSecDoor.desc }
+
+# Тюремные шлюзы (IS14)
+ent-IS14AirlockSolitary = шлюз карцера
+    .desc = Единственный собеседник для заключённого в карцере.
+ent-IS14AirlockSolitaryLocked = { ent-IS14AirlockSolitary }
+    .desc = { ent-IS14AirlockSolitary.desc }
+
+ent-IS14AirlockPrisonCell = шлюз камеры
+    .desc = Граница между законом и понятиями.
+ent-IS14AirlockPrisonCellLocked = { ent-IS14AirlockPrisonCell }
+    .desc = { ent-IS14AirlockPrisonCell.desc }
+
+ent-IS14AirlockPrison = решётка
+    .desc = Создает атмосферу контактного зоопарка, из которого заключенные смотрят за жизнью милиционеров в природной среде обитания.
+ent-IS14AirlockPrisonLocked = { ent-IS14AirlockPrison }
+    .desc = { ent-IS14AirlockPrison.desc }
