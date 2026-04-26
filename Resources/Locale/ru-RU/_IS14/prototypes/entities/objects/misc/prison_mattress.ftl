@@ -1,2 +1,2 @@
-ent-IS14PrisonMattressItem = Матрац (тюремный)
+ent-IS14PrisonMattressItem = матрац
     .desc = Все бока украшены многочисленными зашитыми вертикальными разрезами.
