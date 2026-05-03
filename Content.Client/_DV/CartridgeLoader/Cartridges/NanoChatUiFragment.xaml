@@ -30,7 +30,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
                           HorizontalExpand="True"
                           Margin="0">
                 <TextureRect Name="AppIcon"
-                             TexturePath="/Textures/Interface/Nano/ntlogo.svg.png"
+                             TexturePath="/Textures/_IS14/Interface/Sssp/ntlogo.svg.png"
                              Stretch="KeepAspectCentered"
                              VerticalAlignment="Center"
                              MinSize="32 32"
