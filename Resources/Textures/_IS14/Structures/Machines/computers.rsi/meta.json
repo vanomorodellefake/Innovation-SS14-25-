@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "license": "idk",
+  "copyright": "by melvilla (discord)",
+  "states": [
+    {
+      "name": "lbase"
+    },
+    {
+      "name": "lbroken"
+    },
+    {
+      "name": "lanim",
+	  "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "cbase"
+    },
+    {
+      "name": "cbroken"
+    },
+    {
+      "name": "canim",
+	  "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "rbase"
+    },
+    {
+      "name": "rbroken"
+    },
+    {
+      "name": "ranim",
+	  "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    }
+  ]
+}
