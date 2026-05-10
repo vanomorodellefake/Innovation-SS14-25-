@@ -1,0 +1,221 @@
+- type: entity
+  parent: BaseStructureComputer
+  id: IS14BaseComputer
+  name: computer
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Animateable
+  - type: MeleeSound
+    soundGroups:
+      Brute:
+        collection: GlassSmash
+  - type: Construction
+    graph: Computer
+    node: computer
+    containers:
+      - board
+  - type: Computer
+  - type: TogglePower # CorvaxGoob-TogglingPower
+  - type: ApcPowerReceiver
+    powerLoad: 200
+  - type: ExtensionCableReceiver
+  - type: ActivatableUIRequiresPower
+  - type: Sprite
+    sprite: _IS14/Structures/Machines/computers.rsi
+    noRot: false
+    layers:
+    - map: ["computerLayerBody"]
+      state: cbase
+    - map: ["computerLayerScreen"]
+      state: canim
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.ComputerVisuals.Powered:
+        computerLayerScreen:
+          True: { visible: true, shader: unshaded }
+          False: { visible: false }
+        computerLayerKeys:
+          True: { visible: true, shader: unshaded }
+          False: { visible: true, shader: shaded }
+      enum.WiresVisuals.MaintenancePanelState:
+        enum.WiresVisualLayers.MaintenancePanel:
+          True: { visible: false }
+          False: { visible: true }
+  - type: LitOnPowered
+  - type: PointLight
+    radius: 1.5
+    energy: 1.6
+    enabled: false
+    mask: /Textures/Effects/LightMasks/cone.png
+    autoRot: true
+    offset: "0, 0.4" # shine from the top, not bottom of the computer
+    castShadows: false
+  - type: EmitSoundOnUIOpen
+    sound:
+      collection: Keyboard
+      params:
+        volume: -1
+        variation: 0.10
+        pitch: 1.10  # low pitch keyboard sounds feel kinda weird
+    blacklist:
+      tags:
+      - NoConsoleSound
+  - type: ContainerContainer
+    containers:
+      board: !type:Container
+        ents: []
+  - type: LightningTarget
+    priority: 1
+  - type: RequireProjectileTarget
+  - type: Electrified
+    enabled: false
+    usesApcPower: true
+  - type: WiresPanel
+  - type: WiresVisuals
+  - type: Wires
+    boardName: wires-board-name-computer
+    layoutId: Computer
+  - type: SpamEmitSound # Goobstation - random lathe sounds
+    minInterval: 45
+    maxInterval: 120
+    sound:
+      collection: MonoComputerSFX
+      params:
+        volume: -12 # Ambient
+        maxDistance: 10
+        variation: 0.05
+  - type: SpamEmitSoundRequirePower # Goobstation
+  - type: InteractedBlacklist # Goobstation - xenos too stupid to use computer
+    blacklist:
+      components:
+      - Xenomorph
+  # Einstein Engines - Language begin
+  - type: LanguageSpeaker
+  - type: LanguageKnowledge
+    speaks:
+    - TauCetiBasic
+    understands:
+    - TauCetiBasic
+  # Einstein Engines - Language end
+#
+#     This is overwritten by children, so needs to be defined there
+#  - type: UserInterface
+#    interfaces:
+#      enum.WiresUiKey.Key:
+#        type: WiresBoundUserInterface
+
+- type: entity
+  parent: IS14BaseComputer
+  id: IS14BaseComputerAiAccess
+  components:
+  - type: StationAiWhitelist
+  - type: Wires
+    boardName: wires-board-name-computer
+    layoutId: ComputerAi
+
+
+- type: entity
+  parent: IS14BaseComputerAiAccess
+  id: IS14ComputerComms
+  name: communications computer
+  description: A computer used to make station wide announcements via keyboard, set the appropriate alert level, and call the emergency shuttle.
+  components:
+  - type: Sprite
+    layers:
+    - map: ["computerLayerBody"]
+      state: cbase
+    - map: ["computerLayerScreen"]
+      state: canim
+  - type: AccessReader
+    access: [[ "Command" ]]
+  - type: CommunicationsConsole
+    title: comms-console-announcement-title-station
+  - type: DeviceNetwork
+    transmitFrequencyId: ShuttleTimer
+  - type: ActivatableUI
+    key: enum.CommunicationsConsoleUiKey.Key
+  - type: UserInterface
+    interfaces:
+      enum.CommunicationsConsoleUiKey.Key:
+        type: CommunicationsConsoleBoundUserInterface
+      enum.WiresUiKey.Key:
+        type: WiresBoundUserInterface
+  - type: Computer
+    board: CommsComputerCircuitboard
+  - type: PointLight
+    radius: 1.5
+    energy: 1.6
+    color: "#3c5eb5"
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: StructuralMetallicStrong
+
+- type: entity
+  parent: IS14BaseComputerAiAccess
+  id: IS14ComputerCrewMonitoring
+  name: crew monitoring console
+  description: Used to monitor active health sensors built into most of the crew's uniforms.
+  components:
+  - type: Sprite
+    layers:
+    - map: ["computerLayerBody"]
+      state: lbase
+    - map: ["computerLayerScreen"]
+      state: lanim
+  - type: PointLight
+    radius: 1.5
+    energy: 1.6
+    color: "#006400"
+  - type: Computer
+    board: CrewMonitoringComputerCircuitboard
+  - type: ActivatableUI
+    key: enum.CrewMonitoringUIKey.Key
+  - type: UserInterface
+    interfaces:
+        enum.CrewMonitoringUIKey.Key:
+          type: CrewMonitoringBoundUserInterface
+        enum.WiresUiKey.Key:
+          type: WiresBoundUserInterface
+  - type: CrewMonitoringConsole
+  - type: DeviceNetwork
+    deviceNetId: Wireless
+    receiveFrequencyId: CrewMonitor
+  - type: WirelessNetworkConnection
+    range: 1200
+
+- type: entity
+  parent: IS14BaseComputer
+  id: IS14ComputerSurveillanceWirelessCameraMonitor
+  name: wireless camera monitor
+  description: A wireless surveillance camera monitor. You're watching them. Maybe.
+  components:
+  - type: Sprite
+    layers:
+    - map: ["computerLayerBody"]
+      state: rbase
+    - map: ["computerLayerScreen"]
+      state: ranim
+  - type: Computer
+    board: SurveillanceWirelessCameraMonitorCircuitboard
+  - type: DeviceNetwork
+    deviceNetId: Wireless
+    receiveFrequencyId: SurveillanceCamera
+    transmitFrequencyId: SurveillanceCamera
+  - type: WirelessNetworkConnection
+    range: 200
+  - type: DeviceNetworkRequiresPower
+  - type: Speech
+    speechVerb: Robotic
+  - type: SurveillanceCameraSpeaker
+  - type: SurveillanceCameraMonitor
+  - type: ActivatableUI
+    key: enum.SurveillanceCameraMonitorUiKey.Key
+  - type: ActivatableUIRequiresVision
+  - type: UserInterface
+    interfaces:
+        enum.SurveillanceCameraMonitorUiKey.Key:
+          type: SurveillanceCameraMonitorBoundUserInterface
+        enum.WiresUiKey.Key:
+          type: WiresBoundUserInterface

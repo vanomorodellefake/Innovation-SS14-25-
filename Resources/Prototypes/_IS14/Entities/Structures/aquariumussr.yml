@@ -6,18 +6,22 @@
   components:
   - type: Sprite
     sprite: _IS14/Structures/Decoration/aquariumussr.rsi
-    drawdepth: Overdoors
     state: aquariumussr
-    noRot: true
+    offset: 0.5, 0.5
+    noRot: false
+    drawdepth: Mobs
   - type: Transform
     noRot: true
+    anchored: true
   - type: Fixtures
     fixtures:
       fix1:
         shape:
           !type:PhysShapeAabb
-          bounds: "-0.8,0,0.8,-1"
+          bounds: "-0.45,-0.45,1.45,0.45"
         density: 190
+        mask:
+        - MachineMask
         layer:
         - MobMask
   - type: InteractionOutline
@@ -35,4 +39,4 @@
     interactSuccessString: comp-aquarium-knock
     messagePerceivedByOthers: comp-aquariumu-knock
     interactSuccessSound:
-      path: /Audio/Effects/glass_knock.ogg    
+      path: /Audio/Effects/glass_knock.ogg
