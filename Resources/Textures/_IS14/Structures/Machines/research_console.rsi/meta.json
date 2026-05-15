@@ -1,0 +1,71 @@
+{
+  "version": 1,
+  "license": "All Rights Reserved",
+  "copyright": "Made by melvilla (discord) for IS14",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "computer"
+    },
+    {
+      "name": "generic_keyboard"
+    },
+    {
+      "name": "rdcomp",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "rdcomp_off"
+    },
+    {
+      "name": "rd_key",
+      "directions": 4
+    },
+    {
+      "name": "rd_key_off",
+      "directions": 4
+    },
+    {
+      "name": "generic_panel_open"
+    },
+    {
+      "name": "generic_broken"
+    }
+  ]
+}

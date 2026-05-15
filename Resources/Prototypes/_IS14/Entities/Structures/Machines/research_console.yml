@@ -1,0 +1,20 @@
+- type: entity
+  parent: ComputerResearchAndDevelopment
+  id: IS14ComputerResearch
+  name: R&D computer
+  description: A computer used to interface with R&D tools.
+  suffix: IS14
+  components:
+  - type: Sprite
+    sprite: _IS14/Structures/Machines/research_console.rsi
+    layers:
+    - map: ["computerLayerBody"]
+      state: computer
+    - map: ["computerLayerKeyboard"]
+      state: generic_keyboard
+    - map: ["computerLayerScreen"]
+      state: rdcomp
+    - map: ["computerLayerKeys"]
+      state: rd_key
+    - map: ["enum.WiresVisualLayers.MaintenancePanel"]
+      state: generic_panel_open

@@ -1,0 +1,26 @@
+- type: entity
+  parent: SuitStorageBase
+  id: IS14SuitStoragePrison
+  name: prison suit storage
+  description: A heavy suit storage unit for brig use.
+  components:
+  - type: Sprite
+    sprite: _IS14/Structures/Storage/suit_storage_prison.rsi
+    noRot: true
+    layers:
+    - state: base
+    - state: door
+      map: ["enum.StorageVisualLayers.Door"]
+    - state: welded
+      visible: false
+      map: ["enum.WeldableLayers.BaseWelded"]
+    - state: locked
+      map: ["enum.LockVisualLayers.Lock"]
+      shader: unshaded
+  - type: EntityStorageVisuals
+    stateBaseClosed: base
+    stateBaseOpen: base
+    stateDoorClosed: door
+    stateDoorOpen: open
+  - type: AccessReader
+    access: [["Security"]]

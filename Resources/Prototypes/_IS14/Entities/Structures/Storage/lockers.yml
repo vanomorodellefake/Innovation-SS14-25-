@@ -496,3 +496,30 @@
     stateBaseClosed: pilot_base
     stateDoorOpen: pilot_opened
     stateDoorClosed: pilot_closed
+
+- type: entity
+  id: IS14PrisonLocker
+  parent: LockerBase
+  name: prison locker
+  description: A locker for prison use.
+  components:
+  - type: Sprite
+    sprite: _IS14/Structures/Storage/Lockers/prison_locker.rsi
+    noRot: true
+    layers:
+    - state: base
+      map: ["enum.StorageVisualLayers.Base"]
+    - state: closed
+      map: ["enum.StorageVisualLayers.Door"]
+    - state: locked
+      map: ["enum.LockVisualLayers.Lock"]
+      shader: unshaded
+    - state: welded
+      visible: false
+      map: ["enum.WeldableLayers.BaseWelded"]
+  - type: AccessReader
+    access: [["Security"]]
+  - type: EntityStorageVisuals
+    stateBaseClosed: base
+    stateDoorOpen: opened
+    stateDoorClosed: closed

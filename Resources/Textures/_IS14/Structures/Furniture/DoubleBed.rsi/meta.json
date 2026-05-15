@@ -1,7 +1,7 @@
 {
   "version": 1,
   "license": "All Rights Reserved",
-  "copyright": "made for innovation station by melvilla (discord)",
+  "copyright": "Made by melvilla (discord) for IS14",
   "size": {
     "x": 32,
     "y": 32
@@ -12,6 +12,12 @@
     },
     {
       "name": "doublebed_down"
+    },
+    {
+      "name": "mattress_up"
+    },
+    {
+      "name": "mattress_down"
     }
   ]
 }
