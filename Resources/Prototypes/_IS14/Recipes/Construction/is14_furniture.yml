@@ -1,7 +1,7 @@
 - type: construction
   id: IS14BunkBedUpper
-  name: bunk bed (upper berth)
-  description: Top bunk of a two-tier bed.
+  name: construction-IS14BunkBedUpper
+  description: construction-IS14BunkBedUpper-desc
   graph: IS14DoubleBed
   startNode: start
   targetNode: bunkUpper
@@ -14,8 +14,8 @@
 
 - type: construction
   id: IS14BunkBedLower
-  name: bunk bed (lower berth)
-  description: Bottom bunk of a two-tier bed.
+  name: construction-IS14BunkBedLower
+  description: construction-IS14BunkBedLower-desc
   graph: IS14DoubleBed
   startNode: start
   targetNode: bunkLower
