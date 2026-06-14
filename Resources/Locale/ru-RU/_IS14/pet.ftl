@@ -1,10 +1,10 @@
-ent-HoSDog = Служебный пёс
+ent-HoSDog = служебный пёс
     .desc = Очень строгий как и его хозяин
-ent-PetCarrierHoSDog = Клетка Служебного пса
+ent-PetCarrierHoSDog = клетка служебного пса
     .desc = Вызывает чувство, что за тобою следят
-ent-ActionPetStay = Стоять
+ent-ActionPetStay = чтоять
     .desc = Приказать остаться на месте
-ent-ActionPetAttack = Атаковать
+ent-ActionPetAttack = атаковать
     .desc = Укажите на своего противника и он нападёт
-ent-ActionPetFollow = Следовать
+ent-ActionPetFollow = следовать
     .desc = Приказать следовать за Вами

@@ -2,7 +2,7 @@
   parent: BaseAction
   id: ActionPetStay
   name: Stay
-  description: Allow you to fast moving moving in dark
+  description: Order to stay
   components:
   - type: Action
     useDelay: 1
@@ -21,7 +21,7 @@
   parent: BaseAction
   id: ActionPetAttack
   name: Attack
-  description: Allow you to fast moving moving in dark
+  description: Order to attack
   components:
   - type: Action
     useDelay: 1
@@ -41,7 +41,7 @@
   parent: BaseAction
   id: ActionPetFollow
   name: Follow
-  description: Allow you to fast moving moving in dark
+  description: Order to follow
   components:
   - type: Action
     useDelay: 1
