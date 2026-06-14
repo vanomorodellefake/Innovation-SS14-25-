@@ -42,7 +42,7 @@ public sealed class ListeningSystem : EntitySystem
         var sourcePos = _xforms.GetWorldPosition(sourceXform, xformQuery);
 
         var attemptEv = new ListenAttemptEvent(source);
-        var ev = new ListenEvent(message, orginialMessage, source);
+        var ev = new ListenEvent(message, originalMessage, source);
         var obfuscatedEv = !isWhisper ? null : new ListenEvent(_chat.ObfuscateMessageReadability(message), originalMessage, source); // Einstein Engines - Language
         var query = EntityQueryEnumerator<ActiveListenerComponent, TransformComponent>();
 
