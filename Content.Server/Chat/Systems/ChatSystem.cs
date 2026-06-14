@@ -766,7 +766,7 @@ public sealed partial class ChatSystem : SharedChatSystem
             checkLOS: typeLOS // Floofstation - Check Line-Of-Sight
             );
 
-        var ev = new EntitySpokeEvent(source, message, null, false, language); // Einstein Engines - Language
+        var ev = new EntitySpokeEvent(source, message, originalMessage, null, false, language); // Einstein Engines - Language // IS-edit
         RaiseLocalEvent(source, ev, true);
 
         // To avoid logging any messages sent by entities that are not players, like vendors, cloning, etc.
@@ -895,7 +895,7 @@ public sealed partial class ChatSystem : SharedChatSystem
         _replay.RecordServerMessage(new ChatMessage(ChatChannel.Whisper, message, replayWrap, GetNetEntity(source), null, MessageRangeHideChatForReplay(range)));
         // Einstein Engines - Languages end
 
-        var ev = new EntitySpokeEvent(source, message, channel, true, language); // Einstein Engines - Languages
+        var ev = new EntitySpokeEvent(source, message, originalMessage, channel, true, language); // Einstein Engines - Languages // IS-edit
         RaiseLocalEvent(source, ev, true);
         if (!hideLog)
             if (originalMessage == message)
@@ -1456,6 +1456,7 @@ public sealed class EntitySpokeEvent : EntityEventArgs
 {
     public readonly EntityUid Source;
     public readonly string Message;
+    public readonly string OriginalMessage; // IS-edit
     public readonly bool IsWhisper;
     public readonly LanguagePrototype Language;
 
@@ -1465,10 +1466,11 @@ public sealed class EntitySpokeEvent : EntityEventArgs
     /// </summary>
     public RadioChannelPrototype? Channel;
 
-    public EntitySpokeEvent(EntityUid source, string message, RadioChannelPrototype? channel, bool isWhisper, LanguagePrototype language) // Einstein Engines - Language
+    public EntitySpokeEvent(EntityUid source, string message, string originalMessage, RadioChannelPrototype? channel, bool isWhisper, LanguagePrototype language) // Einstein Engines - Language
     {
         Source = source;
         Message = message;
+        OriginalMessage = originalMessage; // IS-edit
         Channel = channel;
         IsWhisper = isWhisper;
         Language = language;
