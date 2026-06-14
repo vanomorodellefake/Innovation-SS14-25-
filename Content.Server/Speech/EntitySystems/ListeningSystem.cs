@@ -32,7 +32,7 @@ public sealed class ListeningSystem : EntitySystem
         PingListeners(ev.Source, ev.Message, ev.OriginalMessage, ev.IsWhisper); // Einstein Engines - Languages
     }
 
-    public void PingListeners(EntityUid source, string message, string orginialMessage, bool isWhisper) // Einstein Engines - Language
+    public void PingListeners(EntityUid source, string message, string originalMessage, bool isWhisper) // Einstein Engines - Language
     {
         // TODO whispering / audio volume? Microphone sensitivity?
         // for now, whispering just arbitrarily reduces the listener's max range.
