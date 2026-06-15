@@ -15,7 +15,8 @@ class License(Validator):
         "CC0-1.0",
         "MIT",
         "Custom", # implies that the license is described in the copyright field.
-        "All right reserved"
+        "All right reserved",
+        "EULA"
         ]
 
     def _is_valid(self, value):
