@@ -8,11 +8,13 @@ namespace Content.Server.Speech;
 public sealed class ListenEvent : EntityEventArgs
 {
     public readonly string Message;
+    public readonly string OriginalMessage; // IS-edit
     public readonly EntityUid Source;
 
-    public ListenEvent(string message, EntityUid source)
+    public ListenEvent(string message, string originalMessage, EntityUid source)
     {
         Message = message;
+        OriginalMessage = originalMessage; // IS-edit
         Source = source;
     }
 }

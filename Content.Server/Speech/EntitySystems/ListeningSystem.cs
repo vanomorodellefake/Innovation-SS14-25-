@@ -29,10 +29,10 @@ public sealed class ListeningSystem : EntitySystem
 
     private void OnSpeak(EntitySpokeEvent ev)
     {
-        PingListeners(ev.Source, ev.Message, ev.IsWhisper); // Einstein Engines - Languages
+        PingListeners(ev.Source, ev.Message, ev.OriginalMessage, ev.IsWhisper); // Einstein Engines - Languages
     }
 
-    public void PingListeners(EntityUid source, string message, bool isWhisper) // Einstein Engines - Language
+    public void PingListeners(EntityUid source, string message, string originalMessage, bool isWhisper) // Einstein Engines - Language
     {
         // TODO whispering / audio volume? Microphone sensitivity?
         // for now, whispering just arbitrarily reduces the listener's max range.
@@ -42,8 +42,8 @@ public sealed class ListeningSystem : EntitySystem
         var sourcePos = _xforms.GetWorldPosition(sourceXform, xformQuery);
 
         var attemptEv = new ListenAttemptEvent(source);
-        var ev = new ListenEvent(message, source);
-        var obfuscatedEv = !isWhisper ? null : new ListenEvent(_chat.ObfuscateMessageReadability(message), source); // Einstein Engines - Language
+        var ev = new ListenEvent(message, originalMessage, source);
+        var obfuscatedEv = !isWhisper ? null : new ListenEvent(_chat.ObfuscateMessageReadability(message), originalMessage, source); // Einstein Engines - Language
         var query = EntityQueryEnumerator<ActiveListenerComponent, TransformComponent>();
 
         while(query.MoveNext(out var listenerUid, out var listener, out var xform))
