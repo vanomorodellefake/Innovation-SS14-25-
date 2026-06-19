@@ -16,6 +16,12 @@
         {
             "name": "closed"
         },
+		{
+            "name": "qm_closed"
+        },
+		{
+            "name": "exp_closed"
+        },
         {
             "name": "welded"
         },

@@ -55,6 +55,15 @@
         {
             "name": "med_open"
         },
+		{
+            "name": "med_v2_closed"
+        },
+        {
+            "name": "med_v2_generic"
+        },
+        {
+            "name": "med_v2_open"
+        },
         {
             "name": "scientist_closed"
         },

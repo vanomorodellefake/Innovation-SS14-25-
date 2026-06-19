@@ -52,6 +52,15 @@
         {
             "name": "farm_closed"
         },
+		{
+            "name": "cmo_base"
+        },
+        {
+            "name": "cmo_opened"
+        },
+        {
+            "name": "cmo_closed"
+        },
         {
             "name": "welded"
         },

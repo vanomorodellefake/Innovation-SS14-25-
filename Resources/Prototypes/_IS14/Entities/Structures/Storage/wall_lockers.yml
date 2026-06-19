@@ -115,6 +115,33 @@
     access: [["ChiefMedicalOfficer"]]
 
 - type: entity
+  id: ClosetWallMedical
+  parent: BaseWallLocker
+  components:
+  - type: Sprite
+    layers:
+    - state: med_v2_generic
+      sprite: _IS14/Structures/Storage/wall_locker.rsi
+      map: ["enum.StorageVisualLayers.Base"]
+    - state: med_v2_closed
+      sprite: _IS14/Structures/Storage/wall_locker.rsi
+      map: ["enum.StorageVisualLayers.Door"]
+    - state: welded
+      sprite: Structures/Storage/wall_locker.rsi
+      map: ["enum.WeldableLayers.BaseWelded"]
+      visible: false
+    - state: locked
+      sprite: Structures/Storage/wall_locker.rsi
+      map: ["enum.LockVisualLayers.Lock"]
+      shader: unshaded
+  - type: EntityStorageVisuals
+    stateBaseClosed: med_v2_generic
+    stateDoorOpen: med_v2_open
+    stateDoorClosed: med_v2_closed
+  - type: AccessReader
+    access: [["Medical"]]
+
+- type: entity
   id: ClosetWallRD
   parent: BaseWallLocker
   name: настенный шкафчик Главы НИЦ
