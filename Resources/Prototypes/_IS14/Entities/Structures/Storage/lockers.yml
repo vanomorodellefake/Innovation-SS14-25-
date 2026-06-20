@@ -5,12 +5,12 @@
   parent: LockerBase
   components:
   - type: Sprite
-    sprite: _IS14/Structures/Storage/Lockers/Medical_wide.rsi
+    sprite: _IS14/Structures/Storage/wide_lockers.rsi
     noRot: true
     layers:
-    - state: base
+    - state: med_base
       map: ["enum.StorageVisualLayers.Base"]
-    - state: closed
+    - state: med_closed
       map: ["enum.StorageVisualLayers.Door"]
     - state: locked
       map: ["enum.LockVisualLayers.Lock"]
@@ -21,21 +21,21 @@
   - type: AccessReader
     access: [["Medical"]]
   - type: EntityStorageVisuals
-    stateBaseClosed: base
-    stateDoorOpen: opened
-    stateDoorClosed: closed
+    stateBaseClosed: med_base
+    stateDoorOpen: med_opened
+    stateDoorClosed: med_closed
 
 - type: entity
   id: IS14LawWideLocker
   parent: LockerBase
   components:
   - type: Sprite
-    sprite: _IS14/Structures/Storage/Lockers/Law_wide.rsi
+    sprite: _IS14/Structures/Storage/wide_lockers.rsi
     noRot: true
     layers:
-    - state: base
+    - state: law_base
       map: ["enum.StorageVisualLayers.Base"]
-    - state: closed
+    - state: law_closed
       map: ["enum.StorageVisualLayers.Door"]
     - state: locked
       map: ["enum.LockVisualLayers.Lock"]
@@ -46,21 +46,21 @@
   - type: AccessReader
     access: [["Lawyer"]]
   - type: EntityStorageVisuals
-    stateBaseClosed: base
-    stateDoorOpen: opened
-    stateDoorClosed: closed
+    stateBaseClosed: law_base
+    stateDoorOpen: law_opened
+    stateDoorClosed: law_closed
 
 - type: entity
   id: IS14RNDWideLocker
   parent: LockerBase
   components:
   - type: Sprite
-    sprite: _IS14/Structures/Storage/Lockers/RND_wide.rsi
+    sprite: _IS14/Structures/Storage/wide_lockers.rsi
     noRot: true
     layers:
-    - state: base
+    - state: rnd_base
       map: ["enum.StorageVisualLayers.Base"]
-    - state: closed
+    - state: rnd_closed
       map: ["enum.StorageVisualLayers.Door"]
     - state: locked
       map: ["enum.LockVisualLayers.Lock"]
@@ -71,71 +71,21 @@
   - type: AccessReader
     access: [["Research"]]
   - type: EntityStorageVisuals
-    stateBaseClosed: base
-    stateDoorOpen: opened
-    stateDoorClosed: closed
-
-- type: entity
-  id: IS14Safe
-  parent: LockerBase
-  components:
-  - type: Sprite
-    sprite: _IS14/Structures/Storage/Lockers/Safe.rsi
-    noRot: true
-    layers:
-    - state: base
-      map: ["enum.StorageVisualLayers.Base"]
-    - state: closed
-      map: ["enum.StorageVisualLayers.Door"]
-    - state: locked
-      map: ["enum.LockVisualLayers.Lock"]
-      shader: unshaded
-    - state: welded
-      visible: false
-      map: ["enum.WeldableLayers.BaseWelded"]
-  - type: AccessReader
-    access: [["Command"]]
-  - type: EntityStorageVisuals
-    stateBaseClosed: base
-    stateDoorOpen: opened
-    stateDoorClosed: closed
-
-- type: entity
-  id: IS14SafeCaptain
-  parent: LockerBase
-  components:
-  - type: Sprite
-    sprite: _IS14/Structures/Storage/Lockers/Safe_cap.rsi
-    noRot: true
-    layers:
-    - state: base
-      map: ["enum.StorageVisualLayers.Base"]
-    - state: closed
-      map: ["enum.StorageVisualLayers.Door"]
-    - state: locked
-      map: ["enum.LockVisualLayers.Lock"]
-      shader: unshaded
-    - state: welded
-      visible: false
-      map: ["enum.WeldableLayers.BaseWelded"]
-  - type: AccessReader
-    access: [["Captain"]]
-  - type: EntityStorageVisuals
-    stateBaseClosed: base
-    stateDoorOpen: opened
-    stateDoorClosed: closed
+    stateBaseClosed: rnd_base
+    stateDoorOpen: rnd_opened
+    stateDoorClosed: rnd_closed
 
 - type: entity
   id: IS14SecurityWideLocker
   parent: LockerBase
   components:
   - type: Sprite
-    sprite: _IS14/Structures/Storage/Lockers/Shitsec_wide.rsi
+    sprite: _IS14/Structures/Storage/wide_lockers.rsi
     noRot: true
     layers:
-    - state: base
+    - state: sec_base
       map: ["enum.StorageVisualLayers.Base"]
-    - state: closed
+    - state: sec_closed
       map: ["enum.StorageVisualLayers.Door"]
     - state: locked
       map: ["enum.LockVisualLayers.Lock"]
@@ -146,21 +96,21 @@
   - type: AccessReader
     access: [["Security"]]
   - type: EntityStorageVisuals
-    stateBaseClosed: base
-    stateDoorOpen: opened
-    stateDoorClosed: closed
+    stateBaseClosed: sec_base
+    stateDoorOpen: sec_opened
+    stateDoorClosed: sec_closed
 
 - type: entity
   id: IS14CargoWideLocker
   parent: LockerBase
   components:
   - type: Sprite
-    sprite: _IS14/Structures/Storage/Lockers/Cargo_wide.rsi
+    sprite: _IS14/Structures/Storage/wide_lockers.rsi
     noRot: true
     layers:
-    - state: base
+    - state: cargo_base
       map: ["enum.StorageVisualLayers.Base"]
-    - state: closed
+    - state: cargo_closed
       map: ["enum.StorageVisualLayers.Door"]
     - state: locked
       map: ["enum.LockVisualLayers.Lock"]
@@ -171,21 +121,23 @@
   - type: AccessReader
     access: [["Cargo"]]
   - type: EntityStorageVisuals
-    stateBaseClosed: base
-    stateDoorOpen: opened
-    stateDoorClosed: closed
+    stateBaseClosed: cargo_base
+    stateDoorOpen: cargo_opened
+    stateDoorClosed: cargo_closed
+
+# CentComm
 
 - type: entity
   id: IS14CentCommLocker
   parent: LockerBase
   components:
   - type: Sprite
-    sprite: _IS14/Structures/Storage/Lockers/CentComm.rsi
+    sprite: _IS14/Structures/Storage/lockers.rsi
     noRot: true
     layers:
-    - state: base
+    - state: cc_base
       map: ["enum.StorageVisualLayers.Base"]
-    - state: closed
+    - state: cc_closed
       map: ["enum.StorageVisualLayers.Door"]
     - state: locked
       map: ["enum.LockVisualLayers.Lock"]
@@ -196,21 +148,75 @@
   - type: AccessReader
     access: [["CentralCommand"]]
   - type: EntityStorageVisuals
-    stateBaseClosed: base
-    stateDoorOpen: opened
-    stateDoorClosed: closed
+    stateBaseClosed: cc_base
+    stateDoorOpen: cc_opened
+    stateDoorClosed: cc_closed
+
+# Safes
+
+- type: entity
+  id: IS14Safe
+  parent: LockerBase
+  components:
+  - type: Sprite
+    sprite: _IS14/Structures/Storage/lockers.rsi
+    noRot: true
+    layers:
+    - state: safe_base
+      map: ["enum.StorageVisualLayers.Base"]
+    - state: safe_closed
+      map: ["enum.StorageVisualLayers.Door"]
+    - state: safe_locked
+      map: ["enum.LockVisualLayers.Lock"]
+      shader: unshaded
+    - state: safe_welded
+      visible: false
+      map: ["enum.WeldableLayers.BaseWelded"]
+  - type: AccessReader
+    access: [["Command"]]
+  - type: EntityStorageVisuals
+    stateBaseClosed: safe_base
+    stateDoorOpen: safe_opened
+    stateDoorClosed: safe_closed
+
+- type: entity
+  id: IS14SafeCaptain
+  parent: LockerBase
+  components:
+  - type: Sprite
+    sprite: _IS14/Structures/Storage/lockers.rsi
+    noRot: true
+    layers:
+    - state: safe_cap_base
+      map: ["enum.StorageVisualLayers.Base"]
+    - state: safe_cap_closed
+      map: ["enum.StorageVisualLayers.Door"]
+    - state: safe_locked
+      map: ["enum.LockVisualLayers.Lock"]
+      shader: unshaded
+    - state: safe_welded
+      visible: false
+      map: ["enum.WeldableLayers.BaseWelded"]
+  - type: AccessReader
+    access: [["Captain"]]
+  - type: EntityStorageVisuals
+    stateBaseClosed: safe_cap_base
+    stateDoorOpen: safe_cap_opened
+    stateDoorClosed: safe_cap_closed
+
+# law
 
 - type: entity
   id: IS14LawLocker
   parent: LockerBase
   components:
   - type: Sprite
-    sprite: _IS14/Structures/Storage/Lockers/Law.rsi
+    sprite: _IS14/Structures/Storage/lockers.rsi
     noRot: true
     layers:
-    - state: base
+    - state: law_base
       map: ["enum.StorageVisualLayers.Base"]
-    - state: closed
+    - state: law_closed
       map: ["enum.StorageVisualLayers.Door"]
     - state: locked
       map: ["enum.LockVisualLayers.Lock"]
@@ -221,9 +227,9 @@
   - type: AccessReader
     access: [["Lawyer"]]
   - type: EntityStorageVisuals
-    stateBaseClosed: base
-    stateDoorOpen: opened
-    stateDoorClosed: closed
+    stateBaseClosed: law_base
+    stateDoorOpen: law_opened
+    stateDoorClosed: law_closed
 
 # medical
 
@@ -232,12 +238,12 @@
   parent: LockerBase
   components:
   - type: Sprite
-    sprite: _IS14/Structures/Storage/Lockers/Medical.rsi
+    sprite: _IS14/Structures/Storage/lockers.rsi
     noRot: true
     layers:
-    - state: v1_base
+    - state: med_v1_base
       map: ["enum.StorageVisualLayers.Base"]
-    - state: v1_closed
+    - state: med_v1_closed
       map: ["enum.StorageVisualLayers.Door"]
     - state: locked
       map: ["enum.LockVisualLayers.Lock"]
@@ -248,21 +254,21 @@
   - type: AccessReader
     access: [["Medical"]]
   - type: EntityStorageVisuals
-    stateBaseClosed: v1_base
-    stateDoorOpen: v1_opened
-    stateDoorClosed: v1_closed
+    stateBaseClosed: med_v1_base
+    stateDoorOpen: med_v1_opened
+    stateDoorClosed: med_v1_closed
 
 - type: entity
   id: IS14MedicalV2Locker
   parent: LockerBase
   components:
   - type: Sprite
-    sprite: _IS14/Structures/Storage/Lockers/Medical.rsi
+    sprite: _IS14/Structures/Storage/lockers.rsi
     noRot: true
     layers:
-    - state: v2_base
+    - state: med_v2_base
       map: ["enum.StorageVisualLayers.Base"]
-    - state: v2_closed
+    - state: med_v2_closed
       map: ["enum.StorageVisualLayers.Door"]
     - state: locked
       map: ["enum.LockVisualLayers.Lock"]
@@ -273,16 +279,16 @@
   - type: AccessReader
     access: [["Medical"]]
   - type: EntityStorageVisuals
-    stateBaseClosed: v2_base
-    stateDoorOpen: v2_opened
-    stateDoorClosed: v2_closed
+    stateBaseClosed: med_v2_base
+    stateDoorOpen: med_v2_opened
+    stateDoorClosed: med_v2_closed
 
 - type: entity
   id: IS14MedicalPsychoLocker
   parent: LockerBase
   components:
   - type: Sprite
-    sprite: _IS14/Structures/Storage/Lockers/Medical.rsi
+    sprite: _IS14/Structures/Storage/lockers.rsi
     noRot: true
     layers:
     - state: psycho_base
@@ -307,7 +313,7 @@
   parent: LockerBase
   components:
   - type: Sprite
-    sprite: _IS14/Structures/Storage/Lockers/Medical.rsi
+    sprite: _IS14/Structures/Storage/lockers.rsi
     noRot: true
     layers:
     - state: feld_base
@@ -332,7 +338,7 @@
   parent: LockerBase
   components:
   - type: Sprite
-    sprite: _IS14/Structures/Storage/Lockers/Medical.rsi
+    sprite: _IS14/Structures/Storage/lockers.rsi
     noRot: true
     layers:
     - state: farm_base
@@ -357,7 +363,7 @@
   parent: LockerBase
   components:
   - type: Sprite
-    sprite: _IS14/Structures/Storage/Lockers/Medical.rsi
+    sprite: _IS14/Structures/Storage/lockers.rsi
     noRot: true
     layers:
     - state: cmo_base
@@ -384,12 +390,12 @@
   parent: LockerBase
   components:
   - type: Sprite
-    sprite: _IS14/Structures/Storage/Lockers/Pizdec.rsi
+    sprite: _IS14/Structures/Storage/lockers.rsi
     noRot: true
     layers:
-    - state: base
+    - state: sec_v2_base
       map: ["enum.StorageVisualLayers.Base"]
-    - state: closed
+    - state: pzd_closed
       map: ["enum.StorageVisualLayers.Door"]
     - state: locked
       map: ["enum.LockVisualLayers.Lock"]
@@ -400,9 +406,9 @@
   - type: AccessReader
     access: [["CentralCommand"]]
   - type: EntityStorageVisuals
-    stateBaseClosed: base
-    stateDoorOpen: opened
-    stateDoorClosed: closed
+    stateBaseClosed: sec_v2_base
+    stateDoorOpen: pzd_opened
+    stateDoorClosed: pzd_closed
 
 
 - type: entity
@@ -410,10 +416,10 @@
   parent: LockerBase
   components:
   - type: Sprite
-    sprite: _IS14/Structures/Storage/Lockers/Shitsec.rsi
+    sprite: _IS14/Structures/Storage/lockers.rsi
     noRot: true
     layers:
-    - state: brigmed_base
+    - state: sec_v2_base
       map: ["enum.StorageVisualLayers.Base"]
     - state: brigmed_closed
       map: ["enum.StorageVisualLayers.Door"]
@@ -426,7 +432,7 @@
   - type: AccessReader
     access: [["Security"]]
   - type: EntityStorageVisuals
-    stateBaseClosed: brigmed_base
+    stateBaseClosed: sec_v2_base
     stateDoorOpen: brigmed_opened
     stateDoorClosed: brigmed_closed
 
@@ -435,10 +441,10 @@
   parent: LockerBase
   components:
   - type: Sprite
-    sprite: _IS14/Structures/Storage/Lockers/Shitsec.rsi
+    sprite: _IS14/Structures/Storage/lockers.rsi
     noRot: true
     layers:
-    - state: warden_base
+    - state: sec_v2_base
       map: ["enum.StorageVisualLayers.Base"]
     - state: warden_closed
       map: ["enum.StorageVisualLayers.Door"]
@@ -451,7 +457,7 @@
   - type: AccessReader
     access: [["Armory"]]
   - type: EntityStorageVisuals
-    stateBaseClosed: warden_base
+    stateBaseClosed: sec_v2_base
     stateDoorOpen: warden_opened
     stateDoorClosed: warden_closed
 
@@ -460,10 +466,10 @@
   parent: LockerBase
   components:
   - type: Sprite
-    sprite: _IS14/Structures/Storage/Lockers/Shitsec.rsi
+    sprite: _IS14/Structures/Storage/lockers.rsi
     noRot: true
     layers:
-    - state: pilot_base
+    - state: sec_v2_base
       map: ["enum.StorageVisualLayers.Base"]
     - state: pilot_closed
       map: ["enum.StorageVisualLayers.Door"]
@@ -476,7 +482,7 @@
   - type: AccessReader
     access: [["Security"]]
   - type: EntityStorageVisuals
-    stateBaseClosed: pilot_base
+    stateBaseClosed: sec_v2_base
     stateDoorOpen: pilot_opened
     stateDoorClosed: pilot_closed
 
@@ -485,10 +491,10 @@
   parent: LockerBase
   components:
   - type: Sprite
-    sprite: _IS14/Structures/Storage/Lockers/Shitsec.rsi
+    sprite: _IS14/Structures/Storage/lockers.rsi
     noRot: true
     layers:
-    - state: hos_base
+    - state: sec_base
       map: ["enum.StorageVisualLayers.Base"]
     - state: hos_closed
       map: ["enum.StorageVisualLayers.Door"]
@@ -501,7 +507,7 @@
   - type: AccessReader
     access: [["HeadOfSecurity"]]
   - type: EntityStorageVisuals
-    stateBaseClosed: hos_base
+    stateBaseClosed: sec_base
     stateDoorOpen: hos_opened
     stateDoorClosed: hos_closed
 
@@ -510,7 +516,7 @@
   parent: LockerBase
   components:
   - type: Sprite
-    sprite: _IS14/Structures/Storage/Lockers/Shitsec.rsi
+    sprite: _IS14/Structures/Storage/lockers.rsi
     noRot: true
     layers:
     - state: sec_base
@@ -535,12 +541,12 @@
   parent: LockerBase
   components:
   - type: Sprite
-    sprite: _IS14/Structures/Storage/Lockers/Shitsec.rsi
+    sprite: _IS14/Structures/Storage/lockers.rsi
     noRot: true
     layers:
-    - state: evi_base
+    - state: sec_v2_base
       map: ["enum.StorageVisualLayers.Base"]
-    - state: sec_closed
+    - state: evi_closed
       map: ["enum.StorageVisualLayers.Door"]
     - state: locked
       map: ["enum.LockVisualLayers.Lock"]
@@ -551,7 +557,7 @@
   - type: AccessReader
     access: [["Security"]]
   - type: EntityStorageVisuals
-    stateBaseClosed: evi_base
+    stateBaseClosed: sec_v2_base
     stateDoorOpen: evi_opened
     stateDoorClosed: evi_closed
 
@@ -562,12 +568,12 @@
   description: A locker for prison use.
   components:
   - type: Sprite
-    sprite: _IS14/Structures/Storage/Lockers/prison_locker.rsi
+    sprite: _IS14/Structures/Storage/lockers.rsi
     noRot: true
     layers:
-    - state: base
+    - state: sec_v2_base
       map: ["enum.StorageVisualLayers.Base"]
-    - state: closed
+    - state: pl_closed
       map: ["enum.StorageVisualLayers.Door"]
     - state: locked
       map: ["enum.LockVisualLayers.Lock"]
@@ -578,9 +584,9 @@
   - type: AccessReader
     access: [["Security"]]
   - type: EntityStorageVisuals
-    stateBaseClosed: base
-    stateDoorOpen: opened
-    stateDoorClosed: closed
+    stateBaseClosed: sec_v2_base
+    stateDoorOpen: pl_opened
+    stateDoorClosed: pl_closed
 
 # engineering
 
@@ -591,7 +597,7 @@
   description: A locker for ce use.
   components:
   - type: Sprite
-    sprite: _IS14/Structures/Storage/Lockers/Engineer.rsi
+    sprite: _IS14/Structures/Storage/lockers.rsi
     noRot: true
     layers:
     - state: ce_base
@@ -618,7 +624,7 @@
   parent: LockerBase
   components:
   - type: Sprite
-    sprite: _IS14/Structures/Storage/Lockers/RND.rsi
+    sprite: _IS14/Structures/Storage/lockers.rsi
     noRot: true
     layers:
     - state: rnd_base
@@ -643,7 +649,7 @@
   parent: LockerBase
   components:
   - type: Sprite
-    sprite: _IS14/Structures/Storage/Lockers/RND.rsi
+    sprite: _IS14/Structures/Storage/lockers.rsi
     noRot: true
     layers:
     - state: rnd_base
@@ -668,7 +674,7 @@
   parent: LockerBase
   components:
   - type: Sprite
-    sprite: _IS14/Structures/Storage/Lockers/RND.rsi
+    sprite: _IS14/Structures/Storage/lockers.rsi
     noRot: true
     layers:
     - state: rnd_base
@@ -693,7 +699,7 @@
   parent: LockerBase
   components:
   - type: Sprite
-    sprite: _IS14/Structures/Storage/Lockers/RND.rsi
+    sprite: _IS14/Structures/Storage/lockers.rsi
     noRot: true
     layers:
     - state: rnd_base
@@ -720,7 +726,7 @@
   parent: LockerBase
   components:
   - type: Sprite
-    sprite: _IS14/Structures/Storage/Lockers/Captain.rsi
+    sprite: _IS14/Structures/Storage/lockers.rsi
     noRot: true
     layers:
     - state: cap_base
@@ -734,7 +740,7 @@
       visible: false
       map: ["enum.WeldableLayers.BaseWelded"]
   - type: AccessReader
-    access: [["Research"]]
+    access: [["Captain"]]
   - type: EntityStorageVisuals
     stateBaseClosed: cap_base
     stateDoorOpen: cap_opened
@@ -745,7 +751,7 @@
   parent: LockerBase
   components:
   - type: Sprite
-    sprite: _IS14/Structures/Storage/Lockers/Captain.rsi
+    sprite: _IS14/Structures/Storage/lockers.rsi
     noRot: true
     layers:
     - state: cap_base
@@ -759,7 +765,7 @@
       visible: false
       map: ["enum.WeldableLayers.BaseWelded"]
   - type: AccessReader
-    access: [["Research"]]
+    access: [["Captain"]]
   - type: EntityStorageVisuals
     stateBaseClosed: cap_base
     stateDoorOpen: cap_opened
@@ -772,7 +778,7 @@
   parent: LockerBase
   components:
   - type: Sprite
-    sprite: _IS14/Structures/Storage/Lockers/Service.rsi
+    sprite: _IS14/Structures/Storage/lockers.rsi
     noRot: true
     layers:
     - state: hop_base
@@ -797,7 +803,7 @@
   parent: LockerBase
   components:
   - type: Sprite
-    sprite: _IS14/Structures/Storage/Lockers/Service.rsi
+    sprite: _IS14/Structures/Storage/lockers.rsi
     noRot: true
     layers:
     - state: hydro_base
@@ -824,12 +830,12 @@
   parent: LockerBase
   components:
   - type: Sprite
-    sprite: _IS14/Structures/Storage/Lockers/Cargo.rsi
+    sprite: _IS14/Structures/Storage/lockers.rsi
     noRot: true
     layers:
-    - state: base
+    - state: cargo_base
       map: ["enum.StorageVisualLayers.Base"]
-    - state: closed
+    - state: cargo_closed
       map: ["enum.StorageVisualLayers.Door"]
     - state: locked
       map: ["enum.LockVisualLayers.Lock"]
@@ -840,19 +846,19 @@
   - type: AccessReader
     access: [["Cargo"]]
   - type: EntityStorageVisuals
-    stateBaseClosed: base
-    stateDoorOpen: opened
-    stateDoorClosed: closed
+    stateBaseClosed: cargo_base
+    stateDoorOpen: cargo_opened
+    stateDoorClosed: cargo_closed
 
 - type: entity
   id: IS14ExpeditionLocker
   parent: LockerBase
   components:
   - type: Sprite
-    sprite: _IS14/Structures/Storage/Lockers/Cargo.rsi
+    sprite: _IS14/Structures/Storage/lockers.rsi
     noRot: true
     layers:
-    - state: base
+    - state: cargo_base
       map: ["enum.StorageVisualLayers.Base"]
     - state: exp_closed
       map: ["enum.StorageVisualLayers.Door"]
@@ -865,8 +871,8 @@
   - type: AccessReader
     access: [["Salvage"]]
   - type: EntityStorageVisuals
-    stateBaseClosed: base
-    stateDoorOpen: opened
+    stateBaseClosed: cargo_base
+    stateDoorOpen: cargo_opened
     stateDoorClosed: exp_closed
 
 - type: entity
@@ -874,10 +880,10 @@
   parent: LockerBase
   components:
   - type: Sprite
-    sprite: _IS14/Structures/Storage/Lockers/Cargo.rsi
+    sprite: _IS14/Structures/Storage/lockers.rsi
     noRot: true
     layers:
-    - state: base
+    - state: cargo_base
       map: ["enum.StorageVisualLayers.Base"]
     - state: qm_closed
       map: ["enum.StorageVisualLayers.Door"]
@@ -890,6 +896,6 @@
   - type: AccessReader
     access: [["Quartermaster"]]
   - type: EntityStorageVisuals
-    stateBaseClosed: base
-    stateDoorOpen: opened
+    stateBaseClosed: cargo_base
+    stateDoorOpen: cargo_opened
     stateDoorClosed: qm_closed
