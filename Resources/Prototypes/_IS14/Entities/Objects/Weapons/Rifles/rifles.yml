@@ -1,0 +1,3 @@
+- type: entity
+  parent: BaseWeaponRifle
+  id: IS14Ak
