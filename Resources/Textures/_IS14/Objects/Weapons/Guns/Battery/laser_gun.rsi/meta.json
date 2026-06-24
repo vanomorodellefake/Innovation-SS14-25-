@@ -3,7 +3,7 @@
     "license": "EULA",
     "copyright": "Created by jickson900 (discord) for Innovation Station 14",
     "size": {
-        "x": 32,
+        "x": 48,
         "y": 32
     },
     "states": [
@@ -57,14 +57,6 @@
         },
         {
             "name": "wielded-inhand-right",
-            "directions": 4
-        },
-        {
-            "name": "equipped-BACKPACK",
-            "directions": 4
-        },
-        {
-            "name": "equipped-SUITSTORAGE",
             "directions": 4
         }
     ]
