@@ -393,7 +393,7 @@
     sprite: _IS14/Structures/Storage/lockers.rsi
     noRot: true
     layers:
-    - state: sec_v2_base
+    - state: pzd_base
       map: ["enum.StorageVisualLayers.Base"]
     - state: pzd_closed
       map: ["enum.StorageVisualLayers.Door"]
@@ -406,7 +406,7 @@
   - type: AccessReader
     access: [["CentralCommand"]]
   - type: EntityStorageVisuals
-    stateBaseClosed: sec_v2_base
+    stateBaseClosed: pzd_base
     stateDoorOpen: pzd_opened
     stateDoorClosed: pzd_closed
 
@@ -433,7 +433,7 @@
     access: [["Security"]]
   - type: EntityStorageVisuals
     stateBaseClosed: sec_v2_base
-    stateDoorOpen: brigmed_opened
+    stateDoorOpen: sec_opened
     stateDoorClosed: brigmed_closed
 
 - type: entity
@@ -458,7 +458,7 @@
     access: [["Armory"]]
   - type: EntityStorageVisuals
     stateBaseClosed: sec_v2_base
-    stateDoorOpen: warden_opened
+    stateDoorOpen: sec_opened
     stateDoorClosed: warden_closed
 
 - type: entity
@@ -483,7 +483,7 @@
     access: [["Security"]]
   - type: EntityStorageVisuals
     stateBaseClosed: sec_v2_base
-    stateDoorOpen: pilot_opened
+    stateDoorOpen: sec_opened
     stateDoorClosed: pilot_closed
 
 - type: entity
@@ -508,7 +508,7 @@
     access: [["HeadOfSecurity"]]
   - type: EntityStorageVisuals
     stateBaseClosed: sec_base
-    stateDoorOpen: hos_opened
+    stateDoorOpen: sec_opened
     stateDoorClosed: hos_closed
 
 - type: entity
@@ -571,7 +571,7 @@
     sprite: _IS14/Structures/Storage/lockers.rsi
     noRot: true
     layers:
-    - state: sec_v2_base
+    - state: pl_base
       map: ["enum.StorageVisualLayers.Base"]
     - state: pl_closed
       map: ["enum.StorageVisualLayers.Door"]
@@ -584,7 +584,7 @@
   - type: AccessReader
     access: [["Security"]]
   - type: EntityStorageVisuals
-    stateBaseClosed: sec_v2_base
+    stateBaseClosed: pl_base
     stateDoorOpen: pl_opened
     stateDoorClosed: pl_closed
 
