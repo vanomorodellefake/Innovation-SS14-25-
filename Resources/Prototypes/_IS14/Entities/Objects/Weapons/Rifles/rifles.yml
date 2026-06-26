@@ -1,6 +1,6 @@
 - type: entity
   parent: BaseWeaponRifle
-  id: IS14Ak
+  id: IS14WeaponRifleAK
   components:
     - type: Sprite
       sprite: _IS14/Objects/Weapons/Guns/Rifles/ak.rsi

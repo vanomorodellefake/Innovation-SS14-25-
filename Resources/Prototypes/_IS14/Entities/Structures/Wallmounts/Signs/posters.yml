@@ -33,7 +33,7 @@
 
 - type: entity
   parent: PosterBase
-  id: IS14PosterScience32x32
+  id: IS14PosterScience
   components:
   - type: Sprite
     sprite: _IS14/Structures/Wallmounts/posters/posters_32x32.rsi
@@ -74,7 +74,7 @@
 
 - type: entity
   parent: PosterBase
-  id: IS14PosterScience32x64
+  id: IS14PosterScienceMedium
   components:
   - type: Sprite
     sprite: _IS14/Structures/Wallmounts/posters/posters_32x64.rsi

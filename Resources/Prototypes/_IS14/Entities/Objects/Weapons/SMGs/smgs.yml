@@ -1,6 +1,6 @@
 - type: entity
   parent: [BaseWeaponSubMachineGun, BaseGunWieldable]
-  id: IS14akx
+  id: IS14WeaponSmgAKX
   components:
     - type: Sprite
       sprite: _IS14/Objects/Weapons/Guns/SMGs/akx.rsi
