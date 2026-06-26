@@ -128,3 +128,7 @@
   - type: Sprite
     sprite: _IS14/Structures/Wallmounts/posters/holo.rsi
     state: holo_ussp
+  - type: PointLight
+    color: "#00d5ffdd"
+    radius: 2
+    energy: 2
