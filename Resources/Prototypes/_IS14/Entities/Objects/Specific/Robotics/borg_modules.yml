@@ -24,12 +24,6 @@
     layers:
     - state: module
     - state: module_police
-  - type: ItemBorgModule
-    moduleId: BorgModulePolice
-    items:
-    - WeaponDisabler
-    - Handcuffs
-    - Zipties
   - type: DroppableBorgModule
     moduleId: BorgModulePolice
     items:
