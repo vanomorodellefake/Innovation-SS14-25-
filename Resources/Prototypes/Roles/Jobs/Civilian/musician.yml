@@ -71,6 +71,7 @@
   - !type:GiveItemOnHolidaySpecial
     holiday: MikuDay
     prototype: BoxPerformer
+  weight: 9 # IS14-edit
 
 - type: startingGear
   id: MusicianGear

@@ -94,6 +94,7 @@
       factions:
       - NanoTrasen
       - Assistant
+  weight: 6 # IS14-edit
 
 - type: startingGear
   id: PassengerGear

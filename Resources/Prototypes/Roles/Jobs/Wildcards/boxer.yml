@@ -70,6 +70,7 @@
   - !type:GiveItemOnHolidaySpecial
     holiday: BoxingDay
     prototype: ClothingHandsGlovesBoxingRigged
+  weight: 19 # IS14-edit
 
 - type: startingGear
   id: BoxerGear

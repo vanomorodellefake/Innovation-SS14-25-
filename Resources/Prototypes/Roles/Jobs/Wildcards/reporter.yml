@@ -66,6 +66,7 @@
   - Service
   - Maintenance
   - Journalism # goob
+  weight: 10 # IS14-edit
 
 - type: startingGear
   id: ReporterGear
