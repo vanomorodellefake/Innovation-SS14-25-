@@ -138,6 +138,7 @@
     - type: MimePowers
       preventWriting: true
     - type: FrenchAccent
+  weight: 7 # IS14-edit
 
 - type: startingGear
   id: MimeGear

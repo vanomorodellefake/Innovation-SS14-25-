@@ -82,6 +82,7 @@
   - !type:GiveItemOnHolidaySpecial
     holiday: FourTwenty
     prototype: CannabisSeeds
+  weight: 17 # IS14-edit
 
 - type: startingGear
   id: BotanistGear

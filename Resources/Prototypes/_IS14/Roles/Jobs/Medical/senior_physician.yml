@@ -31,6 +31,7 @@
     components:
     - type: SurgerySpeedModifier
       speedModifier: 1.5
+  weight: 9 # IS14-edit
 
 - type: startingGear
   id: SeniorPhysicianGear

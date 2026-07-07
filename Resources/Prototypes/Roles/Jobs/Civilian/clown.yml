@@ -149,6 +149,7 @@
       interval: 10
   - !type:AddImplantSpecial
     implants: [ SadTromboneImplant ]
+  weight: 8 # IS14-edit
 
 - type: startingGear
   id: ClownGear
