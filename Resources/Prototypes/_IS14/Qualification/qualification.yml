@@ -1,0 +1,767 @@
+# Квалификационные группы
+- type: qualificationGroup
+  id: CaptainGroup
+  jobPrototypes:
+    - Captain
+  qualificationHashSet:
+    - CaptainThirdClass
+    - CaptainSecondClass
+    - CaptainFirstClass
+    - CaptainHighestClass
+    - CaptainHonored
+
+- type: qualificationGroup
+  id: HRGroup
+  jobPrototypes:
+    - HeadOfPersonnel
+  qualificationHashSet:
+    - HRClerk
+    - HRSeniorClerk
+    - HRStaff
+    - HRSeniorStaff
+    - HRSpecialist
+    - HRSeniorSpecialist
+    - HRLeadingSpecialist
+
+- type: qualificationGroup
+  id: MilitiaGroup
+  jobPrototypes:
+    - JobMilitia
+  qualificationHashSet:
+    - MilitiaPrivate
+    - MilitiaJuniorSergeant
+    - MilitiaSergeant
+    - MilitiaSeniorSergeant
+    - MilitiaJuniorLieutenant
+    - MilitiaLieutenant
+    - MilitiaSeniorLieutenant
+
+- type: qualificationGroup
+  id: SeniorMilitiaGroup
+  jobPrototypes:
+    - JobSeniorMilitia
+    - JobLrrChief
+  qualificationHashSet:
+    - MilitiaSeniorLieutenant
+    - MilitiaCaptain
+    - MilitiaMajor
+    - MilitiaLieutenantColonel
+    - MilitiaColonel
+
+- type: qualificationGroup
+  id: ChiefMilitiaGroup
+  jobPrototypes:
+    - JobHosMilitia
+  qualificationHashSet:
+    - MilitiaColonel
+    - MilitiaSeniorColonel
+    - MilitiaChiefInspector
+    - MilitiaSeniorChief
+
+- type: qualificationGroup
+  id: InvestigatorGroup
+  jobPrototypes:
+    - JobInvestigator
+    - InternalControlExecutor
+  qualificationHashSet:
+    - InvestigatorSergeant
+    - InvestigatorSeniorSergeant
+    - InvestigatorJuniorLieutenant
+    - InvestigatorLieutenant
+    - InvestigatorSeniorLieutenant
+    - InvestigatorCaptain
+
+- type: qualificationGroup
+  id: MedicalOfficerGroup
+  jobPrototypes:
+    - JobMedOfficer
+  qualificationHashSet:
+    - MedicalOfficerPrivate
+    - MedicalOfficerJuniorSergeant
+    - MedicalOfficerSergeant
+    - MedicalOfficerSeniorSergeant
+    - MedicalOfficerJuniorLieutenant
+    - MedicalOfficerLieutenant
+    - MedicalOfficerSeniorLieutenant
+
+- type: qualificationGroup
+  id: DoctorGroup
+  jobPrototypes:
+    - MedicalDoctor
+    - Paramedic
+    - Psychologist
+  qualificationHashSet:
+    - DoctorTrainee
+    - DoctorJunior
+    - DoctorMedicalWorker
+    - DoctorSeniorMedicalWorker
+    - DoctorJuniorSpecialist
+    - DoctorSpecialist
+    - DoctorSeniorSpecialist
+
+- type: qualificationGroup
+  id: SeniorDoctorGroup
+  jobPrototypes:
+    - SeniorPhysician
+    - Chemist
+  qualificationHashSet:
+    - DoctorSeniorSpecialist
+    - DoctorExpert
+    - DoctorHonored
+    - DoctorPeople
+    - DoctorChiefSpecialist
+
+- type: qualificationGroup
+  id: ChiefDoctorGroup
+  jobPrototypes:
+    - ChiefMedicalOfficer
+  qualificationHashSet:
+    - DoctorChiefSpecialist
+    - DoctorChiefMedical
+    - DoctorHonoredUnion
+    - DoctorCandidate
+
+- type: qualificationGroup
+  id: EngineerGroup
+  jobPrototypes:
+    - StationEngineer
+    - AtmosphericTechnician
+    - TechnicalAssistant
+  qualificationHashSet:
+    - EngineerTrainee
+    - EngineerTechnicianThird
+    - EngineerTechnicianSecond
+    - EngineerTechnicianFirst
+    - EngineerThird
+    - EngineerSecond
+    - EngineerFirst
+
+- type: qualificationGroup
+  id: SeniorEngineerGroup
+  jobPrototypes:
+    - SeniorEngineer
+  qualificationHashSet:
+    - EngineerFirst
+    - EngineerHighest
+    - EngineerLeading
+    - EngineerSenior
+    - EngineerChief
+
+- type: qualificationGroup
+  id: ChiefEngineerGroup
+  jobPrototypes:
+    - ChiefEngineer
+  qualificationHashSet:
+    - EngineerChief
+    - EngineerChiefTechnical
+    - EngineerCandidate
+    - EngineerHonored
+
+- type: qualificationGroup
+  id: ScienceGroup
+  jobPrototypes:
+    - Scientist
+    - ResearchAssistant
+    - Roboticist
+  qualificationHashSet:
+    - ScienceTrainee
+    - ScienceJunior
+    - ScienceSpecialist
+    - ScienceSeniorSpecialist
+    - ScienceLeadingSpecialist
+    - ScienceChiefSpecialist
+    - ScienceHighestSpecialist
+
+- type: qualificationGroup
+  id: SeniorScienceGroup
+  jobPrototypes:
+    - SeniorResearcher
+  qualificationHashSet:
+    - ScienceHighestSpecialist
+    - ScienceSeniorResearcher
+    - ScienceLeadingResearcher
+    - ScienceChiefResearcher
+    - ScienceHonoredResearcher
+
+- type: qualificationGroup
+  id: ScienceDirectorGroup
+  jobPrototypes:
+    - ResearchDirector
+  qualificationHashSet:
+    - ScienceChiefResearcher
+    - ScienceHonoredResearcher
+    - ScienceCandidate
+    - ScienceAcademician
+
+- type: qualificationGroup
+  id: CargoGroup
+  jobPrototypes:
+    - CargoTechnician
+    - SalvageSpecialist
+  qualificationHashSet:
+    - CargoTrainee
+    - CargoWorkerThird
+    - CargoWorkerSecond
+    - CargoWorkerFirst
+    - CargoSeniorWorker
+    - CargoLeadingWorker
+    - CargoHonoredWorker
+
+- type: qualificationGroup
+  id: ExpeditorGroup
+  jobPrototypes:
+    - SeniorExpeditioner
+  qualificationHashSet:
+    - ExpeditorPrivate
+    - ExpeditorJuniorSergeant
+    - ExpeditorSergeant
+    - ExpeditorSeniorSergeant
+    - ExpeditorJuniorLieutenant
+    - ExpeditorLieutenant
+    - ExpeditorSeniorLieutenant
+
+- type: qualificationGroup
+  id: SeniorExpeditorGroup
+  jobPrototypes:
+    - Quartermaster
+  qualificationHashSet:
+    - ExpeditorSeniorLieutenant
+    - ExpeditorCaptain
+    - ExpeditorMajor
+    - ExpeditorLieutenantColonel
+    - ExpeditorColonel
+
+- type: qualificationGroup
+  id: DirectorExpeditorGroup
+  jobPrototypes:
+    - Captain  # Капитан также может иметь эти звания
+  qualificationHashSet:
+    - ExpeditorColonel
+    - ExpeditorChiefInspector
+    - ExpeditorSeniorColonel
+    - ExpeditorSeniorChief
+
+# Квалификации - Капитан
+- type: qualification
+  id: CaptainThirdClass
+  qualificationTitle: is14-qualification-CaptainThirdClass
+  requirement: 0
+
+- type: qualification
+  id: CaptainSecondClass
+  qualificationTitle: is14-qualification-CaptainSecondClass
+  requirement: 50
+
+- type: qualification
+  id: CaptainFirstClass
+  qualificationTitle: is14-qualification-CaptainFirstClass
+  requirement: 100
+
+- type: qualification
+  id: CaptainHighestClass
+  qualificationTitle: is14-qualification-CaptainHighestClass
+  requirement: 300
+
+- type: qualification
+  id: CaptainHonored
+  qualificationTitle: is14-qualification-CaptainHonored
+  requirement: 500
+
+# Квалификации - HR
+- type: qualification
+  id: HRClerk
+  qualificationTitle: is14-qualification-HRClerk
+  requirement: 0
+
+- type: qualification
+  id: HRSeniorClerk
+  qualificationTitle: is14-qualification-HRSeniorClerk
+  requirement: 10
+
+- type: qualification
+  id: HRStaff
+  qualificationTitle: is14-qualification-HRStaff
+  requirement: 30
+
+- type: qualification
+  id: HRSeniorStaff
+  qualificationTitle: is14-qualification-HRSeniorStaff
+  requirement: 50
+
+- type: qualification
+  id: HRSpecialist
+  qualificationTitle: is14-qualification-HRSpecialist
+  requirement: 100
+
+- type: qualification
+  id: HRSeniorSpecialist
+  qualificationTitle: is14-qualification-HRSeniorSpecialist
+  requirement: 300
+
+- type: qualification
+  id: HRLeadingSpecialist
+  qualificationTitle: is14-qualification-HRLeadingSpecialist
+  requirement: 500
+
+# Квалификации - Милиция
+- type: qualification
+  id: MilitiaPrivate
+  qualificationTitle: is14-qualification-MilitiaPrivate
+  requirement: 0
+
+- type: qualification
+  id: MilitiaJuniorSergeant
+  qualificationTitle: is14-qualification-MilitiaJuniorSergeant
+  requirement: 10
+
+- type: qualification
+  id: MilitiaSergeant
+  qualificationTitle: is14-qualification-MilitiaSergeant
+  requirement: 30
+
+- type: qualification
+  id: MilitiaSeniorSergeant
+  qualificationTitle: is14-qualification-MilitiaSeniorSergeant
+  requirement: 50
+
+- type: qualification
+  id: MilitiaJuniorLieutenant
+  qualificationTitle: is14-qualification-MilitiaJuniorLieutenant
+  requirement: 100
+
+- type: qualification
+  id: MilitiaLieutenant
+  qualificationTitle: is14-qualification-MilitiaLieutenant
+  requirement: 300
+
+- type: qualification
+  id: MilitiaSeniorLieutenant
+  qualificationTitle: is14-qualification-MilitiaSeniorLieutenant
+  requirement: 500
+
+# Квалификации - Старшая милиция
+- type: qualification
+  id: MilitiaCaptain
+  qualificationTitle: is14-qualification-MilitiaCaptain
+  requirement: 50
+
+- type: qualification
+  id: MilitiaMajor
+  qualificationTitle: is14-qualification-MilitiaMajor
+  requirement: 100
+
+- type: qualification
+  id: MilitiaLieutenantColonel
+  qualificationTitle: is14-qualification-MilitiaLieutenantColonel
+  requirement: 300
+
+- type: qualification
+  id: MilitiaColonel
+  qualificationTitle: is14-qualification-MilitiaColonel
+  requirement: 500
+
+# Квалификации - Глава милиции
+- type: qualification
+  id: MilitiaSeniorColonel
+  qualificationTitle: is14-qualification-MilitiaSeniorColonel
+  requirement: 100
+
+- type: qualification
+  id: MilitiaChiefInspector
+  qualificationTitle: is14-qualification-MilitiaChiefInspector
+  requirement: 300
+
+- type: qualification
+  id: MilitiaSeniorChief
+  qualificationTitle: is14-qualification-MilitiaSeniorChief
+  requirement: 500
+
+# Квалификации - Следователь/Внутренний контроль
+- type: qualification
+  id: InvestigatorSergeant
+  qualificationTitle: is14-qualification-InvestigatorSergeant
+  requirement: 0
+
+- type: qualification
+  id: InvestigatorSeniorSergeant
+  qualificationTitle: is14-qualification-InvestigatorSeniorSergeant
+  requirement: 10
+
+- type: qualification
+  id: InvestigatorJuniorLieutenant
+  qualificationTitle: is14-qualification-InvestigatorJuniorLieutenant
+  requirement: 30
+
+- type: qualification
+  id: InvestigatorLieutenant
+  qualificationTitle: is14-qualification-InvestigatorLieutenant
+  requirement: 50
+
+- type: qualification
+  id: InvestigatorSeniorLieutenant
+  qualificationTitle: is14-qualification-InvestigatorSeniorLieutenant
+  requirement: 300
+
+- type: qualification
+  id: InvestigatorCaptain
+  qualificationTitle: is14-qualification-InvestigatorCaptain
+  requirement: 500
+
+# Квалификации - Медицинский офицер
+- type: qualification
+  id: MedicalOfficerPrivate
+  qualificationTitle: is14-qualification-MedicalOfficerPrivate
+  requirement: 0
+
+- type: qualification
+  id: MedicalOfficerJuniorSergeant
+  qualificationTitle: is14-qualification-MedicalOfficerJuniorSergeant
+  requirement: 10
+
+- type: qualification
+  id: MedicalOfficerSergeant
+  qualificationTitle: is14-qualification-MedicalOfficerSergeant
+  requirement: 30
+
+- type: qualification
+  id: MedicalOfficerSeniorSergeant
+  qualificationTitle: is14-qualification-MedicalOfficerSeniorSergeant
+  requirement: 50
+
+- type: qualification
+  id: MedicalOfficerJuniorLieutenant
+  qualificationTitle: is14-qualification-MedicalOfficerJuniorLieutenant
+  requirement: 100
+
+- type: qualification
+  id: MedicalOfficerLieutenant
+  qualificationTitle: is14-qualification-MedicalOfficerLieutenant
+  requirement: 300
+
+- type: qualification
+  id: MedicalOfficerSeniorLieutenant
+  qualificationTitle: is14-qualification-MedicalOfficerSeniorLieutenant
+  requirement: 500
+
+# Квалификации - Врач
+- type: qualification
+  id: DoctorTrainee
+  qualificationTitle: is14-qualification-DoctorTrainee
+  requirement: 0
+
+- type: qualification
+  id: DoctorJunior
+  qualificationTitle: is14-qualification-DoctorJunior
+  requirement: 10
+
+- type: qualification
+  id: DoctorMedicalWorker
+  qualificationTitle: is14-qualification-DoctorMedicalWorker
+  requirement: 30
+
+- type: qualification
+  id: DoctorSeniorMedicalWorker
+  qualificationTitle: is14-qualification-DoctorSeniorMedicalWorker
+  requirement: 50
+
+- type: qualification
+  id: DoctorJuniorSpecialist
+  qualificationTitle: is14-qualification-DoctorJuniorSpecialist
+  requirement: 100
+
+- type: qualification
+  id: DoctorSpecialist
+  qualificationTitle: is14-qualification-DoctorSpecialist
+  requirement: 300
+
+- type: qualification
+  id: DoctorSeniorSpecialist
+  qualificationTitle: is14-qualification-DoctorSeniorSpecialist
+  requirement: 500
+
+# Квалификации - Старший врач
+- type: qualification
+  id: DoctorExpert
+  qualificationTitle: is14-qualification-DoctorExpert
+  requirement: 50
+
+- type: qualification
+  id: DoctorHonored
+  qualificationTitle: is14-qualification-DoctorHonored
+  requirement: 100
+
+- type: qualification
+  id: DoctorPeople
+  qualificationTitle: is14-qualification-DoctorPeople
+  requirement: 300
+
+- type: qualification
+  id: DoctorChiefSpecialist
+  qualificationTitle: is14-qualification-DoctorChiefSpecialist
+  requirement: 500
+
+# Квалификации - Главный врач
+- type: qualification
+  id: DoctorChiefMedical
+  qualificationTitle: is14-qualification-DoctorChiefMedical
+  requirement: 100
+
+- type: qualification
+  id: DoctorHonoredUnion
+  qualificationTitle: is14-qualification-DoctorHonoredUnion
+  requirement: 300
+
+- type: qualification
+  id: DoctorCandidate
+  qualificationTitle: is14-qualification-DoctorCandidate
+  requirement: 500
+
+# Квалификации - Инженер
+- type: qualification
+  id: EngineerTrainee
+  qualificationTitle: is14-qualification-EngineerTrainee
+  requirement: 0
+
+- type: qualification
+  id: EngineerTechnicianThird
+  qualificationTitle: is14-qualification-EngineerTechnicianThird
+  requirement: 10
+
+- type: qualification
+  id: EngineerTechnicianSecond
+  qualificationTitle: is14-qualification-EngineerTechnicianSecond
+  requirement: 30
+
+- type: qualification
+  id: EngineerTechnicianFirst
+  qualificationTitle: is14-qualification-EngineerTechnicianFirst
+  requirement: 50
+
+- type: qualification
+  id: EngineerThird
+  qualificationTitle: is14-qualification-EngineerThird
+  requirement: 100
+
+- type: qualification
+  id: EngineerSecond
+  qualificationTitle: is14-qualification-EngineerSecond
+  requirement: 300
+
+- type: qualification
+  id: EngineerFirst
+  qualificationTitle: is14-qualification-EngineerFirst
+  requirement: 500
+
+# Квалификации - Старший инженер
+- type: qualification
+  id: EngineerHighest
+  qualificationTitle: is14-qualification-EngineerHighest
+  requirement: 50
+
+- type: qualification
+  id: EngineerLeading
+  qualificationTitle: is14-qualification-EngineerLeading
+  requirement: 100
+
+- type: qualification
+  id: EngineerSenior
+  qualificationTitle: is14-qualification-EngineerSenior
+  requirement: 300
+
+- type: qualification
+  id: EngineerChief
+  qualificationTitle: is14-qualification-EngineerChief
+  requirement: 500
+
+# Квалификации - Главный инженер
+- type: qualification
+  id: EngineerChiefTechnical
+  qualificationTitle: is14-qualification-EngineerChiefTechnical
+  requirement: 100
+
+- type: qualification
+  id: EngineerCandidate
+  qualificationTitle: is14-qualification-EngineerCandidate
+  requirement: 300
+
+- type: qualification
+  id: EngineerHonored
+  qualificationTitle: is14-qualification-EngineerHonored
+  requirement: 500
+
+# Квалификации - Наука
+- type: qualification
+  id: ScienceTrainee
+  qualificationTitle: is14-qualification-ScienceTrainee
+  requirement: 0
+
+- type: qualification
+  id: ScienceJunior
+  qualificationTitle: is14-qualification-ScienceJunior
+  requirement: 10
+
+- type: qualification
+  id: ScienceSpecialist
+  qualificationTitle: is14-qualification-ScienceSpecialist
+  requirement: 30
+
+- type: qualification
+  id: ScienceSeniorSpecialist
+  qualificationTitle: is14-qualification-ScienceSeniorSpecialist
+  requirement: 50
+
+- type: qualification
+  id: ScienceLeadingSpecialist
+  qualificationTitle: is14-qualification-ScienceLeadingSpecialist
+  requirement: 100
+
+- type: qualification
+  id: ScienceChiefSpecialist
+  qualificationTitle: is14-qualification-ScienceChiefSpecialist
+  requirement: 200
+
+- type: qualification
+  id: ScienceHighestSpecialist
+  qualificationTitle: is14-qualification-ScienceHighestSpecialist
+  requirement: 500
+
+# Квалификации - Старший научный сотрудник
+- type: qualification
+  id: ScienceSeniorResearcher
+  qualificationTitle: is14-qualification-ScienceSeniorResearcher
+  requirement: 50
+
+- type: qualification
+  id: ScienceLeadingResearcher
+  qualificationTitle: is14-qualification-ScienceLeadingResearcher
+  requirement: 100
+
+- type: qualification
+  id: ScienceChiefResearcher
+  qualificationTitle: is14-qualification-ScienceChiefResearcher
+  requirement: 300
+
+- type: qualification
+  id: ScienceHonoredResearcher
+  qualificationTitle: is14-qualification-ScienceHonoredResearcher
+  requirement: 500
+
+# Квалификации - Директор НИЦ
+- type: qualification
+  id: ScienceCandidate
+  qualificationTitle: is14-qualification-ScienceCandidate
+  requirement: 300
+
+- type: qualification
+  id: ScienceAcademician
+  qualificationTitle: is14-qualification-ScienceAcademician
+  requirement: 500
+
+# Квалификации - Карго
+- type: qualification
+  id: CargoTrainee
+  qualificationTitle: is14-qualification-CargoTrainee
+  requirement: 0
+
+- type: qualification
+  id: CargoWorkerThird
+  qualificationTitle: is14-qualification-CargoWorkerThird
+  requirement: 10
+
+- type: qualification
+  id: CargoWorkerSecond
+  qualificationTitle: is14-qualification-CargoWorkerSecond
+  requirement: 30
+
+- type: qualification
+  id: CargoWorkerFirst
+  qualificationTitle: is14-qualification-CargoWorkerFirst
+  requirement: 50
+
+- type: qualification
+  id: CargoSeniorWorker
+  qualificationTitle: is14-qualification-CargoSeniorWorker
+  requirement: 100
+
+- type: qualification
+  id: CargoLeadingWorker
+  qualificationTitle: is14-qualification-CargoLeadingWorker
+  requirement: 300
+
+- type: qualification
+  id: CargoHonoredWorker
+  qualificationTitle: is14-qualification-CargoHonoredWorker
+  requirement: 500
+
+# Квалификации - Экспедитор
+- type: qualification
+  id: ExpeditorPrivate
+  qualificationTitle: is14-qualification-ExpeditorPrivate
+  requirement: 0
+
+- type: qualification
+  id: ExpeditorJuniorSergeant
+  qualificationTitle: is14-qualification-ExpeditorJuniorSergeant
+  requirement: 10
+
+- type: qualification
+  id: ExpeditorSergeant
+  qualificationTitle: is14-qualification-ExpeditorSergeant
+  requirement: 30
+
+- type: qualification
+  id: ExpeditorSeniorSergeant
+  qualificationTitle: is14-qualification-ExpeditorSeniorSergeant
+  requirement: 50
+
+- type: qualification
+  id: ExpeditorJuniorLieutenant
+  qualificationTitle: is14-qualification-ExpeditorJuniorLieutenant
+  requirement: 100
+
+- type: qualification
+  id: ExpeditorLieutenant
+  qualificationTitle: is14-qualification-ExpeditorLieutenant
+  requirement: 300
+
+- type: qualification
+  id: ExpeditorSeniorLieutenant
+  qualificationTitle: is14-qualification-ExpeditorSeniorLieutenant
+  requirement: 500
+
+# Квалификации - Старший экспедитор
+- type: qualification
+  id: ExpeditorCaptain
+  qualificationTitle: is14-qualification-ExpeditorCaptain
+  requirement: 50
+
+- type: qualification
+  id: ExpeditorMajor
+  qualificationTitle: is14-qualification-ExpeditorMajor
+  requirement: 100
+
+- type: qualification
+  id: ExpeditorLieutenantColonel
+  qualificationTitle: is14-qualification-ExpeditorLieutenantColonel
+  requirement: 300
+
+- type: qualification
+  id: ExpeditorColonel
+  qualificationTitle: is14-qualification-ExpeditorColonel
+  requirement: 500
+
+# Квалификации - Руководитель ЭСО
+- type: qualification
+  id: ExpeditorChiefInspector
+  qualificationTitle: is14-qualification-ExpeditorChiefInspector
+  requirement: 100
+
+- type: qualification
+  id: ExpeditorSeniorColonel
+  qualificationTitle: is14-qualification-ExpeditorSeniorColonel
+  requirement: 300
+
+- type: qualification
+  id: ExpeditorSeniorChief
+  qualificationTitle: is14-qualification-ExpeditorSeniorChief
+  requirement: 500
