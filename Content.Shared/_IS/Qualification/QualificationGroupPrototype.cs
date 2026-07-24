@@ -1,8 +1,5 @@
-using System.ComponentModel.DataAnnotations;
 using Content.Shared.Roles;
-using Content.Shared.StatusIcon;
 using Robust.Shared.Prototypes;
-using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype.Array;
 
 namespace Content.Shared._IS.Qualification;
 

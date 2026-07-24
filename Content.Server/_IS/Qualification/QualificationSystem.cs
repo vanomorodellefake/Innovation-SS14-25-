@@ -1,19 +1,14 @@
-using System.Linq;
-using Content.Server.GameTicking;
-using Content.Server.Station.Components;
-using Content.Server.Station.Systems;
 using Content.Shared._IS.Qualification;
 using Content.Shared._IS.Qualification.Components;
-using Content.Shared._White.Examine;
+using Content.Shared.GameTicking;
 using Content.Shared.Players.PlayTimeTracking;
-using Microsoft.EntityFrameworkCore.Query.Internal;
+using Content.Shared.Roles;
 using Robust.Shared.Prototypes;
 
 namespace Content.Server._IS.Qualification;
 
 public sealed partial class QualificationSystem : EntitySystem
 {
-    [Dependency] private StationJobsSystem _stationJobsSystem = default!;
     [Dependency] private IPrototypeManager _prototypeManager = default!;
     [Dependency] private readonly ISharedPlaytimeManager _playtimeManager = default!;
 
@@ -21,56 +16,54 @@ public sealed partial class QualificationSystem : EntitySystem
     {
         base.Initialize();
 
-        SubscribeLocalEvent<RulePlayerJobsAssignedEvent>(OnPlayerJobAssigned);
+        SubscribeLocalEvent<PlayerSpawnCompleteEvent>(OnPlayerJobAssigned);
     }
 
-    private void OnPlayerJobAssigned(RulePlayerJobsAssignedEvent args)
+    private void OnPlayerJobAssigned(PlayerSpawnCompleteEvent args)
     {
-        var query = EntityQueryEnumerator<StationJobsComponent>();
-        while (query.MoveNext(out var uid, out var sjComp))
+        if (args.JobId == null
+            || args.Player.AttachedEntity == null)
+            return;
+
+        var jobId = args.JobId;
+
+        if (!_prototypeManager.TryIndex<JobPrototype>(jobId, out var jobProto)
+            || jobProto == null)
+            return;
+
+        var jobTimeTracker = jobProto.PlayTimeTracker;
+        var session = args.Player;
+        var playTimes = _playtimeManager.GetPlayTimes(session);
+
+        if (!playTimes.TryGetValue(jobTimeTracker, out var time))
+            return;
+
+        var qgPrototypes = _prototypeManager.EnumeratePrototypes<QualificationGroupPrototype>();
+
+        foreach (var qgPrototype in qgPrototypes)
         {
-            foreach (var session in args.Players)
+            if (qgPrototype.JobPrototypes.Contains(jobId))
             {
-                if (session.AttachedEntity == null)
-                    continue;
+                var qPrototypes = qgPrototype.QualificationHashSet;
 
-                if (!_stationJobsSystem.TryGetPlayerJobs(uid, session.UserId, out var jobs, sjComp))
-                    continue;
+                QualificationPrototype? qp = null;
 
-                var playTimes = _playtimeManager.GetPlayTimes(session);
-
-                foreach (var job in jobs)
+                foreach (var qPrototype in qPrototypes)
                 {
-                    if (!playTimes.TryGetValue(job, out var time))
+                    if (!_prototypeManager.TryIndex(qPrototype, out var proto))
                         continue;
 
-                    var qgPrototypes = _prototypeManager.EnumeratePrototypes<QualificationGroupPrototype>();
+                    var hourTimeRquirement = time.TotalHours;
 
-                    foreach (var qgPrototype in qgPrototypes)
-                    {
-                        if (qgPrototype.JobPrototypes.Contains(job))
-                        {
-                            var qPrototypes = qgPrototype.QualificationHashSet;
-
-                            QualificationPrototype? qp = null;
-
-                            foreach (var qPrototype in qPrototypes)
-                            {
-                                if (!_prototypeManager.TryIndex(qPrototype, out var proto))
-                                    continue;
-
-                                if (time < proto.Requirement)
-                                    qp = proto;
-                            }
-
-                            if (qp == null)
-                                continue;
-
-                            var qComp = EnsureComp<QualificationComponent>(session.AttachedEntity.Value);
-                            qComp.QualificationIcon = qp;
-                        }
-                    }
+                    if (hourTimeRquirement >= proto.Requirement)
+                        qp = proto;
                 }
+
+                if (qp == null)
+                    continue;
+
+                var qComp = EnsureComp<QualificationComponent>(session.AttachedEntity.Value);
+                qComp.QualificationIcon = qp;
             }
         }
     }

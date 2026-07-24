@@ -23,5 +23,5 @@ public sealed partial class QualificationPrototype : IPrototype, IInheritingProt
     public LocId QualificationTitle = "IS14-Qualification-Unknown";
 
     [DataField(required: true)]
-    public TimeSpan Requirement;
+    public float Requirement;
 }

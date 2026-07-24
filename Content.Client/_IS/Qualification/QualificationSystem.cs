@@ -14,7 +14,7 @@ namespace Content.Client._IS.Qualification;
 public sealed partial class QualificationSystem : EntitySystem
 {
     [Dependency] private readonly IPrototypeManager _prototype = default!;
-    //[Dependency] private readonly AccessReaderSystem _accessReader = default!;
+    [Dependency] private readonly AccessReaderSystem _accessReader = default!;
 
     public override void Initialize()
     {
@@ -69,6 +69,10 @@ public sealed partial class QualificationSystem : EntitySystem
 
     private void OnExamine(Entity<QualificationComponent> entity, ref ExaminedEvent args)
     {
+        if (!CheckIDCard(entity)
+            || !args.IsInDetailsRange)
+            return;
+
         ProtoId<QualificationPrototype>? iconId = entity.Comp.QualificationIcon;
         _prototype.TryIndex(iconId, out var iconPrototype);
 
@@ -78,6 +82,31 @@ public sealed partial class QualificationSystem : EntitySystem
         var locale = iconPrototype.QualificationTitle;
 
         args.PushText(Loc.GetString(locale),
-            100);
+            5);
+    }
+
+    private bool CheckIDCard(EntityUid entity)
+    {
+        if (_accessReader.FindAccessItemsInventory(entity, out var items))
+        {
+            foreach (var item in items)
+            {
+                // ID Card
+                if (HasComp<IdCardComponent>(item))
+                {
+                    return true;
+                }
+
+                // PDA
+                if (TryComp<PdaComponent>(item, out var pda)
+                    && pda.ContainedId != null
+                    && HasComp<IdCardComponent>(pda.ContainedId))
+                {
+                    return true;
+                }
+            }
+        }
+
+        return false;
     }
 }
